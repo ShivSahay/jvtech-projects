@@ -1,0 +1,28 @@
+.about-container {
+  height: 700px;
+  width: 100%;
+  background: url("../../public/safetyfirst.jpg") 50% 0 no-repeat;
+  justify-content: center;
+  background-size: cover;
+  padding-top: 220px;
+}
+.sec1-about-text1,.sec1-about-text2 {
+  font-weight: bold !important;
+  color: #de0933;
+  text-align: center;
+}
+
+@media (max-width: 599px) {
+  .about-sec2 {
+    padding: 25px !important;
+  }
+
+  .sec1-about-text1{
+    font-size: 3rem !important;
+  }
+
+  .sec1-about-text2{
+    font-size: 2rem !important;
+    /* color: #ffffff !important; */
+  }
+}

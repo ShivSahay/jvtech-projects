@@ -1,0 +1,25 @@
+.header-tab {
+  color: "#fff" !important;
+  text-transform: "none" !important;
+  font-size: "1rem" !important;
+  font-weight: "bold" !important;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+  background-color: #1ed760 !important;
+}
+
+.drower-sidebar .MuiDrawer-paper {
+  width: 50% !important;
+}
+.mobile-header-iconbtn{
+  margin-left: 0px !important;
+}
+@media (max-width: 599px) {
+  .toolbar-header {
+    min-height: 80px !important;
+  }
+  .header-logo{
+    margin-left: 25px !important;
+  }
+}

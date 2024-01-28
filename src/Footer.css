@@ -1,0 +1,33 @@
+.link-footer:hover{
+    color: rgba(138, 113, 255, 1)!important;
+  }
+  .link-footer svg:hover{
+    color: rgba(138, 113, 255, 1)!important;
+  }
+  @media (min-width: 1920px) {
+    .footer-heading {
+      font-size: 2.5rem !important;
+    }
+    .footer-text {
+      font-size: 1.5rem !important;
+    }
+    .footer-share-icon{
+      font-size: 2.5rem !important;
+    }
+    .privacy-grid{
+      margin-right: 60px!important;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .footer-text {
+      font-size: 12px !important;
+    }
+    .footer-share-icon {
+      font-size: 1.2rem !important;
+    }
+    .privacy-grid{
+      margin-right: 30px!important;
+    }
+  }
+  
