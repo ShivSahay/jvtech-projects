@@ -17,6 +17,7 @@ import {
   Grid,
   CardMedia,
   Button,
+  colors,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
@@ -59,7 +60,12 @@ const Header = () => {
     <>
       <AppBar position="sticky">
         <Toolbar
-          style={{ background: "#131120", minHeight: "75px" }}
+          style={{
+            // background: "#f58320",
+            background: "repeating-linear-gradient(135deg,#f96702,#ff8400 2px,#f96702 2px,#f96702 10px)",
+            // background:"linear-gradient(-45deg, rgba(31,164,30,255) -5%, rgba(245,131,32,255))",
+            minHeight: "95px",
+          }}
           className="toolbar-header"
         >
           <Grid item container sm={12} md={12}>
@@ -83,8 +89,8 @@ const Header = () => {
                 >
                   <img
                     style={{
-                      height: "4em",
-                      width: "10em",
+                      height: "5em",
+                      width: "12em",
                       display: "inline-block",
                       overflow: "hidden",
                     }}
@@ -120,7 +126,11 @@ const Header = () => {
                 item
                 sm={9}
                 md={9}
-                style={{ display: "flex", justifyContent: "center" }}
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
               >
                 <Tabs value={selectedTab} onChange={handleTabChange}>
                   {routes.map((route, index) => (
@@ -130,7 +140,7 @@ const Header = () => {
                       style={{
                         color: "#fff",
                         // textTransform: "none",
-                        fontSize: "1rem",
+                        fontSize: "1.25rem",
                         fontWeight: "bold",
                         textTransform: "uppercase",
                       }}
@@ -154,7 +164,7 @@ const Header = () => {
         <List>
           <ListItem href="/">
             <ListItemButton>
-              <ListItemIcon>
+              <ListItemIcon style={{ color: "#fff" }}>
                 <HomeIcon />
               </ListItemIcon>
               <ListItemText primary="Home" />
@@ -162,7 +172,7 @@ const Header = () => {
           </ListItem>
           <ListItem href="/about">
             <ListItemButton>
-              <ListItemIcon>
+              <ListItemIcon style={{ color: "#fff" }}>
                 <InfoIcon />
               </ListItemIcon>
               <ListItemText primary="About" />
@@ -170,7 +180,7 @@ const Header = () => {
           </ListItem>
           <ListItem href="/projects">
             <ListItemButton>
-              <ListItemIcon>
+              <ListItemIcon style={{ color: "#fff" }}>
                 <SchoolIcon />
               </ListItemIcon>
               <ListItemText primary="Education" />
@@ -178,7 +188,7 @@ const Header = () => {
           </ListItem>
           <ListItem href="/service">
             <ListItemButton>
-              <ListItemIcon>
+              <ListItemIcon style={{ color: "#fff" }}>
                 <HomeRepairServiceIcon />
               </ListItemIcon>
               <ListItemText primary="Service" />
@@ -186,7 +196,7 @@ const Header = () => {
           </ListItem>
           <ListItem href="/contact">
             <ListItemButton>
-              <ListItemIcon>
+              <ListItemIcon style={{ color: "#fff" }}>
                 <ContactMailIcon />
               </ListItemIcon>
               <ListItemText primary="Contact" />

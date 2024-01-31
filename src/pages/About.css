@@ -6,9 +6,11 @@
   background-size: cover;
   padding-top: 220px;
 }
-.sec1-about-text1,.sec1-about-text2 {
+.sec1-about-text1,
+.sec1-about-text2 {
   font-weight: bold !important;
-  color: #de0933;
+  /* color: #de0933; */
+  color: rgb(245, 131, 32);
   text-align: center;
 }
 
@@ -17,11 +19,11 @@
     padding: 25px !important;
   }
 
-  .sec1-about-text1{
+  .sec1-about-text1 {
     font-size: 3rem !important;
   }
 
-  .sec1-about-text2{
+  .sec1-about-text2 {
     font-size: 2rem !important;
     /* color: #ffffff !important; */
   }

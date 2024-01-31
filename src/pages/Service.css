@@ -1,0 +1,27 @@
+.service-sec1-card:hover {
+  margin-top: -5px !important;
+}
+
+.service-sec1-heading {
+  color: red;
+}
+
+.service-sec9 {
+  height: 100vh;
+  /* width: 100%; */
+  background: #ddedff;
+  background: url("../../public/watersprinkler.jpg") 50% 0 no-repeat;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  background-size: cover;
+  padding-top: 220px;
+}
+@media (max-width: 599px) {
+  .service-sec1 {
+    padding: 25px !important;
+  }
+  .service-sec1-heading {
+    font-size: 2.5rem !important;
+  }
+}

@@ -168,14 +168,17 @@ const Footer = () => {
   // const classes = useStyles();
 
   return (
-    <Grid item container  sm={12}>
+    <Grid item container sm={12}>
       <Paper
         component="footer"
         style={{
           width: "100%",
+          minHeight: "100px",
           padding: "32px",
           marginTop: "auto",
-          backgroundColor: "#000",
+          // backgroundColor: "#f58320",
+          background:
+            "repeating-linear-gradient(135deg,#f96702,#ff8400 2px,#f96702 2px,#f96702 10px)",
           color: "#ffffff",
         }}
       >

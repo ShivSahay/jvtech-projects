@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import {
@@ -173,16 +173,57 @@ const Testimonials = ({ testimonial }) => {
     </Grid>
   );
 };
+
+// ==========================>
+const images = [
+  "firesystem.jpg",
+  "safetyfirst.jpg",
+  "watersprinkler.jpg",
+  // Add more image URLs as needed
+];
+
+const ImageSliderMui = ({ images }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // Change the interval time as needed (in milliseconds)
+
+    return () => clearInterval(intervalId);
+  }, [currentIndex, images.length]);
+
+  return (
+    <Grid container spacing={2}>
+      <Grid item xs={12}>
+        <Paper elevation={3}>
+          <img
+            src={images[currentIndex]}
+            alt={`slide-${currentIndex}`}
+            style={{ width: "100%", height: "auto" }}
+          />
+        </Paper>
+      </Grid>
+    </Grid>
+  );
+};
+
 const Home = () => {
   return (
     <>
       <Header />
       <div>
         <Grid className="home-sec1">
-          <Typography className="sec1-home-text" variant="h2">
+          <Typography
+            className="sec1-home-text"
+            style={{ position: "absolute", marginTop: "16%",color:"rgb(249, 103, 2)" }}
+            variant="h2"
+          >
             J.V.TECH ENGINEERS
           </Typography>
+          <ImageSliderMui images={images} />
         </Grid>
+
         <Grid className="home-sec2">
           <Grid
             container
@@ -506,8 +547,9 @@ const Home = () => {
           style={{
             minHeight: "400px",
             // background:      " linear-gradient(94.64deg, #B023C2 -0.12%, #680DE4 99.52%)",
+            // background:  "linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231))",
             background:
-              "linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231))",
+              "linear-gradient(-45deg, rgba(31,164,30,255) -5%, rgba(245,131,32,255))",
           }}
           // sm={12}
         >
@@ -554,27 +596,6 @@ const Home = () => {
           </Grid>
         </Grid>
 
-        <Grid
-          item
-          container
-          direction="column"
-          alignItems="center"
-          className="landing-sec5"
-          style={{
-            padding: "2rem",
-            background: "#926CF3",
-          }}
-          xs={12}
-        >
-          <Typography
-            variant="h4"
-            className="sec4-heading"
-            style={{ fontWeight: "bold", color: "#fff", marginBottom: "2rem" }}
-          >
-            Working Experience
-          </Typography>
-          <FeatureSection />
-        </Grid>
         {/* Last add */}
         <Grid
           item
@@ -586,8 +607,9 @@ const Home = () => {
             minHeight: "450px",
             // background:
             // " linear-gradient(94.64deg, #B023C2 -0.12%, #680DE4 99.52%)",
-            background: "#926CB3",
-            padding:"2rem"
+            // background: "#926CB3",
+            background: "#ffffff",
+            padding: "2rem",
           }}
           xs={12}
         >
@@ -596,7 +618,11 @@ const Home = () => {
             align="left"
             className="sec5-heading"
             gutterBottom
-            style={{ color: "#fff", fontWeight: "bold", textAlign: "center", }}
+            style={{
+              color: "rgb(245, 131, 32)",
+              fontWeight: "bold",
+              textAlign: "center",
+            }}
           >
             Scope of Works
           </Typography>
@@ -613,6 +639,29 @@ const Home = () => {
           >
             <AboutSection />
           </Grid>
+        </Grid>
+
+        <Grid
+          item
+          container
+          direction="column"
+          alignItems="center"
+          className="landing-sec5"
+          style={{
+            padding: "2rem",
+            // background: "#926CF3",
+            background: "#f7c7e1",
+          }}
+          xs={12}
+        >
+          <Typography
+            variant="h4"
+            className="sec4-heading"
+            style={{ fontWeight: "bold", color: "#fff", marginBottom: "2rem" }}
+          >
+            Working Experience
+          </Typography>
+          <FeatureSection />
         </Grid>
 
         {/* <Grid className="home-container1">hiuhu</Grid> */}

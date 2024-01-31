@@ -71,7 +71,7 @@ const AboutPage = () => {
               <Grid item xs={12} md={6}>
                 <AboutCard
                   title="Qualiﬁed and technically"
-                  content="Our highly qualiﬁed and technically competent managers, engineers and technicians, allow us to capture a sizable share of the market. We are currently executing projects in different premises of commercial, residential and industrial type."
+                  content="Our highly qualiﬁed and technically competent managers, engineers and technicians, allow us to capture a sizable share of the market. We are currently executing projects in different premises of commercial, residential and industrial type.the services or goods specifically set out in the bid or request for proposal package.Something technically true is actually, really true or correct but it may not be the way people think about it."
                 />
               </Grid>
               <Grid item xs={12} md={12}>

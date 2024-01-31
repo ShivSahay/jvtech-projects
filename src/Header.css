@@ -8,9 +8,10 @@
 .css-1aquho2-MuiTabs-indicator {
   background-color: #1ed760 !important;
 }
-
 .drower-sidebar .MuiDrawer-paper {
   width: 50% !important;
+  background: #f58320 !important;
+  color: #fff;
 }
 .mobile-header-iconbtn{
   margin-left: 0px !important;
