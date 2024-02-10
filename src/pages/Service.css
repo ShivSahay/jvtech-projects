@@ -2,20 +2,34 @@
   margin-top: -5px !important;
 }
 
+.service-sec1{
+  background: #7da500 url("https://garden.pro-theme.info/wp-content/uploads/2015/09/tools-bg.png?id=26") !important;
+}
 .service-sec1-heading {
-  color: red;
+  color: #ffffff;
+}
+
+.service-sec1-cardmedia:hover{
+  width: 400px;
 }
 
 .service-sec9 {
   height: 100vh;
-  /* width: 100%; */
+  width: 100%;
   background: #ddedff;
   background: url("../../public/watersprinkler.jpg") 50% 0 no-repeat;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   /* align-items: center; */
   background-size: cover;
   padding-top: 220px;
+}
+.sec1-service-text1,
+.sec1-service-text2 {
+  font-weight: 800 !important;
+  /* color: #de0933; */
+  color: rgb(245, 131, 32);
+  text-align: center;
 }
 @media (max-width: 599px) {
   .service-sec1 {

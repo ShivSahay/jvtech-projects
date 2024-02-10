@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   AppBar,
   Toolbar,
@@ -25,6 +25,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import SchoolIcon from "@mui/icons-material/School";
 import HomeRepairServiceIcon from "@mui/icons-material/HomeRepairService";
+import { useLocation } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 import "./Header.css";
@@ -33,10 +34,27 @@ const Header = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const [selectedTab, setSelectedTab] = useState(0);
+  let location = useLocation();
+  console.log("location =>", location);
 
   const handleTabChange = (event, newValue) => {
+    console.log("newValue", newValue);
     setSelectedTab(newValue);
   };
+
+  useEffect(() => {
+    if (location.pathname == "/about") {
+      setSelectedTab(1);
+    } else if (location.pathname == "/projects") {
+      setSelectedTab(2);
+    } else if (location.pathname == "/service") {
+      setSelectedTab(3);
+    } else if (location.pathname == "/contact") {
+      setSelectedTab(4);
+    } else {
+      setSelectedTab(0);
+    }
+  }, []);
 
   const [open, setOpen] = useState(false);
 
@@ -62,7 +80,8 @@ const Header = () => {
         <Toolbar
           style={{
             // background: "#f58320",
-            background: "repeating-linear-gradient(135deg,#f96702,#ff8400 2px,#f96702 2px,#f96702 10px)",
+            background:
+              "repeating-linear-gradient(135deg,#f96702,#ff8400 2px,#f96702 2px,#f96702 10px)",
             // background:"linear-gradient(-45deg, rgba(31,164,30,255) -5%, rgba(245,131,32,255))",
             minHeight: "95px",
           }}

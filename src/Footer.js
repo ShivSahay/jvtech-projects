@@ -164,9 +164,41 @@
 import React from "react";
 import { Paper, Container, Typography, Link, Grid } from "@mui/material";
 
+import "./Footer.css";
+import Box from "@mui/material/Box";
+import SpeedDial from "@mui/material/SpeedDial";
+import SpeedDialIcon from "@mui/material/SpeedDialIcon";
+import SpeedDialAction from "@mui/material/SpeedDialAction";
+import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
+const actions = [
+  {
+    icon: <WhatsAppIcon />,
+    name: "Whatsapp",
+    link: "http://api.whatsapp.com/",
+  },
+  {
+    icon: <InstagramIcon />,
+    name: "Instagram",
+    link: "https://www.instagram.com/pandit_himanshu_mishra_up45/",
+  },
+  {
+    icon: <FacebookOutlinedIcon />,
+    name: "Facebook",
+    link: "https://www.facebook.com/",
+  },
+  {
+    icon: <LinkedInIcon />,
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/",
+  },
+];
+
 const Footer = () => {
   // const classes = useStyles();
-
   return (
     <Grid item container sm={12}>
       <Paper
@@ -208,7 +240,42 @@ const Footer = () => {
           </Typography>
         </Container>
       </Paper>
+      <ControlledOpenSpeedDial />
     </Grid>
+  );
+};
+
+const ControlledOpenSpeedDial = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  const handleAction = (action) => {
+    window.open(action.link, "_blank"); // Open link in a new tab
+    handleClose(); // Close the Speed Dial
+  };
+
+  return (
+    <SpeedDial
+      ariaLabel="SpeedDial controlled open example"
+      sx={{ position: "fixed", bottom: 16, right: 16 }}
+      icon={<SpeedDialIcon />}
+      onClose={handleClose}
+      onOpen={handleOpen}
+      open={open}
+    >
+      {actions.map((action) => (
+        <SpeedDialAction
+          key={action.name}
+          icon={action.icon}
+          tooltipTitle={action.name}
+          component={Link}
+          to={action.link}
+          onClick={() => handleAction(action)}
+          // onClick={handleClose}
+        />
+      ))}
+    </SpeedDial>
   );
 };
 

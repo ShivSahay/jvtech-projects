@@ -15,26 +15,42 @@ import Footer from "../Footer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Zoom } from "react-reveal";
+import image1 from "../images/1.jpeg";
+import image2 from "../images/2.jpeg";
+import image3 from "../images/3.jpeg";
+import image4 from "../images/4.jpeg";
+import image5 from "../images/5.jpeg";
+import jitendra from "..//images/jitendra.jpeg";
+import shiv from "../images/shiv.jpeg";
+import leader from "../images/leader.jpeg";
 const AboutPage = () => {
   const AboutCard = ({ title, content }) => {
     return (
       <Card>
         <CardContent>
-          <Typography
-            variant="h6"
-            gutterBottom
-            style={{ fontWeight: "bold", textAlign: "center" }}
-          >
-            {title}
-          </Typography>
-          <Typography variant="body1">{content}</Typography>
+          <Zoom>
+            <Typography
+              variant="h4"
+              gutterBottom
+              style={{
+                fontWeight: "bold",
+                textAlign: "center",
+                color: "rgb(245, 131, 32)",
+              }}
+            >
+              {title}
+            </Typography>
+          </Zoom>
+          <Zoom>
+            <Typography variant="body1">{content}</Typography>
+          </Zoom>
         </CardContent>
       </Card>
     );
   };
   return (
     <>
-      <Header />
       <Grid item container className="about-page-container">
         <Grid className="about-container">
           <Typography className="sec1-about-text1" variant="h2">
@@ -53,13 +69,12 @@ const AboutPage = () => {
             alignItems: "center",
             justifyContent: "center",
             // background: "rgb(146, 108, 243)",
-            background:
-              "linear-gradient(94.64deg, #B023C2 -0.12%, #680DE4 99.52%)",
+            // background:"linear-gradient(94.64deg, #B023C2 -0.12%, #680DE4 99.52%)",
             width: "100%",
             padding: "60px",
           }}
         >
-          <Container maxWidth="md">
+          <Container maxWidth="lg">
             <Grid item container spacing={3}>
               <Grid item xs={12} md={6}>
                 <AboutCard
@@ -85,48 +100,168 @@ const AboutPage = () => {
             </Grid>
           </Container>
         </Grid>
-        {/* <Grid item>
-          <Container maxWidth="md">
-            <Paper
-              elevation={3}
-              style={{
-                padding: "20px",
-                textAlign: "center",
-                marginBottom: "20px",
-              }}
+        <Grid
+          item
+          container
+          // direction="column"
+          alignItems="center"
+          justifyContent="center"
+          className="about-sec3"
+          style={{
+            minHeight: "400px",
+            // background:      " linear-gradient(94.64deg, #B023C2 -0.12%, #680DE4 99.52%)",
+            // background:  "linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231))",
+            background:
+              "linear-gradient(-45deg, rgba(31,164,30,255) -5%, rgba(245,131,32,255))",
+          }}
+          // sm={12}
+        >
+          <Grid
+            item
+            style={{ marginTop: "80px" }}
+            className="sec3-heading-box"
+            sm={12}
+          >
+            <Typography
+              variant="h2"
+              align="center"
+              gutterBottom
+              className="sec3-heading"
+              style={{ color: "#fff", fontWeight: "bold", marginBottom: "1em" }}
             >
-              <Typography variant="h4">Welcome to Our Website</Typography>
-            </Paper>
-
-            <Grid container spacing={3}>
-              <Grid item xs={12} md={6}>
-                <Card>
+              Our Leaderships
+            </Typography>
+          </Grid>
+          <Grid
+            item
+            container
+            sm={12}
+            style={{
+              justifyContent: "space-evenly",
+              alignItems: "center",
+              marginBottom: "80px",
+            }}
+          >
+            <Grid item xs={12} sm={3}>
+              <Card
+                // key={index}
+                style={{ maxWidth: 400, width: "100%" }}
+              >
+                <Zoom>
                   <CardMedia
-                    component="img"
-                    height="140"
-                    alt="Introduction Image"
-                    src="https://example.com/path-to-your-introduction-image.jpg" // Replace with the actual image URL
+                    style={{
+                      height: 310,
+                      width: "310px",
+                      borderRadius: "50%",
+                      margin: "20px auto",
+                    }}
+                    image={leader}
+                    title="Image1"
                   />
-                </Card>
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <Paper elevation={3} style={{ padding: "20px" }}>
-                  <Typography variant="h5">Who We Are</Typography>
-                  <Typography variant="body1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Quisque dapibus velit eu augue. Suspendisse potenti. Fusce
-                    ac semper velit, vel gravida mauris.
-                  </Typography>
-                </Paper>
-              </Grid>
+                </Zoom>
+                <CardContent style={{ textAlign: "center" }}>
+                  <Zoom>
+                    <Typography variant="h6" component="div">
+                      Vipin Pal Singh
+                    </Typography>
+                    <Typography
+                      variant="h6"
+                      style={{ fontWeight: "bold" }}
+                      color="text.secondary"
+                    >
+                      CEO & Co-Founder
+                    </Typography>
+                    <Typography variant="body1" color="text.secondary">
+                      "It takes 20 years to build a reputation and 5 minutes to
+                      ruin it. If you think about that, you’ll do things
+                      differently"
+                    </Typography>
+                  </Zoom>
+                </CardContent>
+              </Card>
             </Grid>
-          </Container>
-        </Grid> */}
-        <Grid item style={{ width: "100%" }}>
-          
-        </Grid>
+            <Grid item xs={12} sm={3}>
+              <Card
+                // key={index}
+                style={{ maxWidth: 400, width: "100%" }}
+              >
+                <Zoom>
+                  <CardMedia
+                    style={{
+                      height: 310,
+                      width: "310px",
+                      borderRadius: "50%",
+                      margin: "20px auto",
+                    }}
+                    image={shiv}
+                    title="Image1"
+                  />
+                </Zoom>
+                <CardContent style={{ textAlign: "center" }}>
+                  <Zoom>
+                    <Typography variant="h6" component="div">
+                      Shiv Pandey 
+                    </Typography>
+                    <Typography
+                      variant="h6"
+                      style={{ fontWeight: "bold" }}
+                      color="text.secondary"
+                    >
+                      Software Engineer
+                    </Typography>
+                    <Typography variant="body1" color="text.secondary">
+                      “To me, business isn’t about wearing suits . It’s about
+                      being true to yourself, your ideas and focusing on the
+                      essentials.”
+                    </Typography>
+                  </Zoom>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={3}>
+              <Card
+                // key={index}
+                style={{ maxWidth: 400, width: "100%" }}
+              >
+                <Zoom>
+                  <CardMedia
+                    style={{
+                      height: 310,
+                      width: "310px",
+                      borderRadius: "50%",
+                      margin: "20px auto",
+                    }}
+                    image={jitendra}
+                    title="Image1"
+                  />
+                </Zoom>
+                <CardContent style={{ textAlign: "center" }}>
+                  <Zoom>
+                    <Typography variant="h6" component="div">
+                      Jitendra Kumar
+                    </Typography>
+                    <Typography
+                      variant="h6"
+                      style={{ fontWeight: "bold" }}
+                      color="text.secondary"
+                    >
+                      Devops Engineer
+                    </Typography>
+                    <Typography variant="body1" color="text.secondary">
+                      “A man must be big enough to admit his mistakes, smart
+                      enough to profit from them and strong enough to correct
+                      them.”
+                    </Typography>
+                  </Zoom>
+                </CardContent>
+              </Card>
+            </Grid>
+          </Grid>
 
-        {/* <Grid className="home-container1">hiuhu</Grid> */}
+          {/* <Grid item container xs={12} sm={10} style={{ marginBottom: "5rem" }}>
+            <Testimonials />
+          </Grid> */}
+        </Grid>
         <Footer />
       </Grid>
     </>

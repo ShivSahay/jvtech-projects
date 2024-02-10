@@ -1,33 +1,35 @@
-.link-footer:hover{
-    color: rgba(138, 113, 255, 1)!important;
+.link-footer:hover {
+  color: rgba(138, 113, 255, 1) !important;
+}
+.link-footer svg:hover {
+  color: rgba(138, 113, 255, 1) !important;
+}
+.css-7dv1rb-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab{
+  background-color: rgb(31, 164, 30) !important;
+}
+@media (min-width: 1920px) {
+  .footer-heading {
+    font-size: 2.5rem !important;
   }
-  .link-footer svg:hover{
-    color: rgba(138, 113, 255, 1)!important;
+  .footer-text {
+    font-size: 1.5rem !important;
   }
-  @media (min-width: 1920px) {
-    .footer-heading {
-      font-size: 2.5rem !important;
-    }
-    .footer-text {
-      font-size: 1.5rem !important;
-    }
-    .footer-share-icon{
-      font-size: 2.5rem !important;
-    }
-    .privacy-grid{
-      margin-right: 60px!important;
-    }
+  .footer-share-icon {
+    font-size: 2.5rem !important;
   }
-  
-  @media (max-width: 360px) {
-    .footer-text {
-      font-size: 12px !important;
-    }
-    .footer-share-icon {
-      font-size: 1.2rem !important;
-    }
-    .privacy-grid{
-      margin-right: 30px!important;
-    }
+  .privacy-grid {
+    margin-right: 60px !important;
   }
-  
+}
+
+@media (max-width: 360px) {
+  .footer-text {
+    font-size: 12px !important;
+  }
+  .footer-share-icon {
+    font-size: 1.2rem !important;
+  }
+  .privacy-grid {
+    margin-right: 30px !important;
+  }
+}

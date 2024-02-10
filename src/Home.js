@@ -21,20 +21,35 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import FeatureSection from "./components/FeatureSection";
 import AboutSection from "./components/AboutSection";
-
+import Zoom from "react-reveal/Zoom";
+import image1 from "./images/1.jpeg";
+import image2 from "./images/2.jpeg";
+import image3 from "./images/3.jpeg";
+import image4 from "./images/4.jpeg";
+import image5 from "./images/5.jpeg";
+import image6 from "./images/6.jpeg";
+import image7 from "./images/7.jpeg";
+import image8 from "./images/8.jpeg";
+import image9 from "./images/9.jpeg";
+import image10 from "./images/10.jpeg";
+import image11 from "./images/11.jpeg";
+import image12 from "./images/12.jpeg";
+import image13 from "./images/13.jpeg";
+import image14 from "./images/14.jpeg";
+import image15 from "./images/15.jpeg";
 const testimonialsData = [
   {
     id: 1,
     name: "John Doe",
     designation: "CEO, Company XYZ",
-    image: "https://5.imimg.com/data5/EE/FS/MY-8313669/dsc00219t-500x500.jpg",
+    image: image1,
     message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 2,
     name: "Smith",
     designation: "Designer, ABC Inc.",
-    image: "https://5.imimg.com/data5/EE/FS/MY-8313669/dsc00219t-500x500.jpg",
+    image: image2,
     message:
       "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
@@ -42,7 +57,7 @@ const testimonialsData = [
     id: 3,
     name: "Amit",
     designation: "Designer, ABC Inc.",
-    image: "https://5.imimg.com/data5/EE/FS/MY-8313669/dsc00219t-500x500.jpg",
+    image: image3,
     message:
       "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
@@ -50,7 +65,7 @@ const testimonialsData = [
     id: 4,
     name: "Jack",
     designation: "Designer, ABC Inc.",
-    image: "https://5.imimg.com/data5/EE/FS/MY-8313669/dsc00219t-500x500.jpg",
+    image: image4,
     message:
       "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
@@ -58,7 +73,7 @@ const testimonialsData = [
     id: 5,
     name: "Tom",
     designation: "Designer, ABC Inc.",
-    image: "https://5.imimg.com/data5/EE/FS/MY-8313669/dsc00219t-500x500.jpg",
+    image: image5,
     message:
       "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
@@ -146,11 +161,13 @@ const Testimonials = ({ testimonial }) => {
               // key={index}
               style={{ maxWidth: 400, width: "100%" }}
             >
-              <CardMedia
-                style={{ height: 240 }}
-                image={item.image}
-                title={item.name}
-              />
+              <Zoom>
+                <CardMedia
+                  style={{ height: 240 }}
+                  image={item.image}
+                  title={item.name}
+                />
+              </Zoom>
               <CardContent>
                 <Typography variant="h6" component="div">
                   {item.name}
@@ -197,11 +214,13 @@ const ImageSliderMui = ({ images }) => {
     <Grid container spacing={2}>
       <Grid item xs={12}>
         <Paper elevation={3}>
-          <img
-            src={images[currentIndex]}
-            alt={`slide-${currentIndex}`}
-            style={{ width: "100%", height: "auto" }}
-          />
+          <Zoom>
+            <img
+              src={images[currentIndex]}
+              alt={`slide-${currentIndex}`}
+              style={{ width: "100%", height: "auto" }}
+            />
+          </Zoom>
         </Paper>
       </Grid>
     </Grid>
@@ -211,12 +230,16 @@ const ImageSliderMui = ({ images }) => {
 const Home = () => {
   return (
     <>
-      <Header />
       <div>
         <Grid className="home-sec1">
           <Typography
             className="sec1-home-text"
-            style={{ position: "absolute", marginTop: "16%",color:"rgb(249, 103, 2)" }}
+            style={{
+              position: "absolute",
+              marginTop: "16%",
+              color: "rgb(249, 103, 2)",
+              zIndex: "999",
+            }}
             variant="h2"
           >
             J.V.TECH ENGINEERS
@@ -235,9 +258,11 @@ const Home = () => {
               sm={12}
               style={{ display: "flex", justifyContent: "center" }}
             >
-              <Typography className="about-text" variant="h2">
-                What I do
-              </Typography>
+              <Zoom>
+                <Typography className="about-text" variant="h2">
+                  What I do
+                </Typography>
+              </Zoom>
             </Grid>
             <Grid
               item
@@ -257,7 +282,7 @@ const Home = () => {
               >
                 <CardMedia
                   sx={{ height: "50%" }}
-                  image="images.jpeg"
+                  image={image6}
                   title="green iguana"
                 />
                 <CardContent>
@@ -294,7 +319,7 @@ const Home = () => {
               >
                 <CardMedia
                   sx={{ height: "50%" }}
-                  image="images1.jpeg"
+                  image={image7}
                   title="green iguana"
                 />
                 <CardContent>
@@ -331,7 +356,7 @@ const Home = () => {
               >
                 <CardMedia
                   sx={{ height: "50%" }}
-                  image="images2.jpeg"
+                  image={image8}
                   title="green iguana"
                 />
                 <CardContent>
@@ -368,7 +393,7 @@ const Home = () => {
               >
                 <CardMedia
                   sx={{ height: "50%" }}
-                  image="images.jpeg"
+                  image={image9}
                   title="green iguana"
                 />
                 <CardContent>
@@ -405,7 +430,7 @@ const Home = () => {
               >
                 <CardMedia
                   sx={{ height: "50%" }}
-                  image="1.jpg"
+                  image={image9}
                   title="green iguana"
                 />
                 <CardContent>
@@ -442,7 +467,7 @@ const Home = () => {
               >
                 <CardMedia
                   sx={{ height: "50%" }}
-                  image="2.jpg"
+                  image={image10}
                   title="green iguana"
                 />
                 <CardContent>
@@ -479,7 +504,7 @@ const Home = () => {
               >
                 <CardMedia
                   sx={{ height: "50%" }}
-                  image="3.jpg"
+                  image={image11}
                   title="green iguana"
                 />
                 <CardContent>
@@ -516,7 +541,7 @@ const Home = () => {
               >
                 <CardMedia
                   sx={{ height: "50%" }}
-                  image="4.jpg"
+                  image={image15}
                   title="green iguana"
                 />
                 <CardContent>
@@ -654,13 +679,19 @@ const Home = () => {
           }}
           xs={12}
         >
-          <Typography
-            variant="h4"
-            className="sec4-heading"
-            style={{ fontWeight: "bold", color: "#fff", marginBottom: "2rem" }}
-          >
-            Working Experience
-          </Typography>
+          <Zoom>
+            <Typography
+              variant="h4"
+              className="sec4-heading"
+              style={{
+                fontWeight: "bold",
+                color: "#fff",
+                marginBottom: "2rem",
+              }}
+            >
+              Working Experience
+            </Typography>
+          </Zoom>
           <FeatureSection />
         </Grid>
 
