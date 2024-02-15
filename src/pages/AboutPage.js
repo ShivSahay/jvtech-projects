@@ -126,7 +126,7 @@ const AboutPage = () => {
               variant="h2"
               align="center"
               gutterBottom
-              className="sec3-heading"
+              className="about-sec3-heading"
               style={{ color: "#fff", fontWeight: "bold", marginBottom: "1em" }}
             >
               Our Leaderships
@@ -136,17 +136,26 @@ const AboutPage = () => {
             item
             container
             sm={12}
+            className="about-sec3-card-container"
             style={{
+              display: "flex",
+              flexDirection: "row",
+              rowGap: "3",
               justifyContent: "space-evenly",
               alignItems: "center",
               marginBottom: "80px",
+              padding: "60px",
             }}
           >
-            <Grid item xs={12} sm={3}>
-              <Card
-                // key={index}
-                style={{ maxWidth: 400, width: "100%" }}
-              >
+            <Grid
+              item
+              xs={12}
+              sm={10}
+              md={5}
+              lg={3}
+              className="about-sec3-card"
+            >
+              <Card style={{ maxWidth: 400, width: "100%" }}>
                 <Zoom>
                   <CardMedia
                     style={{
@@ -155,6 +164,7 @@ const AboutPage = () => {
                       borderRadius: "50%",
                       margin: "20px auto",
                     }}
+                    className="about-sec3-card-img"
                     image={leader}
                     title="Image1"
                   />
@@ -180,7 +190,14 @@ const AboutPage = () => {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={3}>
+            <Grid
+              item
+              xs={12}
+              sm={10}
+              md={5}
+              lg={3}
+              className="about-sec3-card"
+            >
               <Card
                 // key={index}
                 style={{ maxWidth: 400, width: "100%" }}
@@ -193,6 +210,7 @@ const AboutPage = () => {
                       borderRadius: "50%",
                       margin: "20px auto",
                     }}
+                    className="about-sec3-card-img"
                     image={shiv}
                     title="Image1"
                   />
@@ -200,7 +218,7 @@ const AboutPage = () => {
                 <CardContent style={{ textAlign: "center" }}>
                   <Zoom>
                     <Typography variant="h6" component="div">
-                      Shiv Pandey 
+                      Shiv Pandey
                     </Typography>
                     <Typography
                       variant="h6"
@@ -218,7 +236,14 @@ const AboutPage = () => {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={3}>
+            <Grid
+              item
+              xs={12}
+              sm={10}
+              md={5}
+              lg={3}
+              className="about-sec3-card"
+            >
               <Card
                 // key={index}
                 style={{ maxWidth: 400, width: "100%" }}
@@ -231,6 +256,7 @@ const AboutPage = () => {
                       borderRadius: "50%",
                       margin: "20px auto",
                     }}
+                    className="about-sec3-card-img"
                     image={jitendra}
                     title="Image1"
                   />

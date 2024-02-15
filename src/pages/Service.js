@@ -94,14 +94,14 @@ const Service = () => {
           <Grid item sm={12} md={8} style={{ marginBottom: "25px" }}>
             <Typography
               variant="h5"
-              className="service-sec1-heading"
+              className="service-sec2-heading1 "
               style={{ fontWeight: "bold", textAlign: "center" }}
             >
               Our Services{" "}
             </Typography>
             <Typography
               variant="h3"
-              className="service-sec1-heading"
+              className="service-sec2-heading2"
               style={{
                 fontWeight: "800",
                 textAlign: "center",
@@ -112,7 +112,7 @@ const Service = () => {
             </Typography>
             <Typography
               variant="body1"
-              className="service-sec1-heading"
+              className="service-sec2-heading3"
               style={{
                 fontWeight: "800",
                 textAlign: "center",
@@ -122,7 +122,7 @@ const Service = () => {
             </Typography>
             <Typography
               variant="body1"
-              className="service-sec1-heading"
+              className="service-sec2-heading4"
               style={{
                 fontWeight: "800",
                 textAlign: "center",
@@ -154,6 +154,7 @@ const Service = () => {
             <Grid
               item
               sm={6}
+              className="service-sec2-count1"
               style={{ border: "2px solid #FFFFFF45", padding: "45px 25px" }}
             >
               <CountUp
@@ -187,6 +188,7 @@ const Service = () => {
             <Grid
               item
               sm={6}
+              className="service-sec2-count2"
               style={{ border: "2px solid #FFFFFF45", padding: "45px 25px" }}
             >
               <CountUp
@@ -224,7 +226,7 @@ const Service = () => {
             style={{ justifyContent: "space-evenly", marginTop: "40px" }}
             sm={12}
           >
-            <Grid item xs={12} sm={3}>
+            <Grid item xs={12} sm={5} md={3} className="service-sec3-card-box">
               <Roll>
                 <Card
                   // key={index}
@@ -234,6 +236,7 @@ const Service = () => {
                     style={{
                       height: 310,
                       // width: "310px",
+                      width: "100%",
                       // borderRadius: "50%",
                       // margin: "20px auto"  ,
                       justifyContent: "center",
@@ -249,7 +252,6 @@ const Service = () => {
                       style={{
                         color: "#ffffff",
                         fontWeight: "bolder",
-                        position: "absolute",
                         textAlign: "center",
                       }}
                     >
@@ -325,7 +327,7 @@ const Service = () => {
                 </Card>
               </Roll>
             </Grid>
-            <Grid item xs={12} sm={3}>
+            <Grid item xs={12} sm={5} md={3} className="service-sec3-card-box">
               <Roll>
                 <Card style={{ maxWidth: 400, width: "100%" }}>
                   <CardMedia
@@ -393,7 +395,7 @@ const Service = () => {
                 </Card>
               </Roll>
             </Grid>
-            <Grid item xs={12} sm={3}>
+            <Grid item xs={12} sm={6} md={3} className="service-sec3-card-box">
               <Roll>
                 <Card style={{ maxWidth: 400, width: "100%" }}>
                   <CardMedia
@@ -484,18 +486,19 @@ const Service = () => {
             item
             sm={12}
             md={8}
+            className="service-sec4"
             style={{ marginTop: "5rem", marginBottom: "25px" }}
           >
             <Typography
               variant="h5"
-              className="service-sec1-heading"
+              className="service-sec4-heading1"
               style={{ fontWeight: "bold", textAlign: "center" }}
             >
               Our Trust{" "}
             </Typography>
             <Typography
               variant="h3"
-              className="service-sec1-heading"
+              className="service-sec4-heading2"
               style={{
                 fontWeight: "800",
                 textAlign: "center",
@@ -506,7 +509,7 @@ const Service = () => {
             </Typography>
             <Typography
               variant="body1"
-              className="service-sec1-heading"
+              className="service-sec4-heading3"
               style={{
                 fontWeight: "800",
                 textAlign: "center",
@@ -516,7 +519,7 @@ const Service = () => {
             </Typography>
             <Typography
               variant="body1"
-              className="service-sec1-heading"
+              className="service-sec4-heading4"
               style={{
                 fontWeight: "800",
                 textAlign: "center",
@@ -534,7 +537,7 @@ const Service = () => {
             spacing={4}
             direction="row"
           >
-            <Grid item sm={12} md={4}>
+            <Grid item sm={12} md={6} lg={5}>
               <DemoPaper square={false}>
                 <Zoom>
                   <Typography
@@ -571,8 +574,8 @@ const Service = () => {
                 </Bounce>
               </DemoPaper>
             </Grid>
-            <Grid item sm={12} md={4}>
-              <DemoPaper square={false}>
+            <Grid item sm={12} md={6} lg={5}>
+              <DemoPaper className="service-sec5-quality2" square={false}>
                 <Zoom>
                   <Typography
                     variant="h5"

@@ -180,47 +180,57 @@ const Header = () => {
         open={open}
         onClose={handleDrawerClose}
       >
-        <List>
-          <ListItem href="/">
-            <ListItemButton>
-              <ListItemIcon style={{ color: "#fff" }}>
-                <HomeIcon />
-              </ListItemIcon>
-              <ListItemText primary="Home" />
-            </ListItemButton>
-          </ListItem>
-          <ListItem href="/about">
-            <ListItemButton>
-              <ListItemIcon style={{ color: "#fff" }}>
-                <InfoIcon />
-              </ListItemIcon>
-              <ListItemText primary="About" />
-            </ListItemButton>
-          </ListItem>
-          <ListItem href="/projects">
-            <ListItemButton>
-              <ListItemIcon style={{ color: "#fff" }}>
-                <SchoolIcon />
-              </ListItemIcon>
-              <ListItemText primary="Education" />
-            </ListItemButton>
-          </ListItem>
-          <ListItem href="/service">
-            <ListItemButton>
-              <ListItemIcon style={{ color: "#fff" }}>
-                <HomeRepairServiceIcon />
-              </ListItemIcon>
-              <ListItemText primary="Service" />
-            </ListItemButton>
-          </ListItem>
-          <ListItem href="/contact">
-            <ListItemButton>
-              <ListItemIcon style={{ color: "#fff" }}>
-                <ContactMailIcon />
-              </ListItemIcon>
-              <ListItemText primary="Contact" />
-            </ListItemButton>
-          </ListItem>
+        <List className="drower-sidebar-item">
+          <Link to="/" onClick={handleDrawerClose}>
+            <ListItem>
+              <ListItemButton>
+                <ListItemIcon style={{ color: "#fff" }}>
+                  <HomeIcon />
+                </ListItemIcon>
+                <ListItemText primary="Home" />
+              </ListItemButton>
+            </ListItem>
+          </Link>
+          <Link to="/about" onClick={handleDrawerClose}>
+            <ListItem>
+              <ListItemButton>
+                <ListItemIcon style={{ color: "#fff" }}>
+                  <InfoIcon />
+                </ListItemIcon>
+                <ListItemText primary="About" />
+              </ListItemButton>
+            </ListItem>
+          </Link>
+          <Link to="/projects" onClick={handleDrawerClose}>
+            <ListItem>
+              <ListItemButton>
+                <ListItemIcon style={{ color: "#fff" }}>
+                  <SchoolIcon />
+                </ListItemIcon>
+                <ListItemText primary="Project" />
+              </ListItemButton>
+            </ListItem>
+          </Link>
+          <Link to="/service" onClick={handleDrawerClose}>
+            <ListItem>
+              <ListItemButton>
+                <ListItemIcon style={{ color: "#fff" }}>
+                  <HomeRepairServiceIcon />
+                </ListItemIcon>
+                <ListItemText primary="Service" />
+              </ListItemButton>
+            </ListItem>
+          </Link>
+          <Link to="/contact" onClick={handleDrawerClose}>
+            <ListItem>
+              <ListItemButton>
+                <ListItemIcon style={{ color: "#fff" }}>
+                  <ContactMailIcon />
+                </ListItemIcon>
+                <ListItemText primary="Contact" />
+              </ListItemButton>
+            </ListItem>
+          </Link>
         </List>
       </Drawer>
     </>

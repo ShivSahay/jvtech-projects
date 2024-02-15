@@ -48,6 +48,12 @@
 .slick-dots li button:before {
   color: #fff !important;
 }
+
+.home-sec2-rol .react-reveal {
+  display: flex !important;
+  justify-content: center !important;
+}
+
 @media (min-width: 1920px) {
   .slick-next {
     right: 80px !important;

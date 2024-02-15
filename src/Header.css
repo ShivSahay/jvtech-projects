@@ -5,9 +5,23 @@
   font-weight: "bold" !important;
 }
 
-.css-1aquho2-MuiTabs-indicator {
+/* .css-1aquho2-MuiTabs-indicator {
+  background-color: #1ed760 !important;
+} */
+
+.drower-sidebar-item a{
+  text-decoration: none !important;
+  color: #ffffff !important;
+}
+
+.drower-sidebar-item a .MuiListItemButton-root{
+  padding-left: 0px !important;
+}
+
+.MuiTabs-fixed .MuiTabs-indicator{
   background-color: #1ed760 !important;
 }
+
 .drower-sidebar .MuiDrawer-paper {
   width: 50% !important;
   background: #f58320 !important;

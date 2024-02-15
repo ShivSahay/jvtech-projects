@@ -54,7 +54,7 @@ const ProjectPage = () => {
             <Typography
               variant="h2"
               gutterBottom
-              className="sec3-heading"
+              className="project-sec2-heading"
               style={{
                 color: "rgb(249, 103, 2)",
                 fontWeight: "bold",
@@ -64,24 +64,14 @@ const ProjectPage = () => {
               Our Leaderships
             </Typography>
           </Zoom>
-          <Grid item container style={{ justifyContent: "space-evenly" }}>
-            <Grid item sm={4} className="landing-sec-lastadd-imae">
-              {/* <img
-              src={image7}
-              alt="banner"
-              className="landing-sec-lastadd-img"
-              style={{
-                width: 410,
-                height: 410,
-                objectFit: "inherit",
-              }}
-            ></img> */}
+          <Grid item container style={{ justifyContent: "space-around" }}>
+            <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
               <Roll>
                 <Card
                   className="project-sec2-card1"
                   style={{
                     position: "relative",
-                    width: 450,
+                    // width: 450,
                     height: 500,
                     transition: "transform 0.3s ease", // Define transition property
                   }}
@@ -98,17 +88,23 @@ const ProjectPage = () => {
                 </Card>
               </Roll>
             </Grid>
-            <Grid item sm={5} style={{ marginBottom: "25px" }}>
+            <Grid
+              item
+              sm={12}
+              md={5}
+              className="project-sec2-desc-div pcard-mb"
+              style={{ marginBottom: "25px" }}
+            >
               <Typography
                 variant="h5"
-                className="service-sec1-heading"
+                className="project-sec2-heading1"
                 style={{ fontWeight: "bold", textAlign: "center" }}
               >
                 Our Trust{" "}
               </Typography>
               <Typography
                 variant="h3"
-                className="service-sec1-heading"
+                className="project-sec2-heading2"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -119,7 +115,7 @@ const ProjectPage = () => {
               </Typography>
               <Typography
                 variant="body1"
-                className="service-sec1-heading"
+                className="project-sec2-heading3"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -129,7 +125,7 @@ const ProjectPage = () => {
               </Typography>
               <Typography
                 variant="body1"
-                className="service-sec1-heading"
+                className="project-sec2-heading4"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -143,19 +139,26 @@ const ProjectPage = () => {
           <Grid
             item
             container
-            style={{ marginTop: "3rem", justifyContent: "space-evenly" }}
+            className="project-sec2-cardright"
+            style={{ marginTop: "3rem", justifyContent: "space-around" }}
           >
-            <Grid item sm={5} style={{ marginBottom: "25px" }}>
+            <Grid
+              item
+              sm={12}
+              md={5}
+              className="project-sec2-desc-div pcard-mb"
+              style={{ marginBottom: "25px" }}
+            >
               <Typography
                 variant="h5"
-                className="service-sec1-heading"
+                className="project-sec2-heading1"
                 style={{ fontWeight: "bold", textAlign: "center" }}
               >
                 Our Trust{" "}
               </Typography>
               <Typography
                 variant="h3"
-                className="service-sec1-heading"
+                className="project-sec2-heading2"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -166,7 +169,7 @@ const ProjectPage = () => {
               </Typography>
               <Typography
                 variant="body1"
-                className="service-sec1-heading"
+                className="project-sec2-heading3"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -176,7 +179,7 @@ const ProjectPage = () => {
               </Typography>
               <Typography
                 variant="body1"
-                className="service-sec1-heading"
+                className="project-sec2-heading4"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -186,13 +189,13 @@ const ProjectPage = () => {
                 South Extension, New Delhi (Plumbing Work)
               </Typography>
             </Grid>
-            <Grid item sm={4} className="landing-sec-lastadd-imae">
+            <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
               <Roll>
                 <Card
                   className="project-sec2-card1"
                   style={{
                     position: "relative",
-                    width: 450,
+                    // width: 450,
                     height: 500,
                     transition: "transform 0.3s ease", // Define transition property
                   }}
@@ -204,7 +207,7 @@ const ProjectPage = () => {
                       objectFit: "cover",
                     }}
                     className=""
-                    image={image7}
+                    image={leader}
                   />
                 </Card>
               </Roll>
@@ -213,15 +216,15 @@ const ProjectPage = () => {
           <Grid
             item
             container
-            style={{ marginTop: "3rem", justifyContent: "space-evenly" }}
+            style={{ marginTop: "3rem", justifyContent: "space-around" }}
           >
-            <Grid item sm={4} className="landing-sec-lastadd-imae">
+            <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
               <Roll>
                 <Card
                   className="project-sec2-card1"
                   style={{
                     position: "relative",
-                    width: 450,
+                    // width: 450,
                     height: 500,
                     transition: "transform 0.3s ease", // Define transition property
                   }}
@@ -238,17 +241,23 @@ const ProjectPage = () => {
                 </Card>
               </Roll>
             </Grid>
-            <Grid item sm={5} style={{ marginBottom: "25px" }}>
+            <Grid
+              item
+              sm={12}
+              md={5}
+              className="project-sec2-desc-div pcard-mb"
+              style={{ marginBottom: "25px" }}
+            >
               <Typography
                 variant="h5"
-                className="service-sec1-heading"
+                className="project-sec2-heading1"
                 style={{ fontWeight: "bold", textAlign: "center" }}
               >
                 Our Trust{" "}
               </Typography>
               <Typography
                 variant="h3"
-                className="service-sec1-heading"
+                className="project-sec2-heading2"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -259,7 +268,7 @@ const ProjectPage = () => {
               </Typography>
               <Typography
                 variant="body1"
-                className="service-sec1-heading"
+                className="project-sec2-heading3"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -269,7 +278,7 @@ const ProjectPage = () => {
               </Typography>
               <Typography
                 variant="body1"
-                className="service-sec1-heading"
+                className="project-sec2-heading4"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -283,19 +292,26 @@ const ProjectPage = () => {
           <Grid
             item
             container
-            style={{ marginTop: "3rem", justifyContent: "space-evenly" }}
+            className="project-sec2-cardright"
+            style={{ marginTop: "3rem", justifyContent: "space-around" }}
           >
-            <Grid item sm={5} style={{ marginBottom: "25px" }}>
+            <Grid
+              item
+              sm={12}
+              md={5}
+              className="project-sec2-desc-div pcard-mb"
+              style={{ marginBottom: "25px" }}
+            >
               <Typography
                 variant="h5"
-                className="service-sec1-heading"
+                className="project-sec2-heading1"
                 style={{ fontWeight: "bold", textAlign: "center" }}
               >
                 Our Trust{" "}
               </Typography>
               <Typography
                 variant="h3"
-                className="service-sec1-heading"
+                className="project-sec2-heading2"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -306,7 +322,7 @@ const ProjectPage = () => {
               </Typography>
               <Typography
                 variant="body1"
-                className="service-sec1-heading"
+                className="project-sec2-heading3"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -316,7 +332,7 @@ const ProjectPage = () => {
               </Typography>
               <Typography
                 variant="body1"
-                className="service-sec1-heading"
+                className="project-sec2-heading4"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -326,13 +342,13 @@ const ProjectPage = () => {
                 7th Floor, ETT, Noida (Fire Fighting Work)
               </Typography>
             </Grid>
-            <Grid item sm={4} className="landing-sec-lastadd-imae">
+            <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
               <Roll>
                 <Card
                   className="project-sec2-card1"
                   style={{
                     position: "relative",
-                    width: 450,
+                    // width: 450,
                     height: 500,
                     transition: "transform 0.3s ease", // Define transition property
                   }}
@@ -353,15 +369,15 @@ const ProjectPage = () => {
           <Grid
             item
             container
-            style={{ marginTop: "3rem", justifyContent: "space-evenly" }}
+            style={{ marginTop: "3rem", justifyContent: "space-around" }}
           >
-            <Grid item sm={4} className="landing-sec-lastadd-imae">
+            <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
               <Roll>
                 <Card
                   className="project-sec2-card1"
                   style={{
                     position: "relative",
-                    width: 450,
+                    // width: 450,
                     height: 500,
                     transition: "transform 0.3s ease", // Define transition property
                   }}
@@ -378,17 +394,23 @@ const ProjectPage = () => {
                 </Card>
               </Roll>
             </Grid>
-            <Grid item sm={5} style={{ marginBottom: "25px" }}>
+            <Grid
+              item
+              sm={12}
+              md={5}
+              className="project-sec2-desc-div pcard-mb"
+              style={{ marginBottom: "25px" }}
+            >
               <Typography
                 variant="h5"
-                className="service-sec1-heading"
+                className="project-sec2-heading1"
                 style={{ fontWeight: "bold", textAlign: "center" }}
               >
                 Our Trust{" "}
               </Typography>
               <Typography
                 variant="h3"
-                className="service-sec1-heading"
+                className="project-sec2-heading2"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -399,7 +421,7 @@ const ProjectPage = () => {
               </Typography>
               <Typography
                 variant="body1"
-                className="service-sec1-heading"
+                className="project-sec2-heading3"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -409,7 +431,7 @@ const ProjectPage = () => {
               </Typography>
               <Typography
                 variant="body1"
-                className="service-sec1-heading"
+                className="project-sec2-heading4"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -423,19 +445,26 @@ const ProjectPage = () => {
           <Grid
             item
             container
-            style={{ marginTop: "3rem", justifyContent: "space-evenly" }}
+            className="project-sec2-cardright"
+            style={{ marginTop: "3rem", justifyContent: "space-around" }}
           >
-            <Grid item sm={5} style={{ marginBottom: "25px" }}>
+            <Grid
+              item
+              sm={12}
+              md={5}
+              className="project-sec2-desc-div pcard-mb"
+              style={{ marginBottom: "25px" }}
+            >
               <Typography
                 variant="h5"
-                className="service-sec1-heading"
+                className="project-sec2-heading1"
                 style={{ fontWeight: "bold", textAlign: "center" }}
               >
                 Our Trust{" "}
               </Typography>
               <Typography
                 variant="h3"
-                className="service-sec1-heading"
+                className="project-sec2-heading2"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -446,7 +475,7 @@ const ProjectPage = () => {
               </Typography>
               <Typography
                 variant="body1"
-                className="service-sec1-heading"
+                className="project-sec2-heading3"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -456,7 +485,7 @@ const ProjectPage = () => {
               </Typography>
               <Typography
                 variant="body1"
-                className="service-sec1-heading"
+                className="project-sec2-heading4"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -466,13 +495,13 @@ const ProjectPage = () => {
                 Sector-4, Noida (Fire Fighting Work)
               </Typography>
             </Grid>
-            <Grid item sm={4} className="landing-sec-lastadd-imae">
+            <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
               <Roll>
                 <Card
                   className="project-sec2-card1"
                   style={{
                     position: "relative",
-                    width: 450,
+                    // width: 450,
                     height: 500,
                     transition: "transform 0.3s ease", // Define transition property
                   }}
@@ -493,15 +522,15 @@ const ProjectPage = () => {
           <Grid
             item
             container
-            style={{ marginTop: "3rem", justifyContent: "space-evenly" }}
+            style={{ marginTop: "3rem", justifyContent: "space-around" }}
           >
-            <Grid item sm={4} className="landing-sec-lastadd-imae">
+            <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
               <Roll>
                 <Card
                   className="project-sec2-card1"
                   style={{
                     position: "relative",
-                    width: 450,
+                    // width: 450,
                     height: 500,
                     transition: "transform 0.3s ease", // Define transition property
                   }}
@@ -518,17 +547,23 @@ const ProjectPage = () => {
                 </Card>
               </Roll>
             </Grid>
-            <Grid item sm={5} style={{ marginBottom: "25px" }}>
+            <Grid
+              item
+              sm={12}
+              md={5}
+              className="project-sec2-desc-div pcard-mb"
+              style={{ marginBottom: "25px" }}
+            >
               <Typography
                 variant="h5"
-                className="service-sec1-heading"
+                className="project-sec2-heading1"
                 style={{ fontWeight: "bold", textAlign: "center" }}
               >
                 Our Trust{" "}
               </Typography>
               <Typography
                 variant="h3"
-                className="service-sec1-heading"
+                className="project-sec2-heading2"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -539,7 +574,7 @@ const ProjectPage = () => {
               </Typography>
               <Typography
                 variant="body1"
-                className="service-sec1-heading"
+                className="project-sec2-heading3"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -549,7 +584,7 @@ const ProjectPage = () => {
               </Typography>
               <Typography
                 variant="body1"
-                className="service-sec1-heading"
+                className="project-sec2-heading4"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -563,19 +598,26 @@ const ProjectPage = () => {
           <Grid
             item
             container
-            style={{ marginTop: "3rem", justifyContent: "space-evenly" }}
+            className="project-sec2-cardright"
+            style={{ marginTop: "3rem", justifyContent: "space-around" }}
           >
-            <Grid item sm={5} style={{ marginBottom: "25px" }}>
+            <Grid
+              item
+              sm={12}
+              md={5}
+              className="project-sec2-desc-div pcard-mb"
+              style={{ marginBottom: "25px" }}
+            >
               <Typography
                 variant="h5"
-                className="service-sec1-heading"
+                className="project-sec2-heading1"
                 style={{ fontWeight: "bold", textAlign: "center" }}
               >
                 Our Trust{" "}
               </Typography>
               <Typography
                 variant="h3"
-                className="service-sec1-heading"
+                className="project-sec2-heading2"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -586,7 +628,7 @@ const ProjectPage = () => {
               </Typography>
               <Typography
                 variant="body1"
-                className="service-sec1-heading"
+                className="project-sec2-heading3"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -596,7 +638,7 @@ const ProjectPage = () => {
               </Typography>
               <Typography
                 variant="body1"
-                className="service-sec1-heading"
+                className="project-sec2-heading4"
                 style={{
                   fontWeight: "800",
                   textAlign: "center",
@@ -606,13 +648,13 @@ const ProjectPage = () => {
                 Sector-44, Gurugram (Fire Fighting Work)
               </Typography>
             </Grid>
-            <Grid item sm={4} className="landing-sec-lastadd-imae">
+            <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
               <Roll>
                 <Card
                   className="project-sec2-card1"
                   style={{
                     position: "relative",
-                    width: 450,
+                    // width: 450,
                     height: 500,
                     transition: "transform 0.3s ease", // Define transition property
                   }}

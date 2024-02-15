@@ -1,0 +1,112 @@
+.service-sec1-card:hover {
+  margin-top: -5px !important;
+}
+
+.contact-sec2 {
+  /* background: #7da500 url("https://garden.pro-theme.info/wp-content/uploads/2015/09/tools-bg.png?id=26") !important; */
+  background: linear-gradient(-45deg, rgb(31, 164, 30) -5%, rgb(245, 131, 32));
+}
+.contact-sec3 {
+  background: #000;
+  opacity: 0.8;
+}
+.contact-sec2-heading {
+  color: #ffffff;
+}
+
+.contact-sec3-box:hover {
+  transform: scale(1.05);
+}
+.contact-sec6-grid {
+  background: linear-gradient(145deg, #7da500 15px, transparent 0),
+    linear-gradient(-145deg, #7da500 15px, transparent 0);
+  background-repeat: repeat-x;
+  background-size: 30px 30px;
+}
+.contact-sec5 {
+  /* background: rgb(173 179 249); */
+  background: #7da500
+    url("https://garden.pro-theme.info/wp-content/uploads/2015/09/tools-bg.png?id=26") !important;
+  display: flex;
+  justify-content: center;
+  padding: 30px 60px !important;
+}
+
+.contact-sec1 {
+  height: 100vh;
+  width: 100%;
+  background: #ddedff;
+  background: url("../../src//images/contactus2.jpg") 50% 0 no-repeat;
+  /* display: flex; */
+  justify-content: center;
+  /* align-items: center; */
+  background-size: cover;
+  padding-top: 220px;
+}
+.sec1-service-text1,
+.sec1-service-text2 {
+  font-weight: 800 !important;
+  /* color: #de0933; */
+  color: rgb(245, 131, 32);
+  text-align: center;
+}
+.contact-sec5-plbox {
+  margin-top: 1rem !important;
+}
+.contact-sec5-plbox p {
+  margin-left: 15px;
+}
+
+.contact-sec2-btn:hover {
+  box-shadow: none !important;
+  outline: 0 !important;
+  border: 0 !important;
+  color: rgba(255, 255, 255, 1) !important;
+  background-color: rgba(24, 76, 161, 1) !important;
+}
+
+@media (max-width: 1498px) {
+  .contact-sec5-form-text1,
+  .contact-sec5-touchbox-heading {
+    font-size: 3rem !important;
+  }
+}
+@media (max-width: 899px) {
+  .contact-sec5-form-text1 {
+    font-size: 2.5rem !important;
+  }
+  .contact-sec5-touchbox-heading {
+    font-size: 2.5rem !important;
+  }
+  .contact-sec5-form-text2 {
+    margin-top: 1rem !important;
+  }
+  .contact-sec5-form {
+    margin-top: 2rem !important;
+    margin-left: 0px !important;
+  }
+}
+@media (max-width: 599px) {
+  .service-sec1,
+  .contact-sec5 {
+    padding: 25px !important;
+  }
+  .service-sec1-heading {
+    font-size: 2.5rem !important;
+  }
+  .contact-sec5-form-text1 {
+    font-size: 2rem !important;
+  }
+  .contact-sec5-form-text2 {
+    font-size: 1rem !important;
+  }
+  .contact-sec5-formbtn-box {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .contact-sec2,
+  .contact-sec3 {
+    gap: 30px !important;
+    padding: 30px 25px !important;
+  }
+}

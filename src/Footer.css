@@ -4,9 +4,14 @@
 .link-footer svg:hover {
   color: rgba(138, 113, 255, 1) !important;
 }
-.css-7dv1rb-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab{
+/* .css-7dv1rb-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab {
+  background-color: rgb(31, 164, 30) !important;
+} */
+
+.MuiSpeedDial-directionUp .MuiSpeedDial-fab {
   background-color: rgb(31, 164, 30) !important;
 }
+
 @media (min-width: 1920px) {
   .footer-heading {
     font-size: 2.5rem !important;
