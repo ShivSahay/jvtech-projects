@@ -176,22 +176,22 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const actions = [
   {
-    icon: <WhatsAppIcon />,
+    icon: <WhatsAppIcon style={{color:"rgb(31, 164, 30)"}} />,
     name: "Whatsapp",
     link: "http://api.whatsapp.com/",
   },
   {
-    icon: <InstagramIcon />,
+    icon: <InstagramIcon style={{color:"rgb(31, 164, 30)"}}/>,
     name: "Instagram",
     link: "https://www.instagram.com/pandit_himanshu_mishra_up45/",
   },
   {
-    icon: <FacebookOutlinedIcon />,
+    icon: <FacebookOutlinedIcon style={{color:"rgb(31, 164, 30)"}} />,
     name: "Facebook",
     link: "https://www.facebook.com/",
   },
   {
-    icon: <LinkedInIcon />,
+    icon: <LinkedInIcon style={{color:"rgb(31, 164, 30)"}}/>,
     name: "LinkedIn",
     link: "https://www.linkedin.com/",
   },

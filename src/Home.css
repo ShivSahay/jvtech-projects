@@ -52,9 +52,6 @@
   opacity: 1 !important;
   transform: scale(1.05) !important;
 }
-.home-sec2-card:hover {
-  /* margin-top: -10px !important; */
-}
 .slick-dots li button:before {
   color: #fff !important;
 }
@@ -67,7 +64,10 @@
   display: flex !important;
   justify-content: center !important;
 }
-
+.home-about-cardmedia:hover {
+  opacity: 1 !important;
+  transform: scale(1.05) !important;
+}
 .about-sec1-cardmedia {
   width: 400px;
 }

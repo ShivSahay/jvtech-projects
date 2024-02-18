@@ -9,7 +9,8 @@ import {
   CardMedia,
 } from "@mui/material";
 import image1 from "../images/1.jpeg";
-import Zoom from 'react-reveal/Zoom';
+import Zoom from "react-reveal/Zoom";
+import { Fade } from "react-reveal";
 
 const AboutSection = () => {
   return (
@@ -21,6 +22,8 @@ const AboutSection = () => {
               <CardMedia
                 component="img"
                 height="440"
+                style={{ transition: "transform 0.3s ease" }}
+                className="home-about-cardmedia"
                 alt="About Us Image"
                 src={image1} // Replace with the actual image URL
               />
@@ -29,10 +32,12 @@ const AboutSection = () => {
               elevation={3}
               style={{ padding: "20px", textAlign: "center" }}
             >
-              <Zoom>
+              <Fade bottom>
                 <Typography variant="h4">
                   Fire Detection & Alarm System
                 </Typography>
+              </Fade>
+              <Fade bottom>
                 <Typography variant="body1" style={{ marginTop: "2rem" }}>
                   A fire detection and alarm system ( FDAS ) provides audible
                   and visual signals as a result of the operation of manual or
@@ -40,7 +45,7 @@ const AboutSection = () => {
                   Alarm station, smoke detector or heat detector of from other
                   protective equipment such as a fire sprinkler system.
                 </Typography>
-              </Zoom>
+              </Fade>
             </Paper>
           </Card>
         </Grid>

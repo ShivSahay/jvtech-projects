@@ -1,7 +1,7 @@
 // FeatureSection.js
 import React from "react";
 import { Container, Grid, Paper, Typography } from "@mui/material";
-import { Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 
 const FeatureSection = () => {
   return (
@@ -9,15 +9,15 @@ const FeatureSection = () => {
       <Grid container spacing={3}>
         <Grid item xs={12} md={4}>
           <Paper elevation={3} style={{ padding: "20px", textAlign: "center" }}>
-            <Zoom>
+            <Fade top>
               <Typography
                 variant="h4"
                 style={{ fontWeight: "bold", color: "rgba(0, 0, 0, 0.6)" }}
               >
                 Vision
               </Typography>
-            </Zoom>
-            <Zoom>
+            </Fade>
+            <Fade bottom>
               <Typography variant="body1">
                 We strive to become one of the leading and most reliable MEP
                 contracting and most renowned companies in India, continuously
@@ -25,21 +25,21 @@ const FeatureSection = () => {
                 as well as quality assurance standards to earn the privilege of
                 being your Contractor of choice.
               </Typography>
-            </Zoom>
+            </Fade>
           </Paper>
         </Grid>
 
         <Grid item xs={12} md={4}>
           <Paper elevation={3} style={{ padding: "20px", textAlign: "center" }}>
-            <Zoom>
+            <Fade top>
               <Typography
                 variant="h4"
                 style={{ fontWeight: "bold", color: "rgba(0, 0, 0, 0.6)" }}
               >
                 Mission
               </Typography>
-            </Zoom>
-            <Zoom>
+            </Fade>
+            <Fade bottom>
               <Typography variant="body1">
                 Guided by our vision we shall deliver high-quality,
                 cost-effective works on schedule and enhance our client’s
@@ -47,21 +47,21 @@ const FeatureSection = () => {
                 practices in terms of safety, quality, services, delivery as
                 well as environmental protection.
               </Typography>
-            </Zoom>
+            </Fade>
           </Paper>
         </Grid>
 
         <Grid item xs={12} md={4}>
           <Paper elevation={3} style={{ padding: "20px", textAlign: "center" }}>
-            <Zoom>
+            <Fade top>
               <Typography
                 variant="h4"
                 style={{ fontWeight: "bold", color: "rgba(0, 0, 0, 0.6)" }}
               >
                 Working
               </Typography>
-            </Zoom>
-            <Zoom>
+            </Fade>
+            <Fade bottom>
               <Typography variant="body1">
                 Our highly qualiﬁed and technically competent managers,
                 engineers and technicians, allow us to capture a sizable share
@@ -69,7 +69,7 @@ const FeatureSection = () => {
                 premises of commercial, residential and industrial type such as
                 a fire sprinkler system..
               </Typography>
-            </Zoom>
+            </Fade>
           </Paper>
         </Grid>
       </Grid>

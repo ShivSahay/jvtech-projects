@@ -441,6 +441,8 @@ const AboutPage = () => {
             style={{ marginTop: "80px" }}
             className="about-sec3-heading-box"
             sm={12}
+            md={8}
+            lg={5}
           >
             <Fade bottom>
               <Typography
@@ -465,8 +467,9 @@ const AboutPage = () => {
                   marginBottom: "1em",
                 }}
               >
-                Nam lobortis fringilla felis. Fusce vol utpat urna cras ut nec
-                quam vitae turpis
+                At J.V. Tech engineers, we take pride in our diverse and
+                talented team, united by a shared passion for [your mission or
+                industry focus]. Get to know the individuals behind our success:
               </Typography>
             </Fade>
           </Grid>

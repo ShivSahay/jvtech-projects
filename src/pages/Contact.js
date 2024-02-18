@@ -11,7 +11,8 @@ import {
   Typography,
   TextField,
 } from "@mui/material";
-
+import Snackbar from "@mui/material/Snackbar";
+import Alert from "@mui/material/Alert";
 import "./Contact.css";
 import Footer from "../Footer";
 import AboutSection from "../components/AboutSection";
@@ -47,6 +48,17 @@ const Service = () => {
     message: "",
   });
 
+  const [open, setOpen] = React.useState(true);
+  const handleClick = () => {
+    setOpen(true);
+  };
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpen(false);
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -68,12 +80,24 @@ const Service = () => {
   };
   const handleFormSubmit = () => {
     // Handle form submission logic here
+    handleClick();
     console.log("Name:", name);
     console.log("Email:", email);
     console.log("Message:", message);
   };
   return (
     <>
+      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Alert
+          onClose={handleClose}
+          severity="warning"
+          variant="filled"
+          sx={{ width: "100%" }}
+        >
+          Permission denied by admin
+        </Alert>
+      </Snackbar>
+      ;
       <Grid item container>
         <Grid className="contact-sec1">
           <Zoom>
@@ -454,7 +478,7 @@ const Service = () => {
               </Fade>
               <hr />
             </Grid>
-            <Grid
+            {/* <Grid
               item
               xs={12}
               sm={6}
@@ -492,7 +516,7 @@ const Service = () => {
                   <br /> Mobile No.- 09911506868
                 </Typography>
               </Fade>
-            </Grid>
+            </Grid> */}
             <Grid
               item
               xs={12}
@@ -524,13 +548,50 @@ const Service = () => {
                 }}
               >
                 Plot No: C-65 <br /> Opposite District Court
-                <br /> Sec- 51, Noida
+                <br /> Sec- 13, Noida
                 <br /> Distt. - G B Nagar, U.P.
-                <br /> Phone No: 0120-6541868
-                <br /> Mob.No.-09911449868
+                <br /> Phone No: +91 9990314859
+                <br /> Contact Person Name - Mr. Vipin Pal Singh
               </Typography>
             </Grid>
             <Grid
+              item
+              xs={12}
+              sm={6}
+              md={12}
+              className="contact-sec5-plbox"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                rowGap: "10px",
+              }}
+            >
+              <Typography
+                variant="h6"
+                style={{
+                  // textAlign: "center",
+                  fontWeight: "800",
+                  color: "#ffffff",
+                }}
+              >
+                Address of Principle Place of Business
+              </Typography>
+              <Typography
+                variant="body1"
+                style={{
+                  // textAlign: "center",
+                  fontWeight: "400",
+                  color: "#ffffff",
+                }}
+              >
+                Shyama Devi W/O Rajpal Singh, <br /> Gola Road, Danapur
+                <br /> Sadarpur Noida,
+                <br /> Noida Gautam Buddha Nagar,Utter Pradesh,201303
+                <br /> Mobile No: +91 9990314859
+                <br /> Contact Person Name - Mr. Vipin Pal Singh
+              </Typography>
+            </Grid>
+            {/* <Grid
               item
               xs={12}
               sm={6}
@@ -565,7 +626,7 @@ const Service = () => {
                 <br /> Mobile No: 9709394115
                 <br /> Contact Person - Kanhiya Singh
               </Typography>
-            </Grid>
+            </Grid> */}
             <Grid
               item
               xs={12}
@@ -596,12 +657,18 @@ const Service = () => {
                   color: "#ffffff",
                 }}
               >
-                <a href="mailto:jvtech.engineers@gmail.com">
+                <a
+                  href="mailto:jvtech.engineers@gmail.com"
+                  style={{ color: "#ffffff" }}
+                >
                   jvtech.engineers@gmail.com
                 </a>{" "}
                 <br />{" "}
-                <a href="mailto:jvtech.engineers@gmail.com">
-                  jvtech.engineers@gmail.com
+                <a
+                  href="mailto:jvtechengineers2022@gmail.com"
+                  style={{ color: "#ffffff" }}
+                >
+                  jvtechengineers2022@gmail.com
                 </a>
               </Typography>
             </Grid>

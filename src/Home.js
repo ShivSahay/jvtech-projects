@@ -37,46 +37,47 @@ import image12 from "./images/12.jpeg";
 import image13 from "./images/13.jpeg";
 import image14 from "./images/14.jpeg";
 import image15 from "./images/15.jpeg";
-import { Roll } from "react-reveal";
+import { Fade, Roll } from "react-reveal";
 const testimonialsData = [
   {
     id: 1,
-    name: "John Doe",
-    designation: "CEO, Company XYZ",
+    name: "INSECTICIDES INDIA PVT LTD AZADPUR DELHI",
+    designation: "Plumbing Work",
     image: image1,
-    message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    message:
+      "Insecticides (India) Ltd. is committed to fortify Agriculture with a highly productive and progressive vision and mission to make Farmers prosperous.",
   },
   {
     id: 2,
-    name: "Smith",
-    designation: "Designer, ABC Inc.",
+    name: "RADHEY BIO.TECH PVT. LTD. (KAMDHENU GROUP)",
+    designation: "Plumbing Work",
     image: image2,
     message:
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Radhey Bio.Tech Pvt. Ltd. is a proud member of the esteemed Kamdhenu Group, a conglomerate known for its excellence in diverse sectors including agriculture, real estate, infrastructure, and biotechnology. ",
   },
   {
     id: 3,
-    name: "Amit",
-    designation: "Designer, ABC Inc.",
+    name: "SLEEK BRAKE PRODUCTS (SAMPLA BAHADURGRAHHARYANA)",
+    designation: "Fire Figgting Work",
     image: image3,
     message:
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Sleek Brake Products is a company specializing in the manufacturing and distribution of automotive braking components and systems. With a focus on quality, reliability, and innovation,.",
   },
   {
     id: 4,
-    name: "Jack",
-    designation: "Designer, ABC Inc.",
+    name: "SACHADEVA POLYCOLOR PVT LTD (MET CITY JHAJJAR HARYANA)",
+    designation: "Fire Figgting & Alarm System",
     image: image4,
     message:
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Sachadeva PolyColor Pvt Ltd is a part of the manufacturing sector, specializing in the production of polymer-based colorants, additives, and compounds.",
   },
   {
     id: 5,
-    name: "Tom",
-    designation: "Designer, ABC Inc.",
+    name: "HOLISTER MEDICAL INDIA PVT LTD (HSIID GROWTH BAWAL HARYNANA)",
+    designation: "Fire Figgting Work",
     image: image5,
     message:
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Hollister Medical India Pvt Ltd is a subsidiary of Hollister Incorporated, a global medical device company dedicated to advancing healthcare and improving the lives of people with healthcare needs.",
   },
   // Add more testimonials as needed
 ];
@@ -138,20 +139,22 @@ const Testimonials = ({ testimonial }) => {
       sm={12}
       xs={12}
     >
-      <Typography
-        variant="h4"
-        className="sec3-testomonial-heading"
-        style={{
-          marginBottom: "3rem",
-          fontSize: "3rem",
-          fontWeight: "bold",
-          color: "#fff",
-          textAlign: "center",
-        }}
-        gutterBottom
-      >
-        Provide Education
-      </Typography>
+      <Fade bottom>
+        <Typography
+          variant="h4"
+          className="sec3-testomonial-heading"
+          style={{
+            marginBottom: "3rem",
+            fontSize: "3rem",
+            fontWeight: "bold",
+            color: "#fff",
+            textAlign: "center",
+          }}
+          gutterBottom
+        >
+          Recent Projects
+        </Typography>
+      </Fade>
 
       <Slider
         {...settings}
@@ -603,15 +606,17 @@ const Home = () => {
             className="sec3-heading-box"
             sm={12}
           >
-            <Typography
-              variant="h2"
-              align="center"
-              gutterBottom
-              className="sec3-heading"
-              style={{ color: "#fff", fontWeight: "bold" }}
-            >
-              Educational Story
-            </Typography>
+            <Fade bottom>
+              <Typography
+                variant="h2"
+                align="center"
+                gutterBottom
+                className="sec3-heading"
+                style={{ color: "#fff", fontWeight: "bold" }}
+              >
+                Project Story
+              </Typography>
+            </Fade>
           </Grid>
           <Grid
             item
@@ -621,19 +626,23 @@ const Home = () => {
             md={10}
             lg={6}
           >
-            <Typography
-              variant="h6"
-              // align="center"
-              className="landing-sec3-text"
-              style={{ color: "#fff" }}
-            >
-              I like to code things from scratch, and enjoy bringing ideas to
-              life in the browser.Listen to the songs you love, and discover new
-              music and podcasts.We'll help you make playlists. Or enjoy
-              playlists made by music experts.Tell us what you like, and we'll
-              recommend music for you.To use less data when you play music, turn
-              on Data Saver in Settings.
-            </Typography>
+            <Fade bottom>
+              <Typography
+                variant="h6"
+                // align="center"
+                className="landing-sec3-text"
+                style={{ color: "#fff" }}
+              >
+                The journey of "Fire Fighting" began with extensive research and
+                brainstorming sessions. The team delved into the science of fire
+                behavior, studied existing firefighting techniques, and analyzed
+                real-world scenarios to identify key challenges and
+                opportunities for improvement. Drawing inspiration from nature,
+                technology, and innovative design principles, they envisioned a
+                comprehensive system that integrates cutting-edge technology
+                with practical firefighting strategies.
+              </Typography>
+            </Fade>
           </Grid>
           <Grid item container xs={12} sm={10} style={{ marginBottom: "5rem" }}>
             <Testimonials />
@@ -657,19 +666,21 @@ const Home = () => {
           }}
           xs={12}
         >
-          <Typography
-            variant="h2"
-            align="left"
-            className="sec5-heading"
-            gutterBottom
-            style={{
-              color: "rgb(245, 131, 32)",
-              fontWeight: "bold",
-              textAlign: "center",
-            }}
-          >
-            Scope of Works
-          </Typography>
+          <Fade bottom>
+            <Typography
+              variant="h2"
+              align="left"
+              className="sec5-heading"
+              gutterBottom
+              style={{
+                color: "rgb(245, 131, 32)",
+                fontWeight: "bold",
+                textAlign: "center",
+              }}
+            >
+              Scope of Works
+            </Typography>
+          </Fade>
           <Grid
             item
             container
@@ -698,7 +709,7 @@ const Home = () => {
           }}
           xs={12}
         >
-          <Zoom>
+          <Fade bottom>
             <Typography
               variant="h4"
               className="sec4-heading"
@@ -710,7 +721,7 @@ const Home = () => {
             >
               Working Experience
             </Typography>
-          </Zoom>
+          </Fade>
           <FeatureSection />
         </Grid>
 
