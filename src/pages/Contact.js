@@ -97,7 +97,6 @@ const Service = () => {
           Permission denied by admin
         </Alert>
       </Snackbar>
-      ;
       <Grid item container>
         <Grid className="contact-sec1">
           <Zoom>
