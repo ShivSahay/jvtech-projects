@@ -48,7 +48,7 @@ const Service = () => {
     message: "",
   });
 
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
   const handleClick = () => {
     setOpen(true);
   };
