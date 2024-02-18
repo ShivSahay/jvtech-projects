@@ -584,7 +584,7 @@ const Service = () => {
             item
             container
             style={{ justifyContent: "center" }}
-            // spacing={4}
+            spacing={4}
             direction="row"
           >
             <Grid item sm={12} md={6} lg={5}>

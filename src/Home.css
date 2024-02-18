@@ -46,7 +46,8 @@
 
 .home-sec2-card .home-sec2-card-media {
   opacity: 0.8;
-  transition: "transform 0.3s ease";
+  transition: "transform 1s ease";
+  cursor: pointer;
 }
 .home-sec2-card .home-sec2-card-media:hover {
   opacity: 1 !important;
@@ -164,7 +165,7 @@
     text-align: center !important;
   }
   .home-sec1-testomonial-img {
-    height: 90vh !important;
+    height: 85vh !important;
   }
   .home-sec2-card {
     min-height: 54vh !important;

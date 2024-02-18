@@ -203,7 +203,7 @@ const Service = () => {
                   textAlign: "center",
                 }}
               >
-                Get connected with Astream
+                Get connected with J.V. Tech
               </Typography>
             </Fade>
           </Grid>
@@ -716,63 +716,76 @@ const Service = () => {
                 </Typography>
               </Fade>
             </Grid>
-            <form onSubmit={handleSubmit}>
-              <Grid container spacing={2}>
-                <Grid item xs={12}>
-                  <TextField
-                    fullWidth
-                    label="Name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    variant="outlined"
-                  />
+            <Grid
+              item
+              xs={12}
+              sm={12}
+              md={10}
+              style={{
+                background: "darkolivegreen",
+                padding: "20px",
+                borderRadius: "5px",
+                marginTop: "1rem",
+              }}
+            >
+              <form onSubmit={handleSubmit}>
+                <Grid container spacing={2}>
+                  <Grid item xs={12}>
+                    <TextField
+                      fullWidth
+                      label="Name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      variant="outlined"
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <TextField
+                      fullWidth
+                      label="Email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      variant="outlined"
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <TextField
+                      fullWidth
+                      label="Message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      multiline
+                      rows={4}
+                      variant="outlined"
+                    />
+                  </Grid>
+                  <Grid item xs={12} className="contact-sec5-form-btn">
+                    <Fade bottom>
+                      <Button
+                        style={{
+                          background: "rgba(5, 154, 130, 1)",
+                          color: "#ffffff",
+                          width: "158px",
+                          borderRadius: "10rem",
+                          fontSize: "22px",
+                          textTransform: "capitalize",
+                          padding: "10px",
+                          transition: "all .3s",
+                          content: "",
+                        }}
+                        onClick={handleFormSubmit}
+                        className="contact-sec4-formbtn"
+                      >
+                        Submit
+                      </Button>
+                    </Fade>
+                  </Grid>
                 </Grid>
-                <Grid item xs={12}>
-                  <TextField
-                    fullWidth
-                    label="Email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    variant="outlined"
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <TextField
-                    fullWidth
-                    label="Message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    multiline
-                    rows={4}
-                    variant="outlined"
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <Fade left>
-                    <Button
-                      style={{
-                        background: "rgba(5, 154, 130, 1)",
-                        color: "#ffffff",
-                        width: "158px",
-                        borderRadius: "10rem",
-                        fontSize: "22px",
-                        textTransform: "capitalize",
-                        padding: "10px",
-                        transition: "all .3s",
-                        content: "",
-                      }}
-                      onClick={handleFormSubmit}
-                      className="contact-sec4-formbtn"
-                    >
-                      Submit
-                    </Button>
-                  </Fade>
-                </Grid>
-              </Grid>
-            </form>
+              </form>
+            </Grid>
           </Grid>
         </Grid>
         <Grid

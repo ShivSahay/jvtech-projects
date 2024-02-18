@@ -176,22 +176,22 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const actions = [
   {
-    icon: <WhatsAppIcon style={{color:"rgb(31, 164, 30)"}} />,
+    icon: <WhatsAppIcon style={{ color: "rgb(31, 164, 30)" }} />,
     name: "Whatsapp",
     link: "http://api.whatsapp.com/",
   },
   {
-    icon: <InstagramIcon style={{color:"rgb(31, 164, 30)"}}/>,
+    icon: <InstagramIcon style={{ color: "rgb(31, 164, 30)" }} />,
     name: "Instagram",
     link: "https://www.instagram.com/pandit_himanshu_mishra_up45/",
   },
   {
-    icon: <FacebookOutlinedIcon style={{color:"rgb(31, 164, 30)"}} />,
+    icon: <FacebookOutlinedIcon style={{ color: "rgb(31, 164, 30)" }} />,
     name: "Facebook",
     link: "https://www.facebook.com/",
   },
   {
-    icon: <LinkedInIcon style={{color:"rgb(31, 164, 30)"}}/>,
+    icon: <LinkedInIcon style={{ color: "rgb(31, 164, 30)" }} />,
     name: "LinkedIn",
     link: "https://www.linkedin.com/",
   },
@@ -205,7 +205,7 @@ const Footer = () => {
         component="footer"
         style={{
           width: "100%",
-          minHeight: "100px",
+          minHeight: "40px",
           padding: "32px",
           marginTop: "auto",
           // backgroundColor: "#f58320",
@@ -216,7 +216,7 @@ const Footer = () => {
       >
         <Container maxWidth="md">
           <Typography variant="body2" align="center">
-            © {new Date().getFullYear()} J.V. Tech
+            {/* © {new Date().getFullYear()} J.V. Tech */}© 2023 J.V. Tech
           </Typography>
           <Typography variant="body2" align="center">
             <Link

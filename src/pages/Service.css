@@ -43,7 +43,7 @@
 }
 
 .service-sec9 {
-  height: 100vh;
+  height: 800px;
   width: 100%;
   background: #ddedff;
   background: url("../../public/watersprinkler.jpg") 50% 0 no-repeat;
@@ -72,6 +72,9 @@
   }
 }
 @media (max-width: 599px) {
+  .service-sec9 {
+    height: 85vh !important;
+  }
   .sec1-service-text1 {
     font-size: 3rem !important;
   }

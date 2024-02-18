@@ -224,7 +224,7 @@ const ImageSliderMui = ({ images }) => {
               className="home-sec1-testomonial-img"
               src={images[currentIndex]}
               alt={`slide-${currentIndex}`}
-              style={{ width: "100%", height: "auto" }}
+              style={{ width: "100%", height: "800px" }}
             />
           </Zoom>
         </Paper>

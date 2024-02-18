@@ -1,5 +1,5 @@
 .about-container {
-  height: 700px;
+  height: 800px;
   width: 100%;
   background: url("../../public/safetyfirst.jpg") 50% 0 no-repeat;
   justify-content: center;
@@ -31,7 +31,8 @@
 }
 .about-sec2-cardmedia:hover {
   opacity: 1 !important;
-  h5,p{
+  h5,
+  p {
     /* color: transparent !important; */
     opacity: 0.5;
   }
@@ -51,10 +52,12 @@
   }
 }
 @media (max-width: 599px) {
+  .about-container {
+    height: 85vh !important;
+  }
   .about-sec2 {
     padding: 25px !important;
   }
-
   .about-sec2 .css-1oqqzyl-MuiContainer-root {
     padding-left: 0px !important;
     padding-right: 0px !important;
