@@ -41,12 +41,24 @@ const Service = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  function handleClick() {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 8000);
-  }
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData); // You can perform your submission logic here
+  };
   const defaultProps = {
     center: {
       lat: 28.6139, // New Delhi latitude
@@ -82,63 +94,72 @@ const Service = () => {
           style={{ justifyContent: "center", padding: "60px" }}
         >
           <Grid item sm={12} md={8} style={{ marginBottom: "25px" }}>
-            <Typography
-              variant="h5"
-              className="contact-sec2-heading"
-              style={{ fontWeight: "bold", textAlign: "center" }}
-            >
-              Contuct US{" "}
-            </Typography>
-            <Typography
-              variant="h3"
-              className="contact-sec2-heading"
-              style={{
-                fontWeight: "800",
-                textAlign: "center",
-                marginTop: "15px",
-              }}
-            >
-              Who We Are
-            </Typography>
-            <Typography
-              variant="body1"
-              className="contact-sec2-heading"
-              style={{
-                fontWeight: "500",
-                textAlign: "center",
-                marginTop: "15px",
-              }}
-            >
-              Megamind techno group of engineers & designers are known for
-              providing all type of electrical, interior & fire fighting
-              services. We have survived the competitive market, by giving best
-              quality and services in the quickest time and within affordable
-              prices. Our team of experts works closely with the client to know
-              their requirements and to fulfill them on time, as we believe in
-              100% customer satisfaction. Our main services are:
-            </Typography>
+            <Fade bottom>
+              <Typography
+                variant="h5"
+                className="contact-sec2-heading"
+                style={{ fontWeight: "bold", textAlign: "center" }}
+              >
+                Contuct US{" "}
+              </Typography>
+            </Fade>
+            <Fade bottom>
+              <Typography
+                variant="h3"
+                className="contact-sec2-heading"
+                style={{
+                  fontWeight: "800",
+                  textAlign: "center",
+                  marginTop: "15px",
+                }}
+              >
+                Who We Are
+              </Typography>
+            </Fade>
+            <Fade bottom>
+              <Typography
+                variant="body1"
+                className="contact-sec2-heading"
+                style={{
+                  fontWeight: "500",
+                  textAlign: "center",
+                  marginTop: "15px",
+                }}
+              >
+                Megamind techno group of engineers & designers are known for
+                providing all type of electrical, interior & fire fighting
+                services. We have survived the competitive market, by giving
+                best quality and services in the quickest time and within
+                affordable prices. Our team of experts works closely with the
+                client to know their requirements and to fulfill them on time,
+                as we believe in 100% customer satisfaction. Our main services
+                are:
+              </Typography>
+            </Fade>
           </Grid>
           <Grid
             item
-            sm={12}
+            sm={5}
             style={{ display: "flex", justifyContent: "center" }}
           >
-            <Button
-              style={{
-                background: "rgba(5, 154, 130, 1)",
-                color: "#ffffff",
-                width: "268px",
-                borderRadius: "10rem",
-                fontSize: "22px",
-                textTransform: "capitalize",
-                padding: "20px",
-                transition: "all .3s",
-                content: "",
-              }}
-              className="contact-sec2-btn"
-            >
-              Contact US
-            </Button>
+            <Fade left>
+              <Button
+                style={{
+                  background: "rgba(5, 154, 130, 1)",
+                  color: "#ffffff",
+                  width: "268px",
+                  borderRadius: "10rem",
+                  fontSize: "22px",
+                  textTransform: "capitalize",
+                  padding: "20px",
+                  transition: "all .3s",
+                  content: "",
+                }}
+                className="contact-sec2-btn"
+              >
+                Contact US
+              </Button>
+            </Fade>
           </Grid>
         </Grid>
         <Grid
@@ -150,16 +171,18 @@ const Service = () => {
           style={{ justifyContent: "center", padding: "30px 60px" }}
         >
           <Grid item sm={12}>
-            <Typography
-              variant="h4"
-              className="contact-sec2-heading"
-              style={{
-                fontWeight: "800",
-                textAlign: "center",
-              }}
-            >
-              Get connected with Astream
-            </Typography>
+            <Fade bottom>
+              <Typography
+                variant="h4"
+                className="contact-sec2-heading"
+                style={{
+                  fontWeight: "800",
+                  textAlign: "center",
+                }}
+              >
+                Get connected with Astream
+              </Typography>
+            </Fade>
           </Grid>
           <Grid
             item
@@ -413,21 +436,22 @@ const Service = () => {
             </Zoom>
           </Grid>
         </Grid>
-        {/* dsklf */}
         <Grid item container className="contact-sec5">
           <Grid item container sm={12} md={5} className="contact-sec5-touchbox">
             <Grid item xs={12} sm={12}>
-              <Typography
-                variant="h2"
-                className="contact-sec5-touchbox-heading"
-                style={{
-                  textAlign: "center",
-                  fontWeight: "800",
-                  color: "#ffffff",
-                }}
-              >
-                GET IN TOUCH
-              </Typography>
+              <Fade left>
+                <Typography
+                  variant="h2"
+                  className="contact-sec5-touchbox-heading"
+                  style={{
+                    textAlign: "center",
+                    fontWeight: "800",
+                    color: "#ffffff",
+                  }}
+                >
+                  GET IN TOUCH
+                </Typography>
+              </Fade>
               <hr />
             </Grid>
             <Grid
@@ -442,30 +466,32 @@ const Service = () => {
                 rowGap: "10px",
               }}
             >
-              <Typography
-                variant="h6"
-                style={{
-                  // textAlign: "center",
-                  fontWeight: "800",
-                  color: "#ffffff",
-                }}
-              >
-                GURGAON OFFICE:
-              </Typography>
-              <Typography
-                variant="body1"
-                style={{
-                  // textAlign: "center",
-                  fontWeight: "400",
-                  color: "#ffffff",
-                }}
-              >
-                519,3rd Floor, Deep Plaza <br /> Opposite District Court
-                <br /> Gurgaon, Haryana, India
-                <br /> PIN: 122001
-                <br /> Phone no.-0124-6458868
-                <br /> Mobile No.- 09911506868
-              </Typography>
+              <Fade bottom>
+                <Typography
+                  variant="h6"
+                  style={{
+                    // textAlign: "center",
+                    fontWeight: "800",
+                    color: "#ffffff",
+                  }}
+                >
+                  GURGAON OFFICE:
+                </Typography>
+                <Typography
+                  variant="body1"
+                  style={{
+                    // textAlign: "center",
+                    fontWeight: "400",
+                    color: "#ffffff",
+                  }}
+                >
+                  519,3rd Floor, Deep Plaza <br /> Opposite District Court
+                  <br /> Gurgaon, Haryana, India
+                  <br /> PIN: 122001
+                  <br /> Phone no.-0124-6458868
+                  <br /> Mobile No.- 09911506868
+                </Typography>
+              </Fade>
             </Grid>
             <Grid
               item
@@ -588,93 +614,101 @@ const Service = () => {
             md={6}
             className="contact-sec5-form"
             style={{
-              // border: "2px solid red",
               display: "flex",
               justifyContent: "center",
-              // padding:"60px"
             }}
             spacing={2}
           >
             <Grid item xs={12} sm={12} md={10}>
-              <Typography
-                variant="h2"
-                className="contact-sec5-form-text1"
-                style={{
-                  textAlign: "center",
-                  fontWeight: "800",
-                  color: "#ffffff",
-                }}
-              >
-                Send us a message
-              </Typography>
+              <Fade right>
+                <Typography
+                  variant="h2"
+                  className="contact-sec5-form-text1"
+                  style={{
+                    textAlign: "center",
+                    fontWeight: "800",
+                    color: "#ffffff",
+                  }}
+                >
+                  Send us a message
+                </Typography>
+              </Fade>
               <hr />
-              <Typography
-                variant="h6"
-                className="contact-sec5-form-text2"
-                style={{
-                  textAlign: "center",
-                  fontWeight: "400",
-                  color: "#ffffff",
-                }}
-              >
-                If you are satisfied in visiting our website and looking for any
-                of our services. Then feel free to contact us. Here are our
-                contact details and addresses for your convenience.
-              </Typography>
+              <Fade bottom>
+                <Typography
+                  variant="h6"
+                  className="contact-sec5-form-text2"
+                  style={{
+                    textAlign: "center",
+                    fontWeight: "400",
+                    color: "#ffffff",
+                  }}
+                >
+                  If you are satisfied in visiting our website and looking for
+                  any of our services. Then feel free to contact us. Here are
+                  our contact details and addresses for your convenience.
+                </Typography>
+              </Fade>
             </Grid>
-            <Grid item xs={12}>
-              <TextField
-                label="Name"
-                variant="outlined"
-                fullWidth
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <TextField
-                label="Email"
-                variant="outlined"
-                fullWidth
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <TextField
-                label="Message"
-                variant="outlined"
-                multiline
-                rows={4}
-                fullWidth
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              />
-            </Grid>
-            <Grid item xs={12} className="contact-sec5-formbtn-box">
-              {/* <Button
-                variant="contained"
-                className="contact-sec5-formbtn"
-                color="success"
-                onClick={handleFormSubmit}
-              >
-                Submit
-              </Button> */}
-              <LoadingButton
-                size="small"
-                onClick={handleClick}
-                endIcon={<SendIcon />}
-                loading={loading}
-                loadingPosition="end"
-                color="success"
-                variant="contained"
-              >
-                <span>Send</span>
-              </LoadingButton>
-            </Grid>
+            <form onSubmit={handleSubmit}>
+              <Grid container spacing={2}>
+                <Grid item xs={12}>
+                  <TextField
+                    fullWidth
+                    label="Name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    variant="outlined"
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    fullWidth
+                    label="Email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    variant="outlined"
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    fullWidth
+                    label="Message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    multiline
+                    rows={4}
+                    variant="outlined"
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <Fade left>
+                    <Button
+                      style={{
+                        background: "rgba(5, 154, 130, 1)",
+                        color: "#ffffff",
+                        width: "158px",
+                        borderRadius: "10rem",
+                        fontSize: "22px",
+                        textTransform: "capitalize",
+                        padding: "10px",
+                        transition: "all .3s",
+                        content: "",
+                      }}
+                      onClick={handleFormSubmit}
+                      className="contact-sec4-formbtn"
+                    >
+                      Submit
+                    </Button>
+                  </Fade>
+                </Grid>
+              </Grid>
+            </form>
           </Grid>
         </Grid>
-        {/* asld */}
         <Grid
           item
           container
@@ -684,19 +718,21 @@ const Service = () => {
           <Grid
             item
             container
-            style={{ position: "absolute" }}
+            style={{ position: "absolute", height: "30px" }}
             className="contact-sec6-grid"
           >
-            <Typography>Border </Typography>
+            <Typography> </Typography>
           </Grid>
           <div style={{ height: "50vh", width: "100%" }}>
-            <GoogleMapReact
-              bootstrapURLKeys={{ key: "kjdfvkdshgjkd " }}
-              defaultCenter={defaultProps.center}
-              defaultZoom={defaultProps.zoom}
-            >
-              <AnyReactComponent lat={28.6139} lng={77.209} text="New Delhi" />
-            </GoogleMapReact>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7005.587118621671!2d77.35287514604997!3d28.605969352716762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce56cf11a7011%3A0x49d7576acb82fa23!2sSector%2058%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1708073079841!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </Grid>
         <Footer />

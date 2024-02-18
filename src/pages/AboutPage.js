@@ -8,6 +8,7 @@ import {
   Card,
   CardContent,
   CardMedia,
+  Button,
 } from "@mui/material";
 import Header from "../Header";
 import "./About.css";
@@ -15,7 +16,7 @@ import Footer from "../Footer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 import image1 from "../images/1.jpeg";
 import image2 from "../images/2.jpeg";
 import image3 from "../images/3.jpeg";
@@ -25,40 +26,115 @@ import jitendra from "..//images/jitendra.jpeg";
 import shiv from "../images/shiv.jpeg";
 import leader from "../images/leader.jpeg";
 const AboutPage = () => {
-  const AboutCard = ({ title, content }) => {
+  const testimonials = [
+    {
+      name: "J.V. TECH ENGINEERS",
+      image: image1,
+      content:
+        "J.V. TECH ENGINEERS is an Indian based firm that specializes in Mechanical, Electrical and Plumbing (MEP) building services.",
+    },
+    {
+      name: "Qualiﬁed and technically",
+      image: image2,
+      content:
+        "Our team of heroes does no neglect or foresee any delicate of detail in each and every process.",
+    },
+    {
+      name: "Strive to deliver",
+      image: image3,
+      content:
+        "Our staff is recognized as best diligent workers in the field of fire protection and safety.",
+    },
+  ];
+  const TestimonialSlider = ({ testimonials }) => {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+    };
+
     return (
-      <Card>
-        <CardContent>
-          <Zoom>
-            <Typography
-              variant="h4"
-              gutterBottom
-              style={{
-                fontWeight: "bold",
-                textAlign: "center",
-                color: "rgb(245, 131, 32)",
+      // <Container maxWidth="lg">
+      <Slider {...settings}>
+        {testimonials.map((testimonial, index) => (
+          <div key={index}>
+            <Card
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                height: "100%",
               }}
+              className="about-sec2-card"
             >
-              {title}
-            </Typography>
-          </Zoom>
-          <Zoom>
-            <Typography variant="body1">{content}</Typography>
-          </Zoom>
-        </CardContent>
-      </Card>
+              <CardMedia
+                style={{
+                  height: 310,
+                  // width: "310px",
+                  width: "100%",
+                  // borderRadius: "50%",
+                  // margin: "20px auto"  ,
+                  justifyContent: "center",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+                className="about-sec2-cardmedia"
+                image={testimonial.image}
+                alt={testimonial.name}
+              >
+                <Fade bottom>
+                  <Typography
+                    variant="h5"
+                    style={{
+                      color: "#ffffff",
+                      fontWeight: "bolder",
+                      textAlign: "center",
+                    }}
+                  >
+                    {testimonial.name}
+                  </Typography>
+                </Fade>
+                <Fade bottom>
+                  <Typography
+                    variant="body1"
+                    style={{
+                      color: "#ffffff",
+                      fontWeight: "bolder",
+                      textAlign: "center",
+                      margin: "20px 6rem",
+                    }}
+                  >
+                    {testimonial.content}
+                  </Typography>
+                </Fade>
+              </CardMedia>
+            </Card>
+          </div>
+        ))}
+      </Slider>
+      // </Container>
     );
   };
+
   return (
     <>
       <Grid item container className="about-page-container">
         <Grid className="about-container">
-          <Typography className="sec1-about-text1" variant="h2">
-            J.V. TECH ENGINEERES
-          </Typography>
-          <Typography className="sec1-about-text2" variant="h4">
-            ENGINEERES & CONTRACTORS
-          </Typography>
+          <Fade bottom>
+            <Typography className="sec1-about-text1" variant="h2">
+              J.V. TECH ENGINEERES
+            </Typography>
+          </Fade>
+          <Fade bottom>
+            <Typography className="sec1-about-text2" variant="h4">
+              ENGINEERES & CONTRACTORS
+            </Typography>
+          </Fade>
         </Grid>
         <Grid
           className="about-sec2"
@@ -74,31 +150,277 @@ const AboutPage = () => {
             padding: "60px",
           }}
         >
+          <Grid item sm={12} md={8} style={{ marginBottom: "25px" }}>
+            <Fade bottom>
+              <Typography
+                variant="h5"
+                className="service-sec2-heading1 "
+                style={{ fontWeight: "bold", textAlign: "center" }}
+              >
+                About us{" "}
+              </Typography>
+            </Fade>
+          </Grid>
           <Container maxWidth="lg">
             <Grid item container spacing={3}>
-              <Grid item xs={12} md={6}>
-                <AboutCard
-                  title="J.V. TECH ENGINEERS"
-                  content="J.V. TECH ENGINEERS is an Indian based firm that specializes in Mechanical, Electrical and Plumbing (MEP) building services.
-                  From the very beginning we adopted a unique approach towards our clients, catering to their speciﬁc needs and delivering upon their expectations. Behind the name of J.V.TECH ENGINEERS, stands an experienced and professional team that works together to deliver and maintain the highest standards of MEP services. "
-                />
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <AboutCard
-                  title="Qualiﬁed and technically"
-                  content="Our highly qualiﬁed and technically competent managers, engineers and technicians, allow us to capture a sizable share of the market. We are currently executing projects in different premises of commercial, residential and industrial type.the services or goods specifically set out in the bid or request for proposal package.Something technically true is actually, really true or correct but it may not be the way people think about it."
-                />
+              <Grid item xs={12} md={12}>
+                <TestimonialSlider testimonials={testimonials} />
               </Grid>
               <Grid item xs={12} md={12}>
-                <AboutCard
-                  title="Strive to deliver"
-                  content="We strive to deliver the highest standards of MEP installation, carefully paying attention to our client’s ideas, collaborating in the development of the right scope of work. We develop a unique approach towards each client and each project is a never-ending responsibility for us. It is all about our clients! J.V. TECH ENGINEERS undertake all kinds of Mechanical, Electrical and Plumbing works for the following premises: - 
-                  Villas / Hotel Apartments / Warehouses / Factories / Hospitals / Residential Buildings / Commercial Buildings / Offices / shopping malls & Centers."
-                />
+                <Card>
+                  <CardContent>
+                    <Fade bottom>
+                      <Typography
+                        variant="h4"
+                        gutterBottom
+                        style={{
+                          fontWeight: "bold",
+                          textAlign: "center",
+                          color: "rgb(245, 131, 32)",
+                        }}
+                      >
+                        Strive to deliver
+                      </Typography>
+                    </Fade>
+                    <Fade bottom>
+                      <Typography variant="body1">
+                        We strive to deliver the highest standards of MEP
+                        installation, carefully paying attention to our client’s
+                        ideas, collaborating in the development of the right
+                        scope of work. We develop a unique approach towards each
+                        client and each project is a never-ending responsibility
+                        for us. It is all about our clients! J.V. TECH ENGINEERS
+                        undertake all kinds of Mechanical, Electrical and
+                        Plumbing works for the following premises: - Villas /
+                        Hotel Apartments / Warehouses / Factories / Hospitals /
+                        Residential Buildings / Commercial Buildings / Offices /
+                        shopping malls & Centers.
+                      </Typography>
+                    </Fade>
+                  </CardContent>
+                </Card>
               </Grid>
               {/* Add more cards as needed */}
             </Grid>
           </Container>
+        </Grid>
+        <Grid
+          item
+          container
+          className="about-sec4"
+          style={{ justifyContent: "center", padding: "60px" }}
+        >
+          <Grid
+            item
+            container
+            sm={12}
+            md={10}
+            lg={8}
+            style={{
+              marginBottom: "25px",
+              display: "flex",
+              justifyContent: "space-around",
+            }}
+          >
+            <Grid item style={{ marginBottom: "2em" }} sm={12}>
+              <Fade bottom>
+                <Typography
+                  variant="h5"
+                  className="about-sec4-heading"
+                  style={{
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    color: "#f26522",
+                  }}
+                >
+                  Best Services Provider{" "}
+                </Typography>
+              </Fade>
+              <Fade bottom>
+                <Typography
+                  variant="body1"
+                  className="about-sec4-heading"
+                  style={{
+                    fontWeight: "400",
+                    textAlign: "center",
+                    marginTop: "15px",
+                  }}
+                >
+                  Nam lobortis fringilla felis. Fusce vol utpat urna cras ut nec
+                  quam vitae turpis
+                </Typography>
+              </Fade>
+            </Grid>
+            <Grid item className="aobut-sec3-history" sm={3}>
+              <Fade top>
+                <Typography
+                  variant="h6"
+                  className="about-sec4-heading"
+                  style={{
+                    fontWeight: "bold",
+                    // textAlign: "center",
+                    color: "#f26522",
+                  }}
+                >
+                  Our History{" "}
+                </Typography>
+              </Fade>
+              <Fade bottom>
+                <Typography
+                  variant="body1"
+                  className="about-sec4-heading"
+                  style={{
+                    fontWeight: "400",
+                    // textAlign: "center",
+                    marginLeft: "15px",
+                  }}
+                >
+                  J.V. TECH ENGINEERS is an Indian based firm that specializes
+                  in Mechanical, Electrical and Plumbing (MEP) building
+                  services.From the very beginning we adopted a unique approach
+                  towards our clients, catering to their speciﬁc needs and
+                  delivering upon their expectations.
+                </Typography>
+              </Fade>
+              <Fade bottom>
+                <Typography
+                  variant="body1"
+                  className="about-sec4-heading"
+                  style={{
+                    fontWeight: "400",
+                    // textAlign: "center",
+                    marginTop: "1rem",
+                    marginLeft: "15px",
+                  }}
+                >
+                  Our highly qualiﬁed and technically competent managers,
+                  engineers and technicians, allow us to capture a sizable share
+                  of the market. We are currently executing projects in
+                  different premises of commercial, residential and industrial
+                  type.
+                </Typography>
+              </Fade>
+            </Grid>
+            <Grid item className="aobut-sec3-quality" sm={3}>
+              <Fade top>
+                <Typography
+                  variant="h6"
+                  className="about-sec4-heading"
+                  style={{
+                    fontWeight: "bold",
+                    // textAlign: "center",
+                    color: "#f26522",
+                  }}
+                >
+                  Quality and Reliability{" "}
+                </Typography>
+              </Fade>
+              <Fade bottom>
+                <Typography
+                  variant="body1"
+                  className="about-sec4-text"
+                  style={{
+                    fontWeight: "400",
+                    // textAlign: "center",
+                    marginLeft: "15px",
+                  }}
+                >
+                  We aim to attain business excellence in infrastructure works
+                  by meeting and exceeding our customer's expectations in terms
+                  of quality, timely completion and safety with absolute
+                  compliance to relevant regulatory and obligatory requirements.
+                </Typography>
+              </Fade>
+              <Fade bottom>
+                <Typography
+                  variant="body1"
+                  className="about-sec4-heading"
+                  style={{
+                    fontWeight: "400",
+                    // textAlign: "center",
+                    marginTop: "1rem",
+                    marginLeft: "15px",
+                  }}
+                >
+                  Our goal is to remain the preferred contractor by continuous
+                  improvement with proper adherence to the Quality Management
+                  System.
+                </Typography>
+              </Fade>
+            </Grid>
+            <Grid item className="aobut-sec3-exp" sm={3}>
+              <Fade top>
+                <Typography
+                  variant="h6"
+                  className="about-sec4-heading"
+                  style={{
+                    fontWeight: "bold",
+                    // textAlign: "center",
+                    color: "#f26522",
+                  }}
+                >
+                  Our Experience{" "}
+                </Typography>
+              </Fade>
+              <Fade bottom>
+                <Typography
+                  variant="body1"
+                  className="about-sec4-heading"
+                  style={{
+                    fontWeight: "400",
+                    // textAlign: "center",
+                    marginLeft: "15px",
+                  }}
+                >
+                  {`>`} Fire Alarm Systems. <br />
+                  {`>`} Fire Alarm Panel. <br />
+                  {`>`} Sprinkler System Fire.
+                  <br />
+                  We provide complete fire protection services and
+                  installations. Our team of heroes does no neglect or foresee
+                  any delicate of detail in each and every process
+                </Typography>
+              </Fade>
+              <Fade bottom>
+                <Typography
+                  variant="body1"
+                  className="about-sec4-heading"
+                  style={{
+                    fontWeight: "400",
+                    // textAlign: "center",
+                    marginTop: "1rem",
+                    marginLeft: "15px",
+                  }}
+                >
+                  We also help our clients in getting NOC from concerned
+                  authorities. Our team of professionals at your own facility
+                  location conducts well-informed sessions.
+                </Typography>
+              </Fade>
+            </Grid>
+          </Grid>
+          {/* <Grid
+            item
+            sm={12}
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            <Button
+              style={{
+                background: "rgba(5, 154, 130, 1)",
+                color: "#ffffff",
+                width: "268px",
+                borderRadius: "10rem",
+                fontSize: "22px",
+                textTransform: "capitalize",
+                padding: "20px",
+                transition: "all .3s",
+                content: "",
+              }}
+              className="about-sec4-btn"
+            >
+              Contact US
+            </Button>
+          </Grid> */}
         </Grid>
         <Grid
           item
@@ -109,8 +431,6 @@ const AboutPage = () => {
           className="about-sec3"
           style={{
             minHeight: "400px",
-            // background:      " linear-gradient(94.64deg, #B023C2 -0.12%, #680DE4 99.52%)",
-            // background:  "linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231))",
             background:
               "linear-gradient(-45deg, rgba(31,164,30,255) -5%, rgba(245,131,32,255))",
           }}
@@ -119,18 +439,36 @@ const AboutPage = () => {
           <Grid
             item
             style={{ marginTop: "80px" }}
-            className="sec3-heading-box"
+            className="about-sec3-heading-box"
             sm={12}
           >
-            <Typography
-              variant="h2"
-              align="center"
-              gutterBottom
-              className="about-sec3-heading"
-              style={{ color: "#fff", fontWeight: "bold", marginBottom: "1em" }}
-            >
-              Our Leaderships
-            </Typography>
+            <Fade bottom>
+              <Typography
+                variant="h2"
+                align="center"
+                gutterBottom
+                className="about-sec3-heading"
+                style={{ color: "#fff", fontWeight: "bold" }}
+              >
+                Meet Our Team
+              </Typography>
+            </Fade>
+            <Fade bottom>
+              <Typography
+                variant="body1"
+                align="center"
+                gutterBottom
+                className="about-sec3-text"
+                style={{
+                  color: "#fff",
+                  fontWeight: "400",
+                  marginBottom: "1em",
+                }}
+              >
+                Nam lobortis fringilla felis. Fusce vol utpat urna cras ut nec
+                quam vitae turpis
+              </Typography>
+            </Fade>
           </Grid>
           <Grid
             item
@@ -143,7 +481,7 @@ const AboutPage = () => {
               rowGap: "3",
               justifyContent: "space-evenly",
               alignItems: "center",
-              marginBottom: "80px",
+              // marginBottom: "80px",
               padding: "60px",
             }}
           >
@@ -283,11 +621,8 @@ const AboutPage = () => {
               </Card>
             </Grid>
           </Grid>
-
-          {/* <Grid item container xs={12} sm={10} style={{ marginBottom: "5rem" }}>
-            <Testimonials />
-          </Grid> */}
         </Grid>
+
         <Footer />
       </Grid>
     </>

@@ -128,6 +128,7 @@ const Testimonials = ({ testimonial }) => {
   return (
     <Grid
       container
+      className="home-sec3-testomonial"
       style={{
         display: "flex",
         flexDirection: "column",
@@ -139,7 +140,7 @@ const Testimonials = ({ testimonial }) => {
     >
       <Typography
         variant="h4"
-        className="sec3--testomonial-heading"
+        className="sec3-testomonial-heading"
         style={{
           marginBottom: "3rem",
           fontSize: "3rem",
@@ -217,6 +218,7 @@ const ImageSliderMui = ({ images }) => {
         <Paper elevation={3}>
           <Zoom>
             <img
+              className="home-sec1-testomonial-img"
               src={images[currentIndex]}
               alt={`slide-${currentIndex}`}
               style={{ width: "100%", height: "auto" }}
@@ -280,27 +282,27 @@ const Home = () => {
               <Roll>
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "80%", height: "50vh" }}
+                  sx={{ maxWidth: "85%", minHeight: "50vh" }}
                 >
                   <CardMedia
-                    sx={{ height: "50%" }}
+                    sx={{ height: "55%" }}
                     image={image6}
-                    title="green iguana"
+                    className="home-sec2-card-media"
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Lizard
+                    <Typography
+                      gutterBottom
+                      variant="h6"
+                      style={{ fontWeight: "500" }}
+                    >
+                      MARUTI SUZUKLI INDIA LIMITED
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with
-                      over 6,000 species, ranging across all continents except
-                      Antarctica
+                      Maruti Suzuki Service has an extensive service network
+                      that spans across more than 1800 cities in India, making
+                      it easily accessible for customers.
                     </Typography>
                   </CardContent>
-                  <CardActions>
-                    <Button size="small">Share</Button>
-                    <Button size="small">Learn More</Button>
-                  </CardActions>
                 </Card>
               </Roll>
             </Grid>
@@ -319,27 +321,27 @@ const Home = () => {
               <Roll>
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "80%", height: "50vh" }}
+                  sx={{ maxWidth: "85%", minHeight: "50vh" }}
                 >
                   <CardMedia
-                    sx={{ height: "50%" }}
+                    sx={{ height: "55%" }}
                     image={image7}
-                    title="green iguana"
+                    className="home-sec2-card-media"
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Lizard
+                    <Typography
+                      gutterBottom
+                      variant="h6"
+                      style={{ fontWeight: "500" }}
+                    >
+                      HOLISTER MEDICAL INDIA PVT LTD
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with
-                      over 6,000 species, ranging across all continents except
-                      Antarctica
+                      Hollister Incorporated is an independent, employee-owned
+                      company that develops, manufactures, and markets
+                      healthcare products and services worldwide.
                     </Typography>
                   </CardContent>
-                  <CardActions>
-                    <Button size="small">Share</Button>
-                    <Button size="small">Learn More</Button>
-                  </CardActions>
                 </Card>
               </Roll>
             </Grid>
@@ -356,30 +358,29 @@ const Home = () => {
               }}
             >
               <Roll>
-                {" "}
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "80%", height: "50vh" }}
+                  sx={{ maxWidth: "85%", minHeight: "50vh" }}
                 >
                   <CardMedia
-                    sx={{ height: "50%" }}
+                    sx={{ height: "55%" }}
                     image={image8}
-                    title="green iguana"
+                    className="home-sec2-card-media"
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Lizard
+                    <Typography
+                      gutterBottom
+                      variant="h6"
+                      style={{ fontWeight: "500" }}
+                    >
+                      ATS TOWNSHIP PRIVATE LIMITED
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with
-                      over 6,000 species, ranging across all continents except
-                      Antarctica
+                      Ats Township Private Limited is a Private incorporated on
+                      30 April 2008. It is classified as Non-govt company and is
+                      registered at Registrar of Companies, Delhi.
                     </Typography>
                   </CardContent>
-                  <CardActions>
-                    <Button size="small">Share</Button>
-                    <Button size="small">Learn More</Button>
-                  </CardActions>
                 </Card>
               </Roll>
             </Grid>
@@ -398,27 +399,27 @@ const Home = () => {
               <Roll>
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "80%", height: "50vh" }}
+                  sx={{ maxWidth: "85%", minHeight: "50vh" }}
                 >
                   <CardMedia
-                    sx={{ height: "50%" }}
+                    sx={{ height: "55%" }}
                     image={image9}
-                    title="green iguana"
+                    className="home-sec2-card-media"
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Lizard
+                    <Typography
+                      gutterBottom
+                      variant="h6"
+                      style={{ fontWeight: "500" }}
+                    >
+                      SAMPLA BAHADURGRA HHARYANA
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with
-                      over 6,000 species, ranging across all continents except
-                      Antarctica
+                      "Sleek Brake Products" is a part of Super Circle Group of
+                      Companies, which was started in 1965 by founder
+                      Chairman-cum-Managing Director Mr. Jagjyoti Jain.
                     </Typography>
                   </CardContent>
-                  <CardActions>
-                    <Button size="small">Share</Button>
-                    <Button size="small">Learn More</Button>
-                  </CardActions>
                 </Card>
               </Roll>
             </Grid>
@@ -437,27 +438,27 @@ const Home = () => {
               <Roll>
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "80%", height: "50vh" }}
+                  sx={{ maxWidth: "85%", minHeight: "50vh" }}
                 >
                   <CardMedia
-                    sx={{ height: "50%" }}
+                    sx={{ height: "55%" }}
                     image={image9}
-                    title="green iguana"
+                    className="home-sec2-card-media"
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Lizard
+                    <Typography
+                      gutterBottom
+                      variant="h6"
+                      style={{ fontWeight: "500" }}
+                    >
+                      SACHADEVA POLYCOLOR PVT LTD
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with
-                      over 6,000 species, ranging across all continents except
-                      Antarctica
+                      Sachdeva Industries was established in 1982 as a unit
+                      coloring of plastic raw materials. Seeing an increasing
+                      demand for masterbatches.
                     </Typography>
                   </CardContent>
-                  <CardActions>
-                    <Button size="small">Share</Button>
-                    <Button size="small">Learn More</Button>
-                  </CardActions>
                 </Card>
               </Roll>
             </Grid>
@@ -466,7 +467,7 @@ const Home = () => {
               sm={6}
               md={4}
               lg={3}
-              className="home-sec2-card6 home-sec2-rol" 
+              className="home-sec2-card6 home-sec2-rol"
               style={{
                 display: "flex",
                 justifyContent: "center",
@@ -476,27 +477,27 @@ const Home = () => {
               <Roll>
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "80%", height: "50vh" }}
+                  sx={{ maxWidth: "85%", minHeight: "50vh" }}
                 >
                   <CardMedia
-                    sx={{ height: "50%" }}
+                    sx={{ height: "55%" }}
                     image={image10}
-                    title="green iguana"
+                    className="home-sec2-card-media"
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Lizard
+                    <Typography
+                      gutterBottom
+                      variant="h6"
+                      style={{ fontWeight: "500" }}
+                    >
+                      A.C POLY COTERS PVT LTD
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with
-                      over 6,000 species, ranging across all continents except
-                      Antarctica
+                      A. C. POLYOCATERS is an ISO certified manufacturer of
+                      synthetic leather in India. We process our products using
+                      quality raw materials.
                     </Typography>
                   </CardContent>
-                  <CardActions>
-                    <Button size="small">Share</Button>
-                    <Button size="small">Learn More</Button>
-                  </CardActions>
                 </Card>
               </Roll>
             </Grid>
@@ -515,27 +516,27 @@ const Home = () => {
               <Roll>
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "80%", height: "50vh" }}
+                  sx={{ maxWidth: "85%", minHeight: "50vh" }}
                 >
                   <CardMedia
-                    sx={{ height: "50%" }}
+                    sx={{ height: "55%" }}
                     image={image11}
-                    title="green iguana"
+                    className="home-sec2-card-media"
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Lizard
+                    <Typography
+                      gutterBottom
+                      variant="h6"
+                      style={{ fontWeight: "500" }}
+                    >
+                      THE AMARYLLIS CENTRAL PARK DELHI
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with
-                      over 6,000 species, ranging across all continents except
-                      Antarctica
+                      The Amaryllis will glow and change Delhi's landscape into
+                      something spectacular. Because of its location, design,
+                      amenities, and manner of life.
                     </Typography>
                   </CardContent>
-                  <CardActions>
-                    <Button size="small">Share</Button>
-                    <Button size="small">Learn More</Button>
-                  </CardActions>
                 </Card>
               </Roll>
             </Grid>
@@ -554,27 +555,27 @@ const Home = () => {
               <Roll>
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "80%", height: "50vh" }}
+                  sx={{ maxWidth: "85%", minHeight: "50vh" }}
                 >
                   <CardMedia
-                    sx={{ height: "50%" }}
+                    sx={{ height: "55%" }}
                     image={image15}
-                    title="green iguana"
+                    className="home-sec2-card-media"
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Lizard
+                    <Typography
+                      gutterBottom
+                      variant="h6"
+                      style={{ fontWeight: "500" }}
+                    >
+                      INSECTICIDES INDIA PVT LTD
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with
-                      over 6,000 species, ranging across all continents except
-                      Antarctica
+                      nsecticides INDIA Ltd in Azadpur, Delhi is known to
+                      satisfactorily cater to the demands of its customer base
+                      and business came into existence in 2009.
                     </Typography>
                   </CardContent>
-                  <CardActions>
-                    <Button size="small">Share</Button>
-                    <Button size="small">Learn More</Button>
-                  </CardActions>
                 </Card>
               </Roll>
             </Grid>
@@ -693,7 +694,7 @@ const Home = () => {
           style={{
             padding: "2rem",
             // background: "#926CF3",
-            background: "#f7c7e1",
+            // background: "#f7c7e1",
           }}
           xs={12}
         >

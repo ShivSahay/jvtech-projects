@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Button,
   Card,
   CardContent,
   CardMedia,
@@ -40,7 +41,8 @@ const ServiceCard = ({ title, description, imageUrl }) => {
 const DemoPaper = styled(Paper)(({ theme }) => ({
   width: "95%",
   height: 520,
-  background: "#EC3737",
+  // background: "#EC3737",
+  background: "rgb(8 9 10 / 40%)",
   padding: theme.spacing(2),
   ...theme.typography.body2,
   textAlign: "center",
@@ -92,53 +94,85 @@ const Service = () => {
           style={{ justifyContent: "center", padding: "60px" }}
         >
           <Grid item sm={12} md={8} style={{ marginBottom: "25px" }}>
-            <Typography
-              variant="h5"
-              className="service-sec2-heading1 "
-              style={{ fontWeight: "bold", textAlign: "center" }}
-            >
-              Our Services{" "}
-            </Typography>
-            <Typography
-              variant="h3"
-              className="service-sec2-heading2"
-              style={{
-                fontWeight: "800",
-                textAlign: "center",
-                marginTop: "15px",
-              }}
-            >
-              WHAT WE <span style={{ color: "rgb(249, 103, 2)" }}>OFFER</span>
-            </Typography>
-            <Typography
-              variant="body1"
-              className="service-sec2-heading3"
-              style={{
-                fontWeight: "800",
-                textAlign: "center",
-              }}
-            >
-              Think beyond expectation.
-            </Typography>
-            <Typography
-              variant="body1"
-              className="service-sec2-heading4"
-              style={{
-                fontWeight: "800",
-                textAlign: "center",
-                marginTop: "15px",
-              }}
-            >
-              Welcome to Astream, where we offer a comprehensive range of online
-              web services to elevate your digital presence and drive your
-              success in the virtual realm. Our team of skilled experts is
-              dedicated to providing cutting-edge solutions tailored to your
-              unique needs. We pride ourselves on a customer-centric approach,
-              focusing on delivering top-quality services that exceed
-              expectations. Partner with us to unlock your digital potential and
-              embark on a journey of growth and success in the ever-evolving
-              digital landscape.
-            </Typography>
+            <Fade bottom>
+              <Typography
+                variant="h5"
+                className="service-sec2-heading1 "
+                style={{ fontWeight: "bold", textAlign: "center" }}
+              >
+                Our Services{" "}
+              </Typography>
+            </Fade>
+            <Fade bottom>
+              <Typography
+                variant="h3"
+                className="service-sec2-heading2"
+                style={{
+                  fontWeight: "800",
+                  textAlign: "center",
+                  marginTop: "15px",
+                }}
+              >
+                WHAT WE <span style={{ color: "rgb(249, 103, 2)" }}>OFFER</span>
+              </Typography>
+            </Fade>
+            <Fade bottom>
+              <Typography
+                variant="body1"
+                className="service-sec2-heading3"
+                style={{
+                  fontWeight: "800",
+                  textAlign: "center",
+                }}
+              >
+                Think beyond expectation.
+              </Typography>
+            </Fade>
+            <Fade bottom>
+              <Typography
+                variant="body1"
+                className="service-sec2-heading4"
+                style={{
+                  fontWeight: "800",
+                  textAlign: "center",
+                  marginTop: "15px",
+                }}
+              >
+                Welcome to Astream, where we offer a comprehensive range of
+                online web services to elevate your digital presence and drive
+                your success in the virtual realm. Our team of skilled experts
+                is dedicated to providing cutting-edge solutions tailored to
+                your unique needs. We pride ourselves on a customer-centric
+                approach, focusing on delivering top-quality services that
+                exceed expectations. Partner with us to unlock your digital
+                potential and embark on a journey of growth and success in the
+                ever-evolving digital landscape.
+              </Typography>
+            </Fade>
+          </Grid>
+          <Grid
+            item
+            sm={12}
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            <Fade left>
+              <Button
+                style={{
+                  background: "rgba(5, 154, 130, 1)",
+                  color: "#ffffff",
+                  width: "268px",
+                  borderRadius: "10rem",
+                  fontSize: "22px",
+                  textTransform: "capitalize",
+                  padding: "20px",
+                  transition: "all .3s",
+                  content: "",
+                }}
+                className="about-sec2-btn"
+              >
+                Services {`>`}
+              </Button>
+            </Fade>
           </Grid>
           <Grid
             item
@@ -157,33 +191,35 @@ const Service = () => {
               className="service-sec2-count1"
               style={{ border: "2px solid #FFFFFF45", padding: "45px 25px" }}
             >
-              <CountUp
-                start={0.1}
-                end={8}
-                duration={5.75}
-                separator=" "
-                decimals={2}
-                decimal=","
-                prefix=""
-                suffix=" + <br/> Project"
-                onEnd={() => console.log("Ended! 👏")}
-                onStart={() => console.log("Started! 💨")}
-              >
-                {({ countUpRef, start }) => (
-                  <div>
-                    {/* <span
+              <Fade bottom>
+                <CountUp
+                  start={0.1}
+                  end={8}
+                  duration={5.75}
+                  separator=" "
+                  decimals={2}
+                  decimal=","
+                  prefix=""
+                  suffix=" + <br/> Project"
+                  onEnd={() => console.log("Ended! 👏")}
+                  onStart={() => console.log("Started! 💨")}
+                >
+                  {({ countUpRef, start }) => (
+                    <div>
+                      {/* <span
                       style={{ color: "#fff", fontWeight: "bold" }}
                       ref={countUpRef}
                     /> */}
-                    <Typography
-                      variant="h3"
-                      className="service-sec1-heading"
-                      style={{ fontWeight: "bold", textAlign: "center" }}
-                      ref={countUpRef}
-                    />
-                  </div>
-                )}
-              </CountUp>
+                      <Typography
+                        variant="h3"
+                        className="service-sec1-heading"
+                        style={{ fontWeight: "bold", textAlign: "center" }}
+                        ref={countUpRef}
+                      />
+                    </div>
+                  )}
+                </CountUp>
+              </Fade>
             </Grid>
             <Grid
               item
@@ -191,33 +227,35 @@ const Service = () => {
               className="service-sec2-count2"
               style={{ border: "2px solid #FFFFFF45", padding: "45px 25px" }}
             >
-              <CountUp
-                start={0.1}
-                end={1}
-                duration={1.75}
-                separator=" "
-                decimals={2}
-                decimal=","
-                prefix=""
-                suffix=" +<br/> Employee"
-                onEnd={() => console.log("Ended! 👏")}
-                onStart={() => console.log("Started! 💨")}
-              >
-                {({ countUpRef, start }) => (
-                  <div>
-                    {/* <span
+              <Fade bottom>
+                <CountUp
+                  start={0.1}
+                  end={1}
+                  duration={1.75}
+                  separator=" "
+                  decimals={2}
+                  decimal=","
+                  prefix=""
+                  suffix=" +<br/> Employee"
+                  onEnd={() => console.log("Ended! 👏")}
+                  onStart={() => console.log("Started! 💨")}
+                >
+                  {({ countUpRef, start }) => (
+                    <div>
+                      {/* <span
                       style={{ color: "#fff", fontWeight: "bold" }}
                       ref={countUpRef}
                     /> */}
-                    <Typography
-                      variant="h3"
-                      className="service-sec1-heading"
-                      style={{ fontWeight: "bold", textAlign: "center" }}
-                      ref={countUpRef}
-                    />
-                  </div>
-                )}
-              </CountUp>
+                      <Typography
+                        variant="h3"
+                        className="service-sec1-heading"
+                        style={{ fontWeight: "bold", textAlign: "center" }}
+                        ref={countUpRef}
+                      />
+                    </div>
+                  )}
+                </CountUp>
+              </Fade>
             </Grid>
           </Grid>
           <Grid
@@ -242,6 +280,7 @@ const Service = () => {
                       justifyContent: "center",
                       display: "flex",
                       alignItems: "center",
+                      transition: "transform 0.8s ease",
                     }}
                     className="service-sec1-cardmedia"
                     image={leader}
@@ -339,6 +378,7 @@ const Service = () => {
                       justifyContent: "center",
                       display: "flex",
                       alignItems: "center",
+                      transition: "transform 0.8s ease",
                     }}
                     className="service-sec1-cardmedia"
                     image={leader}
@@ -407,6 +447,7 @@ const Service = () => {
                       justifyContent: "center",
                       display: "flex",
                       alignItems: "center",
+                      transition: "transform 0.8s ease",
                     }}
                     className="service-sec1-cardmedia"
                     image={leader}
@@ -489,57 +530,66 @@ const Service = () => {
             className="service-sec4"
             style={{ marginTop: "5rem", marginBottom: "25px" }}
           >
-            <Typography
-              variant="h5"
-              className="service-sec4-heading1"
-              style={{ fontWeight: "bold", textAlign: "center" }}
-            >
-              Our Trust{" "}
-            </Typography>
-            <Typography
-              variant="h3"
-              className="service-sec4-heading2"
-              style={{
-                fontWeight: "800",
-                textAlign: "center",
-                marginTop: "15px",
-              }}
-            >
-              We're Trusted by Customers
-            </Typography>
-            <Typography
-              variant="body1"
-              className="service-sec4-heading3"
-              style={{
-                fontWeight: "800",
-                textAlign: "center",
-              }}
-            >
-              Think beyond expectation.
-            </Typography>
-            <Typography
-              variant="body1"
-              className="service-sec4-heading4"
-              style={{
-                fontWeight: "800",
-                textAlign: "center",
-                marginTop: "15px",
-              }}
-            >
-              Our customer share their experiences of transformation and growth.
-              Unfiltered feedback and the true testament to our service quality.
-            </Typography>
+            <Fade bottom>
+              <Typography
+                variant="h5"
+                className="service-sec4-heading1"
+                style={{ fontWeight: "bold", textAlign: "center" }}
+              >
+                Our Trust{" "}
+              </Typography>
+            </Fade>
+            <Fade bottom>
+              <Typography
+                variant="h3"
+                className="service-sec4-heading2"
+                style={{
+                  fontWeight: "800",
+                  textAlign: "center",
+                  marginTop: "15px",
+                }}
+              >
+                We're Trusted by Customers
+              </Typography>
+            </Fade>
+            <Fade bottom>
+              <Typography
+                variant="body1"
+                className="service-sec4-heading3"
+                style={{
+                  fontWeight: "800",
+                  textAlign: "center",
+                }}
+              >
+                Think beyond expectation.
+              </Typography>
+            </Fade>
+            <Fade bottom>
+              <Typography
+                variant="body1"
+                className="service-sec4-heading4"
+                style={{
+                  fontWeight: "800",
+                  textAlign: "center",
+                  marginTop: "15px",
+                }}
+              >
+                Our customer share their experiences of transformation and
+                growth. Unfiltered feedback and the true testament to our
+                service quality.
+              </Typography>
+            </Fade>
           </Grid>
           <Grid
             item
             container
             style={{ justifyContent: "center" }}
-            spacing={4}
+            // spacing={4}
             direction="row"
           >
             <Grid item sm={12} md={6} lg={5}>
-              <DemoPaper square={false}>
-                <Zoom>
+              <DemoPaper square={false} className="service-sec5-quality1">
+                <Fade bottom>
                   <Typography
                     variant="h5"
                     style={{
@@ -550,7 +600,7 @@ const Service = () => {
                   >
                     QUALITY POLICY
                   </Typography>
-                </Zoom>
+                </Fade>
                 <Bounce>
                   <Typography
                     variant="h6"
@@ -576,7 +626,7 @@ const Service = () => {
             </Grid>
             <Grid item sm={12} md={6} lg={5}>
               <DemoPaper className="service-sec5-quality2" square={false}>
-                <Zoom>
+                <Fade bottom>
                   <Typography
                     variant="h5"
                     style={{
@@ -587,7 +637,7 @@ const Service = () => {
                   >
                     QUALITY OBJECTIVES
                   </Typography>
-                </Zoom>
+                </Fade>
                 <Bounce>
                   <Typography
                     variant="h6"

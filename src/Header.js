@@ -88,7 +88,7 @@ const Header = () => {
           className="toolbar-header"
         >
           <Grid item container sm={12} md={12}>
-            <Grid item sm={3} xs={10} md={3}>
+            <Grid item sm={3} className="header-logo-box" xs={10} md={3}>
               <a href="">
                 <Button
                   // component={Link}

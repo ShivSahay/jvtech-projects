@@ -65,6 +65,14 @@
   background-color: rgba(24, 76, 161, 1) !important;
 }
 
+.contact-sec4-formbtn:hover {
+  box-shadow: none !important;
+  outline: 0 !important;
+  border: 0 !important;
+  color: rgba(255, 255, 255, 1) !important;
+  background-color: rgba(24, 76, 161, 1) !important;
+}
+
 @media (max-width: 1498px) {
   .contact-sec5-form-text1,
   .contact-sec5-touchbox-heading {

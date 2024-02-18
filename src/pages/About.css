@@ -8,9 +8,11 @@
 }
 .about-sec2 {
   background: #131120;
-  background: url("../../public/back1.svg") center -138px / 100% 1068px no-repeat,
+  /* background: url("../../public/back1.svg") center -138px / 100% 1068px no-repeat,
     linear-gradient(-45deg, rgb(48 20 83) -5%, rgb(240, 55, 166)) 50% 0
-      no-repeat;
+      no-repeat; */
+  background: #7da500
+    url("https://garden.pro-theme.info/wp-content/uploads/2015/09/tools-bg.png?id=26") !important;
 }
 .sec1-about-text1,
 .sec1-about-text2 {
@@ -19,21 +21,31 @@
   color: rgb(245, 131, 32);
   text-align: center;
 }
-.about-sec3-card{
+.about-sec3-card {
   display: flex;
   justify-content: center !important;
   margin-bottom: 40px !important;
 }
+.about-sec2-cardmedia {
+  opacity: 0.9;
+}
+.about-sec2-cardmedia:hover {
+  opacity: 1 !important;
+  h5,p{
+    /* color: transparent !important; */
+    opacity: 0.5;
+  }
+}
 
-@media (max-width:1536px){
-  .about-sec3-card-img{
+@media (max-width: 1536px) {
+  .about-sec3-card-img {
     width: 245px !important;
     height: 245px !important;
   }
 }
 
-@media (max-width:899px){
-  .about-sec3-card-img{
+@media (max-width: 899px) {
+  .about-sec3-card-img {
     width: 310px !important;
     height: 310px !important;
   }
@@ -55,20 +67,30 @@
     font-size: 2rem !important;
     /* color: #ffffff !important; */
   }
-  .about-sec3-heading{
+  .about-sec3-heading {
     margin-top: 1em !important;
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
   }
-  .about-sec3-card-container{
+  .about-sec3-card-container {
     padding: 25px !important;
   }
-  .about-sec3-card{
+  .about-sec3-card {
     display: flex;
     justify-content: center !important;
-    
   }
-  .about-sec3-card-img{
+  .about-sec3-card-img {
     height: 268px !important;
     width: 268px !important;
+  }
+  .about-sec4 {
+    padding: 25px !important;
+  }
+  .about-sec3-heading-box {
+    margin-top: 0px !important;
+    padding: 25px !important;
+  }
+  .aobut-sec3-quality,
+  .aobut-sec3-exp {
+    margin-top: 1rem !important;
   }
 }

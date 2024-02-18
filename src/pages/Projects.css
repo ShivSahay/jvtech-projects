@@ -12,9 +12,12 @@
   background: #7da500
     url("https://garden.pro-theme.info/wp-content/uploads/2015/09/tools-bg.png?id=26") !important;
 }
-
+.project-sec2-card1{
+  opacity: 0.8;
+}
 .project-sec2-card1:hover {
   transform: scale(1.05);
+  opacity: 1 !important;
 }
 
 .project-sec2-heading1,
