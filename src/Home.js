@@ -41,7 +41,7 @@ import { Fade, Roll } from "react-reveal";
 const testimonialsData = [
   {
     id: 1,
-    name: "INSECTICIDES INDIA PVT LTD AZADPUR DELHI",
+    name: "Insecticides India Pvt. Ltd. Azadpur Delhi",
     designation: "Plumbing Work",
     image: image1,
     message:
@@ -49,7 +49,7 @@ const testimonialsData = [
   },
   {
     id: 2,
-    name: "RADHEY BIO.TECH PVT. LTD. (KAMDHENU GROUP)",
+    name: "Radhey Bio.Tech Pvt. Ltd. (Kamdhenu Group)",
     designation: "Plumbing Work",
     image: image2,
     message:
@@ -57,7 +57,7 @@ const testimonialsData = [
   },
   {
     id: 3,
-    name: "SLEEK BRAKE PRODUCTS (SAMPLA BAHADURGRAHHARYANA)",
+    name: "Sleek Brake Products (Sampla Bahadurgrah Haryana)",
     designation: "Fire Figgting Work",
     image: image3,
     message:
@@ -65,7 +65,7 @@ const testimonialsData = [
   },
   {
     id: 4,
-    name: "SACHADEVA POLYCOLOR PVT LTD (MET CITY JHAJJAR HARYANA)",
+    name: "Sachadeva Polycolor Pvt. Ltd. (Met City Jhajjar Haryana)",
     designation: "Fire Figgting & Alarm System",
     image: image4,
     message:
@@ -73,7 +73,7 @@ const testimonialsData = [
   },
   {
     id: 5,
-    name: "HOLISTER MEDICAL INDIA PVT LTD (HSIID GROWTH BAWAL HARYNANA)",
+    name: "Holister Mediacl India Pvt. Ltd. (Hssid Growth Bawal Haryana)",
     designation: "Fire Figgting Work",
     image: image5,
     message:
