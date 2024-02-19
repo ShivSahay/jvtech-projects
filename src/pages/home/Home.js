@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Header from "./Header";
-import Sidebar from "./Sidebar";
 import {
   Button,
   Card,
-  CardActions,
   CardContent,
   CardMedia,
   Grid,
@@ -12,31 +9,30 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import { Container, Paper } from "@mui/material";
+import { Paper } from "@mui/material";
 import "./Home.css";
-import Footer from "./Footer";
-import { Link } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import FeatureSection from "./components/FeatureSection";
-import AboutSection from "./components/AboutSection";
+import FeatureSection from "../../components/FeatureSection";
+import AboutSection from "../../components/AboutSection";
 import Zoom from "react-reveal/Zoom";
-import image1 from "./images/1.jpeg";
-import image2 from "./images/2.jpeg";
-import image3 from "./images/3.jpeg";
-import image4 from "./images/4.jpeg";
-import image5 from "./images/5.jpeg";
-import image6 from "./images/6.jpeg";
-import image7 from "./images/7.jpeg";
-import image8 from "./images/8.jpeg";
-import image9 from "./images/9.jpeg";
-import image10 from "./images/10.jpeg";
-import image11 from "./images/11.jpeg";
-import image12 from "./images/12.jpeg";
-import image13 from "./images/13.jpeg";
-import image14 from "./images/14.jpeg";
-import image15 from "./images/15.jpeg";
+import image1 from "../../images/1.jpeg";
+import image2 from "../../images/2.jpeg";
+import image3 from "../../images/3.jpeg";
+import image4 from "../../images/4.jpeg";
+import image5 from "../../images/5.jpeg";
+import image6 from "../../images/6.jpeg";
+import image7 from "../../images/7.jpeg";
+import image8 from "../../images/8.jpeg";
+import image9 from "../../images/9.jpeg";
+import image10 from "../../images/10.jpeg";
+import image11 from "../../images/11.jpeg";
+import image12 from "../../images/12.jpeg";
+import image13 from "../../images/13.jpeg";
+import image14 from "../../images/14.jpeg";
+import image15 from "../../images/15.jpeg";
 import { Fade, Roll } from "react-reveal";
 const testimonialsData = [
   {
@@ -81,36 +77,6 @@ const testimonialsData = [
   },
   // Add more testimonials as needed
 ];
-
-// const Testimonials = () => {
-//   return (
-//     <Container
-//       style={{
-//         // display: "flex",
-//         justifyContent: "space-around",
-//         alignItems: "center",
-//         minHeight: "300px",
-//         spacing: "2",
-//       }}
-//     >
-//       <Slider {...settings}>
-//         {testimonialsData.map((testimonial, index) => (
-//           <Paper
-//             key={index}
-//             elevation={3}
-//             style={{ padding: 3, textAlign: "center" }}
-//           >
-//             <Typography variant="body1">{testimonial.message}</Typography>
-//             <div>
-//               <Typography variant="h6">{testimonial.name}</Typography>
-//               <Typography variant="subtitle2">{testimonial.designation}</Typography>
-//             </div>
-//           </Paper>
-//         ))}
-//       </Slider>
-//     </Container>
-//   );
-// };
 
 const Testimonials = ({ testimonial }) => {
   const theme = useTheme();
@@ -162,10 +128,7 @@ const Testimonials = ({ testimonial }) => {
       >
         {testimonialsData.map((item, index) => (
           <Grid item xs={12} sm={11} key={index}>
-            <Card
-              // key={index}
-              style={{ maxWidth: 400, width: "100%" }}
-            >
+            <Card style={{ maxWidth: 400, width: "100%" }}>
               <Zoom>
                 <CardMedia
                   style={{ height: 240 }}
@@ -196,7 +159,6 @@ const Testimonials = ({ testimonial }) => {
   );
 };
 
-// ==========================>
 const images = [
   "firesystem.jpg",
   "safetyfirst.jpg",
@@ -649,7 +611,6 @@ const Home = () => {
           </Grid>
         </Grid>
 
-        {/* Last add */}
         <Grid
           item
           container
@@ -658,9 +619,6 @@ const Home = () => {
           className="home-sec5"
           style={{
             minHeight: "450px",
-            // background:
-            // " linear-gradient(94.64deg, #B023C2 -0.12%, #680DE4 99.52%)",
-            // background: "#926CB3",
             background: "#ffffff",
             padding: "2rem",
           }}
@@ -704,8 +662,6 @@ const Home = () => {
           className="landing-sec5"
           style={{
             padding: "2rem",
-            // background: "#926CF3",
-            // background: "#f7c7e1",
           }}
           xs={12}
         >
@@ -724,8 +680,6 @@ const Home = () => {
           </Fade>
           <FeatureSection />
         </Grid>
-
-        {/* <Grid className="home-container1">hiuhu</Grid> */}
         <Footer />
       </div>
     </>

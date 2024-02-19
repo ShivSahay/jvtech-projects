@@ -1,4 +1,3 @@
-// FeatureSection.js
 import React from "react";
 import { Container, Grid, Paper, Typography } from "@mui/material";
 import { Fade, Zoom } from "react-reveal";

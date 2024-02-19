@@ -5,19 +5,16 @@ import {
   CardContent,
   CardMedia,
   Grid,
-  Stack,
   Typography,
 } from "@mui/material";
 import "./Service.css";
-import Footer from "../Footer";
-import AboutSection from "../components/AboutSection";
+import Footer from "../../components/Footer/Footer";
 import Zoom from "react-reveal/Zoom";
 import CountUp from "react-countup";
-import leader from "../images/7.jpeg";
+import leader from "../../images/7.jpeg";
 import { Bounce, Fade, Roll } from "react-reveal";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import StarIcon from "@mui/icons-material/Star";
@@ -41,7 +38,6 @@ const ServiceCard = ({ title, description, imageUrl }) => {
 const DemoPaper = styled(Paper)(({ theme }) => ({
   width: "95%",
   height: 520,
-  // background: "#EC3737",
   background: "rgb(8 9 10 / 40%)",
   padding: theme.spacing(2),
   ...theme.typography.body2,
@@ -138,15 +134,16 @@ const Service = () => {
                   marginTop: "15px",
                 }}
               >
-                Welcome to Astream, where we offer a comprehensive range of
-                online web services to elevate your digital presence and drive
-                your success in the virtual realm. Our team of skilled experts
-                is dedicated to providing cutting-edge solutions tailored to
-                your unique needs. We pride ourselves on a customer-centric
-                approach, focusing on delivering top-quality services that
-                exceed expectations. Partner with us to unlock your digital
-                potential and embark on a journey of growth and success in the
-                ever-evolving digital landscape.
+                Welcome to J.V. Tech Enginrres, where we offer a comprehensive
+                range of Integrate automatic fire suppression systems that can
+                quickly detect and extinguish fires before they escalate. This
+                might involve installing sprinkler systems, foam generators, or
+                chemical suppressants that activate automatically upon detection
+                of fire.and Employ predictive analytics and machine learning
+                algorithms to analyze historical fire data, weather patterns,
+                and geographical features to assess and mitigate fire risks.
+                This can help identify vulnerable areas and prioritize
+                preventive measures.
               </Typography>
             </Fade>
           </Grid>
@@ -193,11 +190,11 @@ const Service = () => {
             >
               <Fade bottom>
                 <CountUp
-                  start={0.1}
-                  end={8}
-                  duration={5.75}
+                  start={0}
+                  end={15}
+                  duration={8.75}
                   separator=" "
-                  decimals={2}
+                  decimals={0}
                   decimal=","
                   prefix=""
                   suffix=" + <br/> Project"
@@ -229,11 +226,11 @@ const Service = () => {
             >
               <Fade bottom>
                 <CountUp
-                  start={0.1}
-                  end={1}
-                  duration={1.75}
+                  start={1}
+                  end={50}
+                  duration={5.75}
                   separator=" "
-                  decimals={2}
+                  decimals={0}
                   decimal=","
                   prefix=""
                   suffix=" +<br/> Employee"

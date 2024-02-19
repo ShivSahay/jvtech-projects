@@ -1,32 +1,28 @@
-// AboutUsPage.js
 import React from "react";
 import {
-  Container,
   Typography,
-  Paper,
   Grid,
   Card,
-  CardContent,
   CardMedia,
 } from "@mui/material";
-import Header from "../Header";
+import Header from "../../components/Header/Header";
 import "./Projects.css";
-import Footer from "../Footer";
+import Footer from "../../components/Footer/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Fade, Roll, Zoom } from "react-reveal";
-import image1 from "../images/1.jpeg";
-import image2 from "../images/2.jpeg";
-import image3 from "../images/3.jpeg";
-import image4 from "../images/4.jpeg";
-import image5 from "../images/5.jpeg";
-import image6 from "..//images/6.jpeg";
-import image7 from "../images/7.jpeg";
-import image8 from "../images/8.jpeg";
-import image9 from "../images/9.jpeg";
-import image10 from "../images/10.jpeg";
-import image11 from "../images/11.jpeg";
-import projectsec1img from "../images/projectsec1img.jpeg";
+import image1 from "../../images/1.jpeg";
+import image2 from "../../images/2.jpeg";
+import image3 from "../../images/3.jpeg";
+import image4 from "../../images/4.jpeg";
+import image5 from "../../images/5.jpeg";
+import image6 from "../../images/6.jpeg";
+import image7 from "../../images/7.jpeg";
+import image8 from "../../images/8.jpeg";
+import image9 from "../../images/9.jpeg";
+import image10 from "../../images/10.jpeg";
+import image11 from "../../images/11.jpeg";
+import projectsec1img from "../../images/projectsec1img.jpeg";
 const ProjectPage = () => {
   return (
     <>
@@ -65,7 +61,7 @@ const ProjectPage = () => {
               }}
             >
               Our Projects
-              <hr style={{fontSize:"12px"}}/>
+              <hr style={{ fontSize: "12px" }} />
             </Typography>
           </Fade>
           <Grid item container style={{ justifyContent: "space-around" }}>
@@ -1294,7 +1290,6 @@ const ProjectPage = () => {
                   className="project-sec2-heading3"
                   style={{
                     fontWeight: "800",
-                    // textAlign: "center",
                   }}
                 >
                   Plumbing Work
@@ -1304,7 +1299,6 @@ const ProjectPage = () => {
                   className="project-sec2-heading4"
                   style={{
                     fontWeight: "400",
-                    // textAlign: "center",
                     marginLeft: "15px",
                   }}
                 >
@@ -1320,11 +1314,9 @@ const ProjectPage = () => {
                   className="project-sec2-heading3"
                   style={{
                     fontWeight: "800",
-                    // textAlign: "center",
                     marginTop: "15px",
                   }}
                 >
-                  {/* RESEARCH & DEVELOPMENT */}
                   Insecticides INDIA Ltd
                 </Typography>
                 <Typography
@@ -1332,7 +1324,6 @@ const ProjectPage = () => {
                   className="project-sec2-heading4"
                   style={{
                     fontWeight: "400",
-                    // textAlign: "center",
                     marginLeft: "15px",
                   }}
                 >

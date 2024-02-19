@@ -29,13 +29,11 @@ import { useLocation } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 import "./Header.css";
-// import image from '../../public/'
 const Header = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const [selectedTab, setSelectedTab] = useState(0);
   let location = useLocation();
-  console.log("location =>", location);
 
   const handleTabChange = (event, newValue) => {
     console.log("newValue", newValue);
@@ -79,10 +77,8 @@ const Header = () => {
       <AppBar position="sticky">
         <Toolbar
           style={{
-            // background: "#f58320",
             background:
               "repeating-linear-gradient(135deg,#f96702,#ff8400 2px,#f96702 2px,#f96702 10px)",
-            // background:"linear-gradient(-45deg, rgba(31,164,30,255) -5%, rgba(245,131,32,255))",
             minHeight: "95px",
           }}
           className="toolbar-header"
@@ -91,14 +87,11 @@ const Header = () => {
             <Grid item sm={3} className="header-logo-box" xs={10} md={3}>
               <a href="">
                 <Button
-                  // component={Link}
-                  // to="/"
                   disableRipple
                   className="header-logo"
                   style={{
                     position: "relative",
                     padding: "0px",
-                    // marginLeft: "75px",
                     textTransform: "none",
 
                     "&:hover": {
@@ -158,7 +151,6 @@ const Header = () => {
                       className={`header-link`}
                       style={{
                         color: "#fff",
-                        // textTransform: "none",
                         fontSize: "1.25rem",
                         fontWeight: "bold",
                         textTransform: "uppercase",

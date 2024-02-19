@@ -1,33 +1,11 @@
 import React, { useState } from "react";
-import {
-  Box,
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Grid,
-  Stack,
-  Typography,
-  TextField,
-} from "@mui/material";
+import { Box, Button, Card, Grid, Typography, TextField } from "@mui/material";
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
 import "./Contact.css";
-import Footer from "../Footer";
-import AboutSection from "../components/AboutSection";
+import Footer from "../../components/Footer/Footer";
 import Zoom from "react-reveal/Zoom";
-import CountUp from "react-countup";
-import leader from "../images/7.jpeg";
-import { Bounce, Fade, Roll } from "react-reveal";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import StarIcon from "@mui/icons-material/Star";
-import Paper from "@mui/material/Paper";
-import { styled } from "@mui/material/styles";
+import { Fade } from "react-reveal";
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import EmailIcon from "@mui/icons-material/Email";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
@@ -36,8 +14,7 @@ import GoogleMapReact from "google-map-react";
 import SaveIcon from "@mui/icons-material/Save";
 import SendIcon from "@mui/icons-material/Send";
 import LoadingButton from "@mui/lab/LoadingButton";
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
-const Service = () => {
+const ContactUs = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -546,9 +523,9 @@ const Service = () => {
                   color: "#ffffff",
                 }}
               >
-                Plot No: C-65 <br /> Opposite District Court
-                <br /> Sec- 13, Noida
-                <br /> Distt. - G B Nagar, U.P.
+                Gola Road, Danapur <br /> Sadarpur Noida,
+                <br /> Noida Gautam Buddha Nagar,
+                <br /> State: Utter Pradesh,201303
                 <br /> Phone No: +91 9990314859
                 <br /> Contact Person Name - Mr. Vipin Pal Singh
               </Typography>
@@ -807,6 +784,7 @@ const Service = () => {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7005.587118621671!2d77.35287514604997!3d28.605969352716762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce56cf11a7011%3A0x49d7576acb82fa23!2sSector%2058%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1708073079841!5m2!1sen!2sin"
               width="100%"
               height="450"
+              title="j.v. tech engineer google map contact"
               style={{ border: 0 }}
               allowfullscreen=""
               loading="lazy"
@@ -820,53 +798,4 @@ const Service = () => {
   );
 };
 
-export default Service;
-
-// import React, { useState } from 'react';
-
-// const ContactForm = () => {
-//   const [name, setName] = useState('');
-//   const [email, setEmail] = useState('');
-//   const [message, setMessage] = useState('');
-
-// return (
-//   <Grid container spacing={2}>
-//     <Grid item xs={12}>
-//       <TextField
-//         label="Name"
-//         variant="outlined"
-//         fullWidth
-//         value={name}
-//         onChange={(e) => setName(e.target.value)}
-//       />
-//     </Grid>
-//     <Grid item xs={12}>
-//       <TextField
-//         label="Email"
-//         variant="outlined"
-//         fullWidth
-//         value={email}
-//         onChange={(e) => setEmail(e.target.value)}
-//       />
-//     </Grid>
-//     <Grid item xs={12}>
-//       <TextField
-//         label="Message"
-//         variant="outlined"
-//         multiline
-//         rows={4}
-//         fullWidth
-//         value={message}
-//         onChange={(e) => setMessage(e.target.value)}
-//       />
-//     </Grid>
-//     <Grid item xs={12}>
-//       <Button variant="contained" color="primary" onClick={handleFormSubmit}>
-//         Submit
-//       </Button>
-//     </Grid>
-//   </Grid>
-// );
-// };
-
-// export default ContactForm;
+export default ContactUs;

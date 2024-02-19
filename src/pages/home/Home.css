@@ -11,13 +11,8 @@
 .home-sec2 {
   display: flex;
   justify-content: center;
-  /* height: 80vh; */
   width: 100%;
   background: #131120;
-  /* background: url("../public/back1.svg") center -138px / 100% 1068px no-repeat,
-    linear-gradient(-45deg, rgb(48 20 83) -5%, rgb(240, 55, 166)) 50% 0
-      no-repeat;
-  background-repeat: repeat-y; /* rgb(83,43,20) */
   background: #7da500
     url("https://garden.pro-theme.info/wp-content/uploads/2015/09/tools-bg.png?id=26") !important;
 }

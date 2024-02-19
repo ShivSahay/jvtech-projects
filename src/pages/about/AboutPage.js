@@ -1,30 +1,27 @@
-// AboutUsPage.js
 import React from "react";
 import {
   Container,
   Typography,
-  Paper,
   Grid,
   Card,
   CardContent,
   CardMedia,
   Button,
 } from "@mui/material";
-import Header from "../Header";
 import "./About.css";
-import Footer from "../Footer";
+import Footer from "../../components/Footer/Footer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Fade, Zoom } from "react-reveal";
-import image1 from "../images/1.jpeg";
-import image2 from "../images/2.jpeg";
-import image3 from "../images/3.jpeg";
-import image4 from "../images/4.jpeg";
-import image5 from "../images/5.jpeg";
-import jitendra from "..//images/jitendra.jpeg";
-import shiv from "../images/shiv.jpeg";
-import leader from "../images/leader.jpeg";
+import image1 from "../../images/1.jpeg";
+import image2 from "../../images/2.jpeg";
+import image3 from "../../images/3.jpeg";
+import image4 from "../../images/4.jpeg";
+import image5 from "../../images/5.jpeg";
+import jitendra from "../..//images/jitendra.jpeg";
+import shiv from "../../images/shiv.jpeg";
+import leader from "../../images/leader.jpeg";
 const AboutPage = () => {
   const testimonials = [
     {
@@ -59,7 +56,6 @@ const AboutPage = () => {
     };
 
     return (
-      // <Container maxWidth="lg">
       <Slider {...settings}>
         {testimonials.map((testimonial, index) => (
           <div key={index}>
@@ -117,7 +113,6 @@ const AboutPage = () => {
           </div>
         ))}
       </Slider>
-      // </Container>
     );
   };
 
@@ -144,8 +139,6 @@ const AboutPage = () => {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            // background: "rgb(146, 108, 243)",
-            // background:"linear-gradient(94.64deg, #B023C2 -0.12%, #680DE4 99.52%)",
             width: "100%",
             padding: "60px",
           }}
@@ -222,7 +215,7 @@ const AboutPage = () => {
               justifyContent: "space-around",
             }}
           >
-            <Grid item style={{ marginBottom: "2em" }} sm={12}>
+            <Grid item style={{ marginBottom: "2em" }} sm={12} md={10}>
               <Fade bottom>
                 <Typography
                   variant="h5"
@@ -246,8 +239,11 @@ const AboutPage = () => {
                     marginTop: "15px",
                   }}
                 >
-                  Nam lobortis fringilla felis. Fusce vol utpat urna cras ut nec
-                  quam vitae turpis
+                  Take the time to understand your customers' needs and Strive
+                  for excellence in everything you do. Maintain high standards
+                  of quality in your products or services.and also Experiment
+                  with new ideas, processes, and business models to drive growth
+                  and competitive advantage.
                 </Typography>
               </Fade>
             </Grid>
@@ -399,33 +395,10 @@ const AboutPage = () => {
               </Fade>
             </Grid>
           </Grid>
-          {/* <Grid
-            item
-            sm={12}
-            style={{ display: "flex", justifyContent: "center" }}
-          >
-            <Button
-              style={{
-                background: "rgba(5, 154, 130, 1)",
-                color: "#ffffff",
-                width: "268px",
-                borderRadius: "10rem",
-                fontSize: "22px",
-                textTransform: "capitalize",
-                padding: "20px",
-                transition: "all .3s",
-                content: "",
-              }}
-              className="about-sec4-btn"
-            >
-              Contact US
-            </Button>
-          </Grid> */}
         </Grid>
         <Grid
           item
           container
-          // direction="column"
           alignItems="center"
           justifyContent="center"
           className="about-sec3"
@@ -434,7 +407,6 @@ const AboutPage = () => {
             background:
               "linear-gradient(-45deg, rgba(31,164,30,255) -5%, rgba(245,131,32,255))",
           }}
-          // sm={12}
         >
           <Grid
             item
@@ -484,7 +456,6 @@ const AboutPage = () => {
               rowGap: "3",
               justifyContent: "space-evenly",
               alignItems: "center",
-              // marginBottom: "80px",
               padding: "60px",
             }}
           >
@@ -539,10 +510,7 @@ const AboutPage = () => {
               lg={3}
               className="about-sec3-card"
             >
-              <Card
-                // key={index}
-                style={{ maxWidth: 400, width: "100%" }}
-              >
+              <Card style={{ maxWidth: 400, width: "100%" }}>
                 <Zoom>
                   <CardMedia
                     style={{
@@ -552,21 +520,21 @@ const AboutPage = () => {
                       margin: "20px auto",
                     }}
                     className="about-sec3-card-img"
-                    image={shiv}
+                    image={leader}
                     title="Image1"
                   />
                 </Zoom>
                 <CardContent style={{ textAlign: "center" }}>
                   <Zoom>
                     <Typography variant="h6" component="div">
-                      Shiv Pandey
+                      ABC
                     </Typography>
                     <Typography
                       variant="h6"
                       style={{ fontWeight: "bold" }}
                       color="text.secondary"
                     >
-                      Software Engineer
+                      Team Manager
                     </Typography>
                     <Typography variant="body1" color="text.secondary">
                       “To me, business isn’t about wearing suits . It’s about
@@ -585,10 +553,7 @@ const AboutPage = () => {
               lg={3}
               className="about-sec3-card"
             >
-              <Card
-                // key={index}
-                style={{ maxWidth: 400, width: "100%" }}
-              >
+              <Card style={{ maxWidth: 400, width: "100%" }}>
                 <Zoom>
                   <CardMedia
                     style={{
@@ -625,7 +590,6 @@ const AboutPage = () => {
             </Grid>
           </Grid>
         </Grid>
-
         <Footer />
       </Grid>
     </>

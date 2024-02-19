@@ -64,17 +64,14 @@ textarea:-webkit-autofill:hover {
   height: 800px;
   width: 100%;
   background: #ddedff;
-  background: url("../../src//images/contactus2.jpg") 50% 0 no-repeat;
-  /* display: flex; */
+  background: url("../../../src//images/contactus2.jpg") 50% 0 no-repeat;
   justify-content: center;
-  /* align-items: center; */
   background-size: cover;
   padding-top: 220px;
 }
 .sec1-service-text1,
 .sec1-service-text2 {
   font-weight: 800 !important;
-  /* color: #de0933; */
   color: rgb(245, 131, 32);
   text-align: center;
 }
