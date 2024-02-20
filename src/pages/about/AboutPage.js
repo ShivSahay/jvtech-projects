@@ -19,7 +19,7 @@ import image2 from "../../images/2.jpeg";
 import image3 from "../../images/3.jpeg";
 import image4 from "../../images/4.jpeg";
 import image5 from "../../images/5.jpeg";
-import jitendra from "../..//images/jitendra.jpeg";
+import jitendra from "../..//images/jitendra.jpg";
 import shiv from "../../images/shiv.jpeg";
 import leader from "../../images/leader.jpeg";
 const AboutPage = () => {
@@ -577,7 +577,7 @@ const AboutPage = () => {
                       style={{ fontWeight: "bold" }}
                       color="text.secondary"
                     >
-                      Devops Engineer
+                      Engineer
                     </Typography>
                     <Typography variant="body1" color="text.secondary">
                       “A man must be big enough to admit his mistakes, smart
