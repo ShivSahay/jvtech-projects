@@ -77,12 +77,12 @@ const ContactUs = () => {
       <Grid item container>
         <Grid className="contact-sec1">
           <Zoom>
-            <Typography className="sec1-service-text1" variant="h2">
+            <Typography className="sec1-contact-text1" variant="h2">
               Contact Information of
             </Typography>
           </Zoom>
           <Zoom>
-            <Typography className="sec1-service-text2" variant="h4">
+            <Typography className="sec1-contact-text2" variant="h4">
               J.V.TECH ENGINEERS
             </Typography>
           </Zoom>

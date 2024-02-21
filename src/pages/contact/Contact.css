@@ -1,10 +1,10 @@
-.MuiInputBase-input{
+.MuiInputBase-input {
   color: #ffffff !important;
 }
-.MuiInputLabel-formControl{
+.MuiInputLabel-formControl {
   color: #ffffff !important;
 }
-.MuiOutlinedInput-notchedOutline{
+.MuiOutlinedInput-notchedOutline {
   border: 1px solid #ffffff !important;
   opacity: 0.5;
 }
@@ -69,8 +69,8 @@ textarea:-webkit-autofill:hover {
   background-size: cover;
   padding-top: 220px;
 }
-.sec1-service-text1,
-.sec1-service-text2 {
+.sec1-contact-text1,
+.sec1-contact-text2 {
   font-weight: 800 !important;
   color: rgb(245, 131, 32);
   text-align: center;
@@ -120,6 +120,9 @@ textarea:-webkit-autofill:hover {
   }
 }
 @media (max-width: 599px) {
+  .sec1-contact-text1 {
+    font-size: 3rem !important;
+  }
   .contact-sec1 {
     height: 85vh !important;
   }
@@ -145,7 +148,7 @@ textarea:-webkit-autofill:hover {
     gap: 30px !important;
     padding: 30px 25px !important;
   }
-  .contact-sec5-form-btn{
+  .contact-sec5-form-btn {
     display: flex !important;
     justify-content: center !important;
   }
