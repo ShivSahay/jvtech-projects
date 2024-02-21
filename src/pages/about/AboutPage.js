@@ -86,6 +86,7 @@ const AboutPage = () => {
                 <Fade bottom>
                   <Typography
                     variant="h5"
+                    className="about-sec2-cardmedia-text"
                     style={{
                       color: "#ffffff",
                       fontWeight: "bolder",
@@ -98,6 +99,7 @@ const AboutPage = () => {
                 <Fade bottom>
                   <Typography
                     variant="body1"
+                    className="about-sec2-cardmedia-content"
                     style={{
                       color: "#ffffff",
                       fontWeight: "bolder",

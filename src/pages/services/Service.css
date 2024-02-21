@@ -21,13 +21,13 @@
 .service-sec1-heading {
   color: #ffffff;
 }
-.service-sec1-cardmedia{
+.service-sec1-cardmedia {
   opacity: 0.8;
 }
 .service-sec1-cardmedia:hover {
   transform: scale(1.05);
   opacity: 1 !important;
-  h5{
+  h5 {
     opacity: 0.7;
   }
 }
@@ -84,8 +84,11 @@
   .service-sec5-quality2 {
     height: 700px !important;
   }
-
-  .service-sec5-quality1,.service-sec5-quality2{
+  .service-sec5-quality1 {
+    height: 550px !important;
+  }
+  .service-sec5-quality1,
+  .service-sec5-quality2 {
     width: auto !important;
   }
   .service-sec4-heading2 {

@@ -100,9 +100,6 @@
   .home-sec2-card3 {
     margin: 0px 0px 5rem 0px !important;
   }
-  .home-sec2-card .home-sec2-card-media {
-    height: 60% !important;
-  }
 }
 
 @media (max-width: 768px) {
@@ -164,5 +161,8 @@
   }
   .home-sec2-card {
     min-height: 54vh !important;
+  }
+  .home-sec3-testomonial{
+    padding: 0px !important;
   }
 }

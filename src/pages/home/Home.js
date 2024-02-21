@@ -646,7 +646,7 @@ const Home = () => {
             justifyContent="center"
             alignItems="center"
             className="landing-sec5-btn-grid"
-            spacing={3}
+            // spacing={3}
             sm={6}
             style={{ marginTop: "30px", marginBottom: "20px" }}
           >

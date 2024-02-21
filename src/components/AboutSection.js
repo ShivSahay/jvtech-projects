@@ -13,7 +13,7 @@ import { Fade } from "react-reveal";
 
 const AboutSection = () => {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" style={{padding:"0px"}}>
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Card>
