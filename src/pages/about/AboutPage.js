@@ -480,7 +480,7 @@ const AboutPage = () => {
                     }}
                     className="about-sec3-card-img"
                     image={leader}
-                    title="Image1"
+                    title="CEO & Co-Founder"
                   />
                 </Zoom>
                 <CardContent style={{ textAlign: "center" }}>
@@ -523,7 +523,7 @@ const AboutPage = () => {
                     }}
                     className="about-sec3-card-img"
                     image={leader}
-                    title="Image1"
+                    title="Team Manager"
                   />
                 </Zoom>
                 <CardContent style={{ textAlign: "center" }}>
@@ -566,7 +566,7 @@ const AboutPage = () => {
                     }}
                     className="about-sec3-card-img"
                     image={jitendra}
-                    title="Image1"
+                    title="Engineer"
                   />
                 </Zoom>
                 <CardContent style={{ textAlign: "center" }}>
