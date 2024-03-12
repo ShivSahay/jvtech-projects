@@ -19,7 +19,7 @@ const actions = [
   {
     icon: <InstagramIcon style={{ color: "rgb(31, 164, 30)" }} />,
     name: "Instagram",
-    link: "https://www.instagram.com/pandit_himanshu_mishra_up45/",
+    link: "https://www.instagram.com/jvtechengineers/",
   },
   {
     icon: <FacebookOutlinedIcon style={{ color: "rgb(31, 164, 30)" }} />,

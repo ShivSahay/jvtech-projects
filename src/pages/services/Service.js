@@ -12,6 +12,8 @@ import Footer from "../../components/Footer/Footer";
 import Zoom from "react-reveal/Zoom";
 import CountUp from "react-countup";
 import leader from "../../images/7.jpeg";
+import servicesec3img1 from "../../images/Pumproom.jpg";
+import servicesec3img3 from "../../images/5.jpeg";
 import { Bounce, Fade, Roll } from "react-reveal";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
@@ -280,7 +282,7 @@ const Service = () => {
                       transition: "transform 0.8s ease",
                     }}
                     className="service-sec1-cardmedia"
-                    image={leader}
+                    image={servicesec3img1}
                     title="Image1"
                   >
                     <Typography
@@ -378,7 +380,7 @@ const Service = () => {
                       transition: "transform 0.8s ease",
                     }}
                     className="service-sec1-cardmedia"
-                    image={leader}
+                    image={servicesec3img3}
                     title="Image1"
                   >
                     <Typography

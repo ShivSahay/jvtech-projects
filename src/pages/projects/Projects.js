@@ -22,7 +22,6 @@ import image8 from "../../images/8.jpeg";
 import image9 from "../../images/9.jpeg";
 import image10 from "../../images/10.jpeg";
 import image11 from "../../images/11.jpeg";
-import projectsec1img from "../../images/projectsec1img.jpeg";
 const ProjectPage = () => {
   return (
     <>

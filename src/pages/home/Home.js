@@ -33,6 +33,7 @@ import image12 from "../../images/12.jpeg";
 import image13 from "../../images/13.jpeg";
 import image14 from "../../images/14.jpeg";
 import image15 from "../../images/15.jpeg";
+import servicesec3img2   from "../../images/servicesec3img2.jpeg";
 import { Fade, Roll } from "react-reveal";
 const testimonialsData = [
   {
@@ -251,7 +252,7 @@ const Home = () => {
                 >
                   <CardMedia
                     sx={{ height: "55%" }}
-                    image={image6}
+                    image={image13}
                     className="home-sec2-card-media"
                   />
                   <CardContent>
@@ -407,7 +408,7 @@ const Home = () => {
                 >
                   <CardMedia
                     sx={{ height: "55%" }}
-                    image={image9}
+                    image={servicesec3img2}
                     className="home-sec2-card-media"
                   />
                   <CardContent>
