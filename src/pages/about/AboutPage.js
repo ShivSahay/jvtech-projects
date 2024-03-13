@@ -522,21 +522,21 @@ const AboutPage = () => {
                       margin: "20px auto",
                     }}
                     className="about-sec3-card-img"
-                    image={leader}
+                    image={shiv}
                     title="Team Manager"
                   />
                 </Zoom>
                 <CardContent style={{ textAlign: "center" }}>
                   <Zoom>
                     <Typography variant="h6" component="div">
-                      ABC
+                      Shiv Pandey
                     </Typography>
                     <Typography
                       variant="h6"
                       style={{ fontWeight: "bold" }}
                       color="text.secondary"
                     >
-                      Team Manager
+                      Software Engineer
                     </Typography>
                     <Typography variant="body1" color="text.secondary">
                       “To me, business isn’t about wearing suits . It’s about

@@ -14,7 +14,7 @@ const actions = [
   {
     icon: <WhatsAppIcon style={{ color: "rgb(31, 164, 30)" }} />,
     name: "Whatsapp",
-    link: "http://api.whatsapp.com/",
+    link: "https://wa.me/+91 9990314859",
   },
   {
     icon: <InstagramIcon style={{ color: "rgb(31, 164, 30)" }} />,
