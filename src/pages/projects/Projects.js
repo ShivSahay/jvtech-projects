@@ -65,7 +65,7 @@ const ProjectPage = () => {
           </Fade>
           <Grid item container style={{ justifyContent: "space-around" }}>
             <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
-              <Roll>
+              <Zoom>
                 <Card
                   className="project-sec2-card1"
                   style={{
@@ -85,7 +85,7 @@ const ProjectPage = () => {
                     image={image1}
                   />
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
             <Grid
               item
@@ -265,7 +265,7 @@ const ProjectPage = () => {
               </Fade>
             </Grid>
             <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
-              <Roll>
+              <Zoom>
                 <Card
                   className="project-sec2-card1"
                   style={{
@@ -285,7 +285,7 @@ const ProjectPage = () => {
                     image={image2}
                   />
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
           </Grid>
           <Grid
@@ -294,7 +294,7 @@ const ProjectPage = () => {
             style={{ marginTop: "3rem", justifyContent: "space-around" }}
           >
             <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
-              <Roll>
+              <Zoom>
                 <Card
                   className="project-sec2-card1"
                   style={{
@@ -314,7 +314,7 @@ const ProjectPage = () => {
                     image={image3}
                   />
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
             <Grid
               item
@@ -497,7 +497,7 @@ const ProjectPage = () => {
               </Fade>
             </Grid>
             <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
-              <Roll>
+              <Zoom>
                 <Card
                   className="project-sec2-card1"
                   style={{
@@ -517,7 +517,7 @@ const ProjectPage = () => {
                     image={image4}
                   />
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
           </Grid>
           <Grid
@@ -526,7 +526,7 @@ const ProjectPage = () => {
             style={{ marginTop: "3rem", justifyContent: "space-around" }}
           >
             <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
-              <Roll>
+              <Zoom>
                 <Card
                   className="project-sec2-card1"
                   style={{
@@ -546,7 +546,7 @@ const ProjectPage = () => {
                     image={image5}
                   />
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
             <Grid
               item
@@ -623,7 +623,7 @@ const ProjectPage = () => {
                     marginLeft: "15px",
                   }}
                 >
-                  Our lab is equipped with Two Roll Mills, Injection & Blow
+                  Our lab is equipped with Two Zoom Mills, Injection & Blow
                   Moulding, Film Pilot Plant, MFI Tester, Spectrophotometers,
                   Carbon Contents Tester of Masterbatches, etc. We carefully
                   select the Pigments, Additives, and polymers according to the
@@ -732,7 +732,7 @@ const ProjectPage = () => {
               </Fade>
             </Grid>
             <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
-              <Roll>
+              <Zoom>
                 <Card
                   className="project-sec2-card1"
                   style={{
@@ -752,7 +752,7 @@ const ProjectPage = () => {
                     image={image6}
                   />
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
           </Grid>
           <Grid
@@ -761,7 +761,7 @@ const ProjectPage = () => {
             style={{ marginTop: "3rem", justifyContent: "space-around" }}
           >
             <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
-              <Roll>
+              <Zoom>
                 <Card
                   className="project-sec2-card1"
                   style={{
@@ -781,7 +781,7 @@ const ProjectPage = () => {
                     image={image7}
                   />
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
             <Grid
               item
@@ -969,7 +969,7 @@ const ProjectPage = () => {
               </Fade>
             </Grid>
             <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
-              <Roll>
+              <Zoom>
                 <Card
                   className="project-sec2-card1"
                   style={{
@@ -989,7 +989,7 @@ const ProjectPage = () => {
                     image={image8}
                   />
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
           </Grid>
           <Grid
@@ -998,7 +998,7 @@ const ProjectPage = () => {
             style={{ marginTop: "3rem", justifyContent: "space-around" }}
           >
             <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
-              <Roll>
+              <Zoom>
                 <Card
                   className="project-sec2-card1"
                   style={{
@@ -1018,7 +1018,7 @@ const ProjectPage = () => {
                     image={image9}
                   />
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
             <Grid
               item
@@ -1205,7 +1205,7 @@ const ProjectPage = () => {
               </Fade>
             </Grid>
             <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
-              <Roll>
+              <Zoom>
                 <Card
                   className="project-sec2-card1"
                   style={{
@@ -1225,7 +1225,7 @@ const ProjectPage = () => {
                     image={image10}
                   />
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
           </Grid>
           <Grid
@@ -1234,7 +1234,7 @@ const ProjectPage = () => {
             style={{ marginTop: "3rem", justifyContent: "space-around" }}
           >
             <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
-              <Roll>
+              <Zoom>
                 <Card
                   className="project-sec2-card1"
                   style={{
@@ -1254,7 +1254,7 @@ const ProjectPage = () => {
                     image={image11}
                   />
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
             <Grid
               item

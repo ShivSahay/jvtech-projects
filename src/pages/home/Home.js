@@ -20,7 +20,7 @@ import AboutSection from "../../components/AboutSection";
 import Zoom from "react-reveal/Zoom";
 import image1 from "../../images/1.jpeg";
 import image2 from "../../images/2.jpeg";
-import image3 from "../../images/3.jpeg";
+import image3 from "../../images/p.jpeg";
 import image4 from "../../images/4.jpeg";
 import image5 from "../../images/5.jpeg";
 import image6 from "../../images/6.jpeg";
@@ -28,12 +28,10 @@ import image7 from "../../images/7.jpeg";
 import image8 from "../../images/8.jpeg";
 import image9 from "../../images/9.jpeg";
 import image10 from "../../images/10.jpeg";
-import image11 from "../../images/11.jpeg";
-import image12 from "../../images/12.jpeg";
+import image11 from "../../images/77.jpeg";
 import image13 from "../../images/13.jpeg";
-import image14 from "../../images/14.jpeg";
 import image15 from "../../images/15.jpeg";
-import servicesec3img2   from "../../images/servicesec3img2.jpeg";
+import servicesec3img2 from "../../images/servicesec3img2.jpeg";
 import { Fade, Roll } from "react-reveal";
 const testimonialsData = [
   {
@@ -72,7 +70,7 @@ const testimonialsData = [
     id: 5,
     name: "Holister Mediacl India Pvt. Ltd. (Hssid Growth Bawal Haryana)",
     designation: "Fire Figgting Work",
-    image: image5,
+    image: image6,
     message:
       "Hollister Medical India Pvt Ltd is a subsidiary of Hollister Incorporated, a global medical device company dedicated to advancing healthcare and improving the lives of people with healthcare needs.",
   },
@@ -162,6 +160,7 @@ const Testimonials = ({ testimonial }) => {
 
 const images = [
   "firesystem.jpg",
+  "home1.jpeg",
   "safetyfirst.jpg",
   "watersprinkler.jpg",
   // Add more image URLs as needed
@@ -245,7 +244,7 @@ const Home = () => {
                 margin: "5rem 0px",
               }}
             >
-              <Roll>
+              <Zoom>
                 <Card
                   className="home-sec2-card"
                   sx={{ maxWidth: "85%", minHeight: "50vh" }}
@@ -270,7 +269,7 @@ const Home = () => {
                     </Typography>
                   </CardContent>
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
             <Grid
               item
@@ -284,7 +283,7 @@ const Home = () => {
                 margin: "5rem 0px",
               }}
             >
-              <Roll>
+              <Zoom>
                 <Card
                   className="home-sec2-card"
                   sx={{ maxWidth: "85%", minHeight: "50vh" }}
@@ -309,7 +308,7 @@ const Home = () => {
                     </Typography>
                   </CardContent>
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
             <Grid
               item
@@ -323,7 +322,7 @@ const Home = () => {
                 margin: "5rem 0px",
               }}
             >
-              <Roll>
+              <Zoom>
                 <Card
                   className="home-sec2-card"
                   sx={{ maxWidth: "85%", minHeight: "50vh" }}
@@ -348,7 +347,7 @@ const Home = () => {
                     </Typography>
                   </CardContent>
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
             <Grid
               item
@@ -362,7 +361,7 @@ const Home = () => {
                 margin: "5rem 0px",
               }}
             >
-              <Roll>
+              <Zoom>
                 <Card
                   className="home-sec2-card"
                   sx={{ maxWidth: "85%", minHeight: "50vh" }}
@@ -387,7 +386,7 @@ const Home = () => {
                     </Typography>
                   </CardContent>
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
             <Grid
               item
@@ -401,7 +400,7 @@ const Home = () => {
                 marginBottom: "5rem",
               }}
             >
-              <Roll>
+              <Zoom>
                 <Card
                   className="home-sec2-card"
                   sx={{ maxWidth: "85%", minHeight: "50vh" }}
@@ -426,7 +425,7 @@ const Home = () => {
                     </Typography>
                   </CardContent>
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
             <Grid
               item
@@ -440,7 +439,7 @@ const Home = () => {
                 marginBottom: "5rem",
               }}
             >
-              <Roll>
+              <Zoom>
                 <Card
                   className="home-sec2-card"
                   sx={{ maxWidth: "85%", minHeight: "50vh" }}
@@ -465,7 +464,7 @@ const Home = () => {
                     </Typography>
                   </CardContent>
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
             <Grid
               item
@@ -479,7 +478,7 @@ const Home = () => {
                 marginBottom: "5rem",
               }}
             >
-              <Roll>
+              <Zoom>
                 <Card
                   className="home-sec2-card"
                   sx={{ maxWidth: "85%", minHeight: "50vh" }}
@@ -504,7 +503,7 @@ const Home = () => {
                     </Typography>
                   </CardContent>
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
             <Grid
               item
@@ -518,7 +517,7 @@ const Home = () => {
                 marginBottom: "5rem",
               }}
             >
-              <Roll>
+              <Zoom>
                 <Card
                   className="home-sec2-card"
                   sx={{ maxWidth: "85%", minHeight: "50vh" }}
@@ -543,7 +542,7 @@ const Home = () => {
                     </Typography>
                   </CardContent>
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
           </Grid>
         </Grid>

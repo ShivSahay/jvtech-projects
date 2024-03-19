@@ -12,7 +12,7 @@ import Footer from "../../components/Footer/Footer";
 import Zoom from "react-reveal/Zoom";
 import CountUp from "react-countup";
 import leader from "../../images/7.jpeg";
-import servicesec3img1 from "../../images/Pumproom.jpg";
+import servicesec3img1 from "../../images/Pumproom.jpeg";
 import servicesec3img3 from "../../images/5.jpeg";
 import { Bounce, Fade, Roll } from "react-reveal";
 import List from "@mui/material/List";
@@ -264,7 +264,7 @@ const Service = () => {
             sm={12}
           >
             <Grid item xs={12} sm={5} md={3} className="service-sec3-card-box">
-              <Roll>
+              <Zoom>
                 <Card
                   // key={index}
                   style={{ maxWidth: 400, width: "100%" }}
@@ -363,10 +363,10 @@ const Service = () => {
                     </List>
                   </CardContent>
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
             <Grid item xs={12} sm={5} md={3} className="service-sec3-card-box">
-              <Roll>
+              <Zoom>
                 <Card style={{ maxWidth: 400, width: "100%" }}>
                   <CardMedia
                     style={{
@@ -432,10 +432,10 @@ const Service = () => {
                     </List>
                   </CardContent>
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
             <Grid item xs={12} sm={6} md={3} className="service-sec3-card-box">
-              <Roll>
+              <Zoom>
                 <Card style={{ maxWidth: 400, width: "100%" }}>
                   <CardMedia
                     style={{
@@ -519,7 +519,7 @@ const Service = () => {
                     </List>
                   </CardContent>
                 </Card>
-              </Roll>
+              </Zoom>
             </Grid>
           </Grid>
           <Grid
