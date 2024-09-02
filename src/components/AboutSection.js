@@ -32,7 +32,7 @@ const AboutSection = () => {
               style={{ padding: "20px", textAlign: "center" }}
             >
               <Fade bottom>
-                <Typography variant="h4">
+                <Typography variant="h4" sx={{fontWeight:"bold"}}>
                   Fire Detection & Alarm System
                 </Typography>
               </Fade>

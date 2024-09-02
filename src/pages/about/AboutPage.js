@@ -241,7 +241,7 @@ const AboutPage = () => {
                     marginTop: "15px",
                   }}
                 >
-                  Take the time to understand your customers' needs and Strive
+                  Take the time to understand your customer's needs and Strive
                   for excellence in everything you do. Maintain high standards
                   of quality in your products or services.and also Experiment
                   with new ideas, processes, and business models to drive growth

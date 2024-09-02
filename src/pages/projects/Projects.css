@@ -19,6 +19,11 @@
   opacity: 1 !important;
 }
 
+.image4:hover{
+  transform: scale(1.05);
+  opacity: 1 !important;
+}
+
 .project-sec2-heading1,
 .project-sec2-heading2,
 .project-sec2-heading3,

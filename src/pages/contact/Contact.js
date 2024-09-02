@@ -126,7 +126,7 @@ const ContactUs = () => {
                   marginTop: "15px",
                 }}
               >
-                Megamind techno group of engineers & designers are known for
+                J.V. Tech techno group of engineers & designers are known for
                 providing all type of electrical, interior & fire fighting
                 services. We have survived the competitive market, by giving
                 best quality and services in the quickest time and within

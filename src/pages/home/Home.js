@@ -24,14 +24,15 @@ import image3 from "../../images/p.jpeg";
 import image4 from "../../images/4.jpeg";
 import image5 from "../../images/5.jpeg";
 import image6 from "../../images/6.jpeg";
-import image7 from "../../images/7.jpeg";
-import image8 from "../../images/8.jpeg";
-import image9 from "../../images/9.jpeg";
-import image10 from "../../images/10.jpeg";
-import image11 from "../../images/77.jpeg";
-import image13 from "../../images/13.jpeg";
-import image15 from "../../images/15.jpeg";
-import servicesec3img2 from "../../images/servicesec3img2.jpeg";
+import hollister from "../../images/hollister.jpeg";
+import atsTownship from "../../images/ats-township.jpeg";
+import sleekbrake from "../../images/sleekbrake.jpeg";
+import image10 from "../../images/ac-polycotores.jpeg";
+import amaryllis from "../../images/amaryllis.jpeg";
+import marutisuzki from "../../images/marutisuzki.jpeg";
+import insecticides from "../../images/insecticides.jpeg";
+import sachdeva from "../../images/sachdeva.jpeg";
+import sprintFire from "../../images/sprint-fire.jpeg";
 import { Fade, Roll } from "react-reveal";
 const testimonialsData = [
   {
@@ -52,7 +53,7 @@ const testimonialsData = [
   },
   {
     id: 3,
-    name: "Sleek Brake Products (Sampla Bahadurgrah Haryana)",
+    name: "Sleek Brake Products (Bahadurgrah Haryana)",
     designation: "Fire Figgting Work",
     image: image3,
     message:
@@ -163,6 +164,7 @@ const images = [
   "home1.jpeg",
   "safetyfirst.jpg",
   "watersprinkler.jpg",
+  sprintFire
   // Add more image URLs as needed
 ];
 
@@ -172,7 +174,7 @@ const ImageSliderMui = ({ images }) => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change the interval time as needed (in milliseconds)
+    }, 2000); // Change the interval time as needed (in milliseconds)
 
     return () => clearInterval(intervalId);
   }, [currentIndex, images.length]);
@@ -247,18 +249,18 @@ const Home = () => {
               <Zoom>
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "85%", minHeight: "50vh" }}
+                  sx={{ maxWidth: "85%", minHeight: "48vh" }}
                 >
                   <CardMedia
                     sx={{ height: "55%" }}
-                    image={image13}
+                    image={marutisuzki}
                     className="home-sec2-card-media"
                   />
                   <CardContent>
                     <Typography
                       gutterBottom
                       variant="h6"
-                      style={{ fontWeight: "500" }}
+                      style={{ fontWeight: "500",textAlign:"center" }}
                     >
                       MARUTI SUZUKLI INDIA LIMITED
                     </Typography>
@@ -286,20 +288,20 @@ const Home = () => {
               <Zoom>
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "85%", minHeight: "50vh" }}
+                  sx={{ maxWidth: "85%", minHeight: "48vh" }}
                 >
                   <CardMedia
                     sx={{ height: "55%" }}
-                    image={image7}
+                    image={hollister}
                     className="home-sec2-card-media"
                   />
                   <CardContent>
                     <Typography
                       gutterBottom
                       variant="h6"
-                      style={{ fontWeight: "500" }}
+                      style={{ fontWeight: "500",textAlign:"center" }}
                     >
-                      HOLISTER MEDICAL INDIA PVT LTD
+                      HOLISTER MEDICAL INDIA PRIVATE LTD
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                       Hollister Incorporated is an independent, employee-owned
@@ -325,18 +327,18 @@ const Home = () => {
               <Zoom>
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "85%", minHeight: "50vh" }}
+                  sx={{ maxWidth: "85%", minHeight: "48vh" }}
                 >
                   <CardMedia
                     sx={{ height: "55%" }}
-                    image={image8}
+                    image={atsTownship}
                     className="home-sec2-card-media"
                   />
                   <CardContent>
                     <Typography
                       gutterBottom
                       variant="h6"
-                      style={{ fontWeight: "500" }}
+                      style={{ fontWeight: "500",textAlign:"center" }}
                     >
                       ATS TOWNSHIP PRIVATE LIMITED
                     </Typography>
@@ -364,20 +366,20 @@ const Home = () => {
               <Zoom>
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "85%", minHeight: "50vh" }}
+                  sx={{ maxWidth: "85%", minHeight: "48vh" }}
                 >
                   <CardMedia
                     sx={{ height: "55%" }}
-                    image={image9}
+                    image={sleekbrake}
                     className="home-sec2-card-media"
                   />
                   <CardContent>
                     <Typography
                       gutterBottom
                       variant="h6"
-                      style={{ fontWeight: "500" }}
+                      style={{ fontWeight: "500",textAlign:"center" }}
                     >
-                      SAMPLA BAHADURGRA HHARYANA
+                      Sleek Brake Products (Bahadurgrah Haryana)
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                       "Sleek Brake Products" is a part of Super Circle Group of
@@ -403,20 +405,20 @@ const Home = () => {
               <Zoom>
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "85%", minHeight: "50vh" }}
+                  sx={{ maxWidth: "85%", minHeight: "48vh" }}
                 >
                   <CardMedia
                     sx={{ height: "55%" }}
-                    image={servicesec3img2}
+                    image={sachdeva}
                     className="home-sec2-card-media"
                   />
                   <CardContent>
                     <Typography
                       gutterBottom
                       variant="h6"
-                      style={{ fontWeight: "500" }}
+                      style={{ fontWeight: "500",textAlign:"center" }}
                     >
-                      SACHADEVA POLYCOLOR PVT LTD
+                      SACHADEVA POLYCOLOR PRIVATE LTD
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                       Sachdeva Industries was established in 1982 as a unit
@@ -442,7 +444,7 @@ const Home = () => {
               <Zoom>
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "85%", minHeight: "50vh" }}
+                  sx={{ maxWidth: "85%", minHeight: "48vh" }}
                 >
                   <CardMedia
                     sx={{ height: "55%" }}
@@ -453,12 +455,12 @@ const Home = () => {
                     <Typography
                       gutterBottom
                       variant="h6"
-                      style={{ fontWeight: "500" }}
+                      style={{ fontWeight: "500",textAlign:"center" }}
                     >
-                      A.C POLY COTERS PVT LTD
+                      AC POLYCOTERS PRIVATE LIMITED
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                      A. C. POLYOCATERS is an ISO certified manufacturer of
+                      AC POLYOCATERS is an ISO certified manufacturer of
                       synthetic leather in India. We process our products using
                       quality raw materials.
                     </Typography>
@@ -481,18 +483,18 @@ const Home = () => {
               <Zoom>
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "85%", minHeight: "50vh" }}
+                  sx={{ maxWidth: "85%", minHeight: "48vh" }}
                 >
                   <CardMedia
                     sx={{ height: "55%" }}
-                    image={image11}
+                    image={amaryllis}
                     className="home-sec2-card-media"
                   />
                   <CardContent>
                     <Typography
                       gutterBottom
                       variant="h6"
-                      style={{ fontWeight: "500" }}
+                      style={{ fontWeight: "500",textAlign:"center" }}
                     >
                       THE AMARYLLIS CENTRAL PARK DELHI
                     </Typography>
@@ -520,18 +522,18 @@ const Home = () => {
               <Zoom>
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "85%", minHeight: "50vh" }}
+                  sx={{ maxWidth: "85%", minHeight: "48vh" }}
                 >
                   <CardMedia
                     sx={{ height: "55%" }}
-                    image={image15}
+                    image={insecticides}
                     className="home-sec2-card-media"
                   />
                   <CardContent>
                     <Typography
                       gutterBottom
                       variant="h6"
-                      style={{ fontWeight: "500" }}
+                      style={{ fontWeight: "500",textAlign:"center" }}
                     >
                       INSECTICIDES INDIA PVT LTD
                     </Typography>
@@ -586,7 +588,7 @@ const Home = () => {
             xs={12}
             sm={10}
             md={10}
-            lg={6}
+            lg={8}
           >
             <Fade bottom>
               <Typography

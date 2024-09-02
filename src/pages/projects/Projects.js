@@ -11,8 +11,8 @@ import Footer from "../../components/Footer/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Fade, Roll, Zoom } from "react-reveal";
-import image1 from "../../images/1.jpeg";
-import image2 from "../../images/2.jpeg";
+import image1 from "../../images/maruti.jpg";
+import image2 from "../../images/holister.jpeg";
 import image3 from "../../images/3.jpeg";
 import image4 from "../../images/4.jpeg";
 import image5 from "../../images/5.jpeg";
@@ -135,7 +135,7 @@ const ProjectPage = () => {
                     marginLeft: "15px",
                   }}
                 >
-                  Megamind Engineering Project is an engineering enterprise and
+                  J.V. Tech Engineering Project is an engineering enterprise and
                   consulting company. Our firm specializes in various aspects of
                   electrical projects involving fire-fighting engineering,
                   consulting and equipment’s. The firm has grown to be the
@@ -434,7 +434,7 @@ const ProjectPage = () => {
                     marginTop: "15px",
                   }}
                 >
-                  SLEEK BRAKE PRODUCTS (SAMPLA BAHADURGRAHHARYANA)
+                  Sleek Brake Products (Bahadurgrah Haryana)
                 </Typography>
               </Fade>
               <Fade bottom>
@@ -665,7 +665,7 @@ const ProjectPage = () => {
                     marginTop: "15px",
                   }}
                 >
-                  A.C POLY COTERS PVT LTD (MET CITY JHAJJAR HARYANA)
+                  AC POLY COTERS PVT LTD (MET CITY JHAJJAR HARYANA)
                 </Typography>
               </Fade>
               <Fade bottom>
@@ -688,7 +688,7 @@ const ProjectPage = () => {
                     marginLeft: "15px",
                   }}
                 >
-                  A. C. POLYOCATERS is an ISO certified manufacturer of
+                  AC POLYOCATERS is an ISO certified manufacturer of
                   synthetic leather in India. The company manufacturers PVC / PU
                   leather cloth under the brand name "LEATHERTEX™". Our product
                   range is available in variety of creative designs, embossed
@@ -731,14 +731,16 @@ const ProjectPage = () => {
                 </Typography>
               </Fade>
             </Grid>
-            <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
-              <Zoom>
+            {/* Change here to add image  */}
+            <Grid item xs={12} sm={12} md={5} container className="project-sec2-card-div image4">
+            <Grid sm={6}> 
+            <Zoom>
                 <Card
-                  className="project-sec2-card1"
+                  className="project-sec2-card1d"
                   style={{
                     position: "relative",
                     // width: 450,
-                    height: 500,
+                    height: 250,
                     transition: "transform 0.3s ease", // Define transition property
                   }}
                 >
@@ -754,6 +756,77 @@ const ProjectPage = () => {
                 </Card>
               </Zoom>
             </Grid>
+            <Grid sm={6}> 
+            <Zoom>
+                <Card
+                  className="project-sec2-card1d"
+                  style={{
+                    position: "relative",
+                    // width: 450,
+                    height: 250,
+                    transition: "transform 0.3s ease", // Define transition property
+                  }}
+                >
+                  <CardMedia
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                    className=""
+                    image={image6}
+                  />
+                </Card>
+              </Zoom>
+            </Grid>
+            <Grid sm={6}> 
+            <Zoom>
+                <Card
+                  className="project-sec2-card1d"
+                  style={{
+                    position: "relative",
+                    // width: 450,
+                    height: 250,
+                    transition: "transform 0.3s ease", // Define transition property
+                  }}
+                >
+                  <CardMedia
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                    className=""
+                    image={image6}
+                  />
+                </Card>
+              </Zoom>
+            </Grid>
+             <Grid sm={6}> 
+            <Zoom>
+                <Card
+                  className="project-sec2-card1d"
+                  style={{
+                    position: "relative",
+                    // width: 450,
+                    height: 250,
+                    transition: "transform 0.3s ease", // Define transition property
+                  }}
+                >
+                  <CardMedia
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                    className=""
+                    image={image6}
+                  />
+                </Card>
+              </Zoom>
+            </Grid>
+            </Grid>
+            {/* Change stop here to add image  */}
           </Grid>
           <Grid
             item
