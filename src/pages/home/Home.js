@@ -23,7 +23,7 @@ import image2 from "../../images/2.jpeg";
 import image3 from "../../images/p.jpeg";
 import image4 from "../../images/4.jpeg";
 import image5 from "../../images/5.jpeg";
-import image6 from "../../images/6.jpeg";
+import holister from "../../images/holister.jpeg";
 import hollister from "../../images/hollister.jpeg";
 import atsTownship from "../../images/ats-township.jpeg";
 import sleekbrake from "../../images/sleekbrake.jpeg";
@@ -49,7 +49,7 @@ const testimonialsData = [
     designation: "Plumbing Work",
     image: image2,
     message:
-      "Radhey Bio.Tech Pvt. Ltd. is a proud member of the esteemed Kamdhenu Group, a conglomerate known for its excellence in diverse sectors including agriculture, real estate, infrastructure, and biotechnology. ",
+      "Radhey Bio.Tech Pvt. Ltd. is a proud member of the esteemed Kamdhenu Group, a conglomerate known for its excellence in diverse sectors including agriculture and biotechnology. ",
   },
   {
     id: 3,
@@ -71,9 +71,9 @@ const testimonialsData = [
     id: 5,
     name: "Holister Mediacl India Pvt. Ltd. (Hssid Growth Bawal Haryana)",
     designation: "Fire Figgting Work",
-    image: image6,
+    image: holister,
     message:
-      "Hollister Medical India Pvt Ltd is a subsidiary of Hollister Incorporated, a global medical device company dedicated to advancing healthcare and improving the lives of people with healthcare needs.",
+      "Hollister Medical India Pvt Ltd is a subsidiary of Hollister Incorporated, a global medical device company dedicated to advancing healthcare and improving lives of people with healthcare needs.",
   },
   // Add more testimonials as needed
 ];
@@ -89,7 +89,7 @@ const Testimonials = ({ testimonial }) => {
     slidesToShow: !isMobile ? 3 : 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     margin: 16,
   };
   return (
@@ -137,7 +137,7 @@ const Testimonials = ({ testimonial }) => {
                 />
               </Zoom>
               <CardContent>
-                <Typography variant="h6" component="div">
+                <Typography variant="h6" sx={{textAlign:"center"}} component="div">
                   {item.name}
                 </Typography>
                 <Typography
@@ -249,10 +249,10 @@ const Home = () => {
               <Zoom>
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "85%", minHeight: "48vh" }}
+                  sx={{ maxWidth: "100%", minHeight: "48vh" }}
                 >
                   <CardMedia
-                    sx={{ height: "55%" }}
+                    sx={{ height: "75%" }}
                     image={marutisuzki}
                     className="home-sec2-card-media"
                   />
@@ -264,11 +264,11 @@ const Home = () => {
                     >
                       MARUTI SUZUKLI INDIA LIMITED
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    {/* <Typography variant="body2" color="text.secondary">
                       Maruti Suzuki Service has an extensive service network
                       that spans across more than 1800 cities in India, making
                       it easily accessible for customers.
-                    </Typography>
+                    </Typography> */}
                   </CardContent>
                 </Card>
               </Zoom>
@@ -291,7 +291,7 @@ const Home = () => {
                   sx={{ maxWidth: "85%", minHeight: "48vh" }}
                 >
                   <CardMedia
-                    sx={{ height: "55%" }}
+                    sx={{ height: "75%" }}
                     image={hollister}
                     className="home-sec2-card-media"
                   />
@@ -301,13 +301,13 @@ const Home = () => {
                       variant="h6"
                       style={{ fontWeight: "500",textAlign:"center" }}
                     >
-                      HOLISTER MEDICAL INDIA PRIVATE LTD
+                      HOLISTER MEDICAL INDIA PRIVATE LIMITED
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    {/* <Typography variant="body2" color="text.secondary">
                       Hollister Incorporated is an independent, employee-owned
                       company that develops, manufactures, and markets
                       healthcare products and services worldwide.
-                    </Typography>
+                    </Typography> */}
                   </CardContent>
                 </Card>
               </Zoom>
@@ -327,10 +327,10 @@ const Home = () => {
               <Zoom>
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "85%", minHeight: "48vh" }}
+                  sx={{ maxWidth: "100%", minHeight: "48vh" }}
                 >
                   <CardMedia
-                    sx={{ height: "55%" }}
+                    sx={{ height: "75%" }}
                     image={atsTownship}
                     className="home-sec2-card-media"
                   />
@@ -342,11 +342,11 @@ const Home = () => {
                     >
                       ATS TOWNSHIP PRIVATE LIMITED
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    {/* <Typography variant="body2" color="text.secondary">
                       Ats Township Private Limited is a Private incorporated on
                       30 April 2008. It is classified as Non-govt company and is
                       registered at Registrar of Companies, Delhi.
-                    </Typography>
+                    </Typography> */}
                   </CardContent>
                 </Card>
               </Zoom>
@@ -369,7 +369,7 @@ const Home = () => {
                   sx={{ maxWidth: "85%", minHeight: "48vh" }}
                 >
                   <CardMedia
-                    sx={{ height: "55%" }}
+                    sx={{ height: "75%" }}
                     image={sleekbrake}
                     className="home-sec2-card-media"
                   />
@@ -381,11 +381,11 @@ const Home = () => {
                     >
                       Sleek Brake Products (Bahadurgrah Haryana)
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    {/* <Typography variant="body2" color="text.secondary">
                       "Sleek Brake Products" is a part of Super Circle Group of
                       Companies, which was started in 1965 by founder
                       Chairman-cum-Managing Director Mr. Jagjyoti Jain.
-                    </Typography>
+                    </Typography> */}
                   </CardContent>
                 </Card>
               </Zoom>
@@ -408,7 +408,7 @@ const Home = () => {
                   sx={{ maxWidth: "85%", minHeight: "48vh" }}
                 >
                   <CardMedia
-                    sx={{ height: "55%" }}
+                    sx={{ height: "75%" }}
                     image={sachdeva}
                     className="home-sec2-card-media"
                   />
@@ -418,13 +418,13 @@ const Home = () => {
                       variant="h6"
                       style={{ fontWeight: "500",textAlign:"center" }}
                     >
-                      SACHADEVA POLYCOLOR PRIVATE LTD
+                      SACHADEVA POLYCOLOR PRIVATE LIMITED
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    {/* <Typography variant="body2" color="text.secondary">
                       Sachdeva Industries was established in 1982 as a unit
                       coloring of plastic raw materials. Seeing an increasing
                       demand for masterbatches.
-                    </Typography>
+                    </Typography> */}
                   </CardContent>
                 </Card>
               </Zoom>
@@ -444,10 +444,10 @@ const Home = () => {
               <Zoom>
                 <Card
                   className="home-sec2-card"
-                  sx={{ maxWidth: "85%", minHeight: "48vh" }}
+                  sx={{ maxWidth: "100%", minHeight: "48vh" }}
                 >
                   <CardMedia
-                    sx={{ height: "55%" }}
+                    sx={{ height: "75%" }}
                     image={image10}
                     className="home-sec2-card-media"
                   />
@@ -459,11 +459,11 @@ const Home = () => {
                     >
                       AC POLYCOTERS PRIVATE LIMITED
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    {/* <Typography variant="body2" color="text.secondary">
                       AC POLYOCATERS is an ISO certified manufacturer of
                       synthetic leather in India. We process our products using
                       quality raw materials.
-                    </Typography>
+                    </Typography> */}
                   </CardContent>
                 </Card>
               </Zoom>
@@ -486,7 +486,7 @@ const Home = () => {
                   sx={{ maxWidth: "85%", minHeight: "48vh" }}
                 >
                   <CardMedia
-                    sx={{ height: "55%" }}
+                    sx={{ height: "75%" }}
                     image={amaryllis}
                     className="home-sec2-card-media"
                   />
@@ -498,11 +498,11 @@ const Home = () => {
                     >
                       THE AMARYLLIS CENTRAL PARK DELHI
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    {/* <Typography variant="body2" color="text.secondary">
                       The Amaryllis will glow and change Delhi's landscape into
                       something spectacular. Because of its location, design,
                       amenities, and manner of life.
-                    </Typography>
+                    </Typography> */}
                   </CardContent>
                 </Card>
               </Zoom>
@@ -525,7 +525,7 @@ const Home = () => {
                   sx={{ maxWidth: "85%", minHeight: "48vh" }}
                 >
                   <CardMedia
-                    sx={{ height: "55%" }}
+                    sx={{ height: "75%" }}
                     image={insecticides}
                     className="home-sec2-card-media"
                   />
@@ -535,13 +535,13 @@ const Home = () => {
                       variant="h6"
                       style={{ fontWeight: "500",textAlign:"center" }}
                     >
-                      INSECTICIDES INDIA PVT LTD
+                      INSECTICIDES INDIA PRIVATE LIMITED
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    {/* <Typography variant="body2" color="text.secondary">
                       nsecticides INDIA Ltd in Azadpur, Delhi is known to
                       satisfactorily cater to the demands of its customer base
                       and business came into existence in 2009.
-                    </Typography>
+                    </Typography> */}
                   </CardContent>
                 </Card>
               </Zoom>
