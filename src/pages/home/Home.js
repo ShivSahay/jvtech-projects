@@ -137,7 +137,11 @@ const Testimonials = ({ testimonial }) => {
                 />
               </Zoom>
               <CardContent>
-                <Typography variant="h6" sx={{textAlign:"center"}} component="div">
+                <Typography
+                  variant="h6"
+                  sx={{ textAlign: "center" }}
+                  component="div"
+                >
                   {item.name}
                 </Typography>
                 <Typography
@@ -164,7 +168,7 @@ const images = [
   "home1.jpeg",
   "safetyfirst.jpg",
   "watersprinkler.jpg",
-  sprintFire
+  sprintFire,
   // Add more image URLs as needed
 ];
 
@@ -188,7 +192,7 @@ const ImageSliderMui = ({ images }) => {
               className="home-sec1-testomonial-img"
               src={images[currentIndex]}
               alt={`slide-${currentIndex}`}
-              style={{ width: "100%", height: "800px" }}
+              style={{ width: "100%", height: "100vh",marginBottom:"-5px" }}
             />
           </Zoom>
         </Paper>
@@ -200,7 +204,7 @@ const ImageSliderMui = ({ images }) => {
 const Home = () => {
   return (
     <>
-      <div>
+      <div style={{marginTop:"-96px"}}>
         <Grid className="home-sec1">
           <Typography
             className="sec1-home-text"
@@ -260,7 +264,7 @@ const Home = () => {
                     <Typography
                       gutterBottom
                       variant="h6"
-                      style={{ fontWeight: "500",textAlign:"center" }}
+                      style={{ fontWeight: "500", textAlign: "center" }}
                     >
                       MARUTI SUZUKLI INDIA LIMITED
                     </Typography>
@@ -299,7 +303,7 @@ const Home = () => {
                     <Typography
                       gutterBottom
                       variant="h6"
-                      style={{ fontWeight: "500",textAlign:"center" }}
+                      style={{ fontWeight: "500", textAlign: "center" }}
                     >
                       HOLISTER MEDICAL INDIA PRIVATE LIMITED
                     </Typography>
@@ -338,7 +342,7 @@ const Home = () => {
                     <Typography
                       gutterBottom
                       variant="h6"
-                      style={{ fontWeight: "500",textAlign:"center" }}
+                      style={{ fontWeight: "500", textAlign: "center" }}
                     >
                       ATS TOWNSHIP PRIVATE LIMITED
                     </Typography>
@@ -377,7 +381,7 @@ const Home = () => {
                     <Typography
                       gutterBottom
                       variant="h6"
-                      style={{ fontWeight: "500",textAlign:"center" }}
+                      style={{ fontWeight: "500", textAlign: "center" }}
                     >
                       Sleek Brake Products (Bahadurgrah Haryana)
                     </Typography>
@@ -416,7 +420,7 @@ const Home = () => {
                     <Typography
                       gutterBottom
                       variant="h6"
-                      style={{ fontWeight: "500",textAlign:"center" }}
+                      style={{ fontWeight: "500", textAlign: "center" }}
                     >
                       SACHADEVA POLYCOLOR PRIVATE LIMITED
                     </Typography>
@@ -455,7 +459,7 @@ const Home = () => {
                     <Typography
                       gutterBottom
                       variant="h6"
-                      style={{ fontWeight: "500",textAlign:"center" }}
+                      style={{ fontWeight: "500", textAlign: "center" }}
                     >
                       AC POLYCOTERS PRIVATE LIMITED
                     </Typography>
@@ -494,7 +498,7 @@ const Home = () => {
                     <Typography
                       gutterBottom
                       variant="h6"
-                      style={{ fontWeight: "500",textAlign:"center" }}
+                      style={{ fontWeight: "500", textAlign: "center" }}
                     >
                       THE AMARYLLIS CENTRAL PARK DELHI
                     </Typography>
@@ -533,7 +537,7 @@ const Home = () => {
                     <Typography
                       gutterBottom
                       variant="h6"
-                      style={{ fontWeight: "500",textAlign:"center" }}
+                      style={{ fontWeight: "500", textAlign: "center" }}
                     >
                       INSECTICIDES INDIA PRIVATE LIMITED
                     </Typography>

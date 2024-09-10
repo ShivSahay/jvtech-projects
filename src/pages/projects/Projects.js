@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Typography,
-  Grid,
-  Card,
-  CardMedia,
-} from "@mui/material";
+import { Typography, Grid, Card, CardMedia } from "@mui/material";
 import Header from "../../components/Header/Header";
 import "./Projects.css";
 import Footer from "../../components/Footer/Footer";
@@ -25,7 +20,7 @@ import image11 from "../../images/11.jpeg";
 const ProjectPage = () => {
   return (
     <>
-      <Grid item container className="project-page-container">
+      <Grid item container className="project-page-container" sx={{marginTop:"-96px"}}>
         <Grid className="project-container">
           <Zoom>
             <Typography className="sec1-project-text1" variant="h2">
@@ -63,7 +58,9 @@ const ProjectPage = () => {
               <hr style={{ fontSize: "12px" }} />
             </Typography>
           </Fade>
-          <Grid item container style={{ justifyContent: "space-around" }}>
+          {/* Edit start */}
+
+          {/* <Grid item container style={{ justifyContent: "space-around" }}>
             <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
               <Zoom>
                 <Card
@@ -173,8 +170,265 @@ const ProjectPage = () => {
                 </Typography>
               </Fade>
             </Grid>
+          </Grid> */}
+
+          <Grid item container style={{ justifyContent: "space-around" }}>
+            <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
+              <Fade bottom>
+                {/* <Typography
+                  variant="h5"
+                  className="project-sec2-heading1"
+                  style={{ fontWeight: "bold", textAlign: "center" }}
+                >
+                  1st Projects{" "}
+                </Typography> */}
+                <Typography
+                  variant="h4"
+                  className="project-sec2-heading2"
+                  style={{
+                    fontWeight: "800",
+                    textAlign: "center",
+                    marginTop: "15px",
+                  }}
+                >
+                  MARUTI SUZUKLI INDIA LIMITED (STOCKYARD & WAREHOUSE
+                  MSIL-NAGPUR)
+                </Typography>
+              </Fade>
+              {/* <Zoom>
+                <Card
+                  className="project-sec2-card1"
+                  style={{
+                    position: "relative",
+                    // width: 450,
+                    height: 500,
+                    transition: "transform 0.3s ease", // Define transition property
+                  }}
+                >
+                  <CardMedia
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                    className=""
+                    image={image1}
+                  />
+                </Card>
+              </Zoom> */}
+            </Grid>
+            <Grid
+              item
+              sm={12}
+              md={5}
+              className="project-sec2-desc-div pcard-mb"
+              style={{ marginBottom: "25px" }}
+            >
+              <Fade bottom>
+                {/* <Typography
+                  variant="h5"
+                  className="project-sec2-heading1"
+                  style={{ fontWeight: "bold", textAlign: "center" }}
+                >
+                  2nd Projects{" "}
+                </Typography> */}
+                <Typography
+                  variant="h4"
+                  className="project-sec2-heading2"
+                  style={{
+                    fontWeight: "800",
+                    textAlign: "center",
+                    marginTop: "15px",
+                  }}
+                >
+                  HOLISTER MEDICAL INDIA PVT LTD (HSIID GROWTH BAWAL HARYNANA)
+                </Typography>
+              </Fade>
+              {/* <Zoom>
+                <Card
+                  className="project-sec2-card1"
+                  style={{
+                    position: "relative",
+                    // width: 450,
+                    height: 500,
+                    transition: "transform 0.3s ease", // Define transition property
+                  }}
+                >
+                  <CardMedia
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                    className=""
+                    image={image2}
+                  />
+                </Card>
+              </Zoom> */}
+            </Grid>
           </Grid>
+
           <Grid
+            item
+            container
+            style={{ justifyContent: "space-around", marginTop: "2rem" }}
+          >
+            <Grid item xs={12} sm={12} md={5} className="project-sec2-card-div">
+              {/* <Fade bottom>
+                <Typography
+                  variant="h5"
+                  className="project-sec2-heading1"
+                  style={{ fontWeight: "bold", textAlign: "center" }}
+                >
+                  1st Projects{" "}
+                </Typography>
+                <Typography
+                  variant="h4"
+                  className="project-sec2-heading2"
+                  style={{
+                    fontWeight: "800",
+                    textAlign: "center",
+                    marginTop: "15px",
+                  }}
+                >
+                  MARUTI SUZUKLI INDIA LIMITED (STOCKYARD & WAREHOUSE
+                  MSIL-NAGPUR)
+                </Typography>
+              </Fade> */}
+              {/* <>
+                <Fade bottom>
+                  <Typography
+                    variant="body1"
+                    className="project-sec2-heading3"
+                    style={{
+                      fontWeight: "800",
+                      // textAlign: "center",
+                    }}
+                  >
+                    Fire flighting and alarm system
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    className="project-sec2-heading4"
+                    style={{
+                      fontWeight: "400",
+                      // textAlign: "center",
+                      marginLeft: "15px",
+                    }}
+                  >
+                    J.V. Tech Engineering Project is an engineering enterprise
+                    and consulting company. Our firm specializes in various
+                    aspects of electrical projects involving fire-fighting
+                    engineering, consulting and equipment’s. The firm has grown
+                    to be the leading in dedicated fire fighting protection-
+                    engineering specialties.
+                  </Typography>
+                </Fade>
+                <Fade bottom>
+                  <Typography
+                    variant="body1"
+                    className="project-sec2-heading3"
+                    style={{
+                      fontWeight: "800",
+                      // textAlign: "center",
+                      marginTop: "15px",
+                    }}
+                  >
+                    TESTING & MAINTENANCE
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    className="project-sec2-heading4"
+                    style={{
+                      fontWeight: "400",
+                      // textAlign: "center",
+                      marginLeft: "15px",
+                    }}
+                  >
+                    We can serve as a single source for all kind of fire
+                    protection with full testing and maintenance. Our fire
+                    fighting equipment’s include water sprays, sprinkler
+                    systems, hydrants, fire pumps, hoses, extinguishers, manual
+                    and automatic systems, emergency alarms, CO2, dry-chemical
+                    and foam based suppressants and so on
+                  </Typography>
+                </Fade>
+              </> */}
+              <Zoom>
+                <Card
+                  className="project-sec2-card1"
+                  style={{
+                    position: "relative",
+                    // width: 450,
+                    height: 500,
+                    transition: "transform 0.3s ease", // Define transition property
+                  }}
+                >
+                  <CardMedia
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                    className=""
+                    image={image1}
+                  />
+                </Card>
+              </Zoom>
+            </Grid>
+            <Grid
+              item
+              sm={12}
+              md={5}
+              className="project-sec2-desc-div pcard-mb"
+              style={{ marginBottom: "25px" }}
+            >
+              {/* <Fade bottom>
+                <Typography
+                  variant="h5"
+                  className="project-sec2-heading1"
+                  style={{ fontWeight: "bold", textAlign: "center" }}
+                >
+                  2nd Projects{" "}
+                </Typography>
+                <Typography
+                  variant="h4"
+                  className="project-sec2-heading2"
+                  style={{
+                    fontWeight: "800",
+                    textAlign: "center",
+                    marginTop: "15px",
+                  }}
+                >
+                  HOLISTER MEDICAL INDIA PVT LTD (HSIID GROWTH BAWAL HARYNANA)
+                </Typography>
+              </Fade> */}
+              <Zoom>
+                <Card
+                  className="project-sec2-card1"
+                  style={{
+                    position: "relative",
+                    // width: 450,
+                    height: 500,
+                    transition: "transform 0.3s ease", // Define transition property
+                  }}
+                >
+                  <CardMedia
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                    className=""
+                    image={image2}
+                  />
+                </Card>
+              </Zoom>
+            </Grid>
+          </Grid>
+
+          {/* Edit end  */}
+          {/* <Grid
             item
             container
             className="project-sec2-cardright"
@@ -287,7 +541,7 @@ const ProjectPage = () => {
                 </Card>
               </Zoom>
             </Grid>
-          </Grid>
+          </Grid> */}
           <Grid
             item
             container
@@ -688,14 +942,14 @@ const ProjectPage = () => {
                     marginLeft: "15px",
                   }}
                 >
-                  AC POLYOCATERS is an ISO certified manufacturer of
-                  synthetic leather in India. The company manufacturers PVC / PU
-                  leather cloth under the brand name "LEATHERTEX™". Our product
-                  range is available in variety of creative designs, embossed
-                  and prints with a wide choice of colors as per prevailing
-                  trends to cater the requirements of domestic and international
-                  markets. Our products are guaranteed to customer satisfaction
-                  and quality standards.
+                  AC POLYOCATERS is an ISO certified manufacturer of synthetic
+                  leather in India. The company manufacturers PVC / PU leather
+                  cloth under the brand name "LEATHERTEX™". Our product range is
+                  available in variety of creative designs, embossed and prints
+                  with a wide choice of colors as per prevailing trends to cater
+                  the requirements of domestic and international markets. Our
+                  products are guaranteed to customer satisfaction and quality
+                  standards.
                 </Typography>
               </Fade>
               <Fade bottom>
@@ -732,99 +986,106 @@ const ProjectPage = () => {
               </Fade>
             </Grid>
             {/* Change here to add image  */}
-            <Grid item xs={12} sm={12} md={5} container className="project-sec2-card-div image4">
-            <Grid sm={6}> 
-            <Zoom>
-                <Card
-                  className="project-sec2-card1d"
-                  style={{
-                    position: "relative",
-                    // width: 450,
-                    height: 250,
-                    transition: "transform 0.3s ease", // Define transition property
-                  }}
-                >
-                  <CardMedia
+            <Grid
+              item
+              xs={12}
+              sm={12}
+              md={5}
+              container
+              className="project-sec2-card-div image4"
+            >
+              <Grid sm={6}>
+                <Zoom>
+                  <Card
+                    className="project-sec2-card1d"
                     style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
+                      position: "relative",
+                      // width: 450,
+                      height: 250,
+                      transition: "transform 0.3s ease", // Define transition property
                     }}
-                    className=""
-                    image={image6}
-                  />
-                </Card>
-              </Zoom>
-            </Grid>
-            <Grid sm={6}> 
-            <Zoom>
-                <Card
-                  className="project-sec2-card1d"
-                  style={{
-                    position: "relative",
-                    // width: 450,
-                    height: 250,
-                    transition: "transform 0.3s ease", // Define transition property
-                  }}
-                >
-                  <CardMedia
+                  >
+                    <CardMedia
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                      className=""
+                      image={image6}
+                    />
+                  </Card>
+                </Zoom>
+              </Grid>
+              <Grid sm={6}>
+                <Zoom>
+                  <Card
+                    className="project-sec2-card1d"
                     style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
+                      position: "relative",
+                      // width: 450,
+                      height: 250,
+                      transition: "transform 0.3s ease", // Define transition property
                     }}
-                    className=""
-                    image={image6}
-                  />
-                </Card>
-              </Zoom>
-            </Grid>
-            <Grid sm={6}> 
-            <Zoom>
-                <Card
-                  className="project-sec2-card1d"
-                  style={{
-                    position: "relative",
-                    // width: 450,
-                    height: 250,
-                    transition: "transform 0.3s ease", // Define transition property
-                  }}
-                >
-                  <CardMedia
+                  >
+                    <CardMedia
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                      className=""
+                      image={image6}
+                    />
+                  </Card>
+                </Zoom>
+              </Grid>
+              <Grid sm={6}>
+                <Zoom>
+                  <Card
+                    className="project-sec2-card1d"
                     style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
+                      position: "relative",
+                      // width: 450,
+                      height: 250,
+                      transition: "transform 0.3s ease", // Define transition property
                     }}
-                    className=""
-                    image={image6}
-                  />
-                </Card>
-              </Zoom>
-            </Grid>
-             <Grid sm={6}> 
-            <Zoom>
-                <Card
-                  className="project-sec2-card1d"
-                  style={{
-                    position: "relative",
-                    // width: 450,
-                    height: 250,
-                    transition: "transform 0.3s ease", // Define transition property
-                  }}
-                >
-                  <CardMedia
+                  >
+                    <CardMedia
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                      className=""
+                      image={image6}
+                    />
+                  </Card>
+                </Zoom>
+              </Grid>
+              <Grid sm={6}>
+                <Zoom>
+                  <Card
+                    className="project-sec2-card1d"
                     style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
+                      position: "relative",
+                      // width: 450,
+                      height: 250,
+                      transition: "transform 0.3s ease", // Define transition property
                     }}
-                    className=""
-                    image={image6}
-                  />
-                </Card>
-              </Zoom>
-            </Grid>
+                  >
+                    <CardMedia
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                      className=""
+                      image={image6}
+                    />
+                  </Card>
+                </Zoom>
+              </Grid>
             </Grid>
             {/* Change stop here to add image  */}
           </Grid>

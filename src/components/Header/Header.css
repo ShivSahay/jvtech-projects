@@ -1,3 +1,13 @@
+
+
+.main-header{
+  background: "repeating-linear-gradient(135deg,#f96702,#ff8400 2px,#f96702 2px,#f96702 10px)" !important;
+}
+
+.main-header-scrolled{
+  background: #3e3e3e60 !important;
+}
+
 .header-tab {
   color: "#fff" !important;
   text-transform: "none" !important;

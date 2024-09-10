@@ -61,7 +61,8 @@ textarea:-webkit-autofill:hover {
 }
 
 .contact-sec1 {
-  height: 800px;
+  /* height: 800px; */
+height: 100vh;
   width: 100%;
   background: #ddedff;
   background: url("../../../src//images/contactus2.jpg") 50% 0 no-repeat;

@@ -74,7 +74,7 @@ const ContactUs = () => {
           Permission denied by admin
         </Alert>
       </Snackbar>
-      <Grid item container>
+      <Grid item container sx={{marginTop:"-96px"}}>
         <Grid className="contact-sec1">
           <Zoom>
             <Typography className="sec1-contact-text1" variant="h2">

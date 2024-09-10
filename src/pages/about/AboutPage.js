@@ -22,6 +22,7 @@ import image5 from "../../images/5.jpeg";
 import jitendra from "../..//images/jitendra.jpg";
 import shiv from "../../images/shiv.jpeg";
 import leader from "../../images/leader.jpeg";
+import joinus from "../../images/joinus.jpg";
 const AboutPage = () => {
   const testimonials = [
     {
@@ -120,7 +121,8 @@ const AboutPage = () => {
 
   return (
     <>
-      <Grid item container className="about-page-container">
+      <Grid item container className="about-page-container" sx={{marginTop:"-96px"}}>
+        {/* Section 1 */}
         <Grid className="about-container">
           <Fade bottom>
             <Typography className="sec1-about-text1" variant="h2">
@@ -133,6 +135,7 @@ const AboutPage = () => {
             </Typography>
           </Fade>
         </Grid>
+        {/* Section 2 */}
         <Grid
           className="about-sec2"
           style={{
@@ -199,6 +202,16 @@ const AboutPage = () => {
             </Grid>
           </Container>
         </Grid>
+
+        <Grid
+          item
+          container
+          style={{ height: "35rem",width:"100vw",alignItems:"center",justifyContent:"center",backgroundImage:"url(" + joinus + ")",backgroundSize:"contain"}}
+          className="abou-joinus-container"
+        >
+          <Typography sx={{color:"red",fontWeight:"bolder",fontSize:"3rem"}}>Why Join Us ?</Typography>
+        </Grid>
+        {/* Section 3 */}
         <Grid
           item
           container
@@ -398,6 +411,7 @@ const AboutPage = () => {
             </Grid>
           </Grid>
         </Grid>
+        {/* Section 4 */}
         <Grid
           item
           container

@@ -35,6 +35,30 @@ const Header = () => {
   const [selectedTab, setSelectedTab] = useState(0);
   let location = useLocation();
 
+
+  // Change header background 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 10) { // You can adjust the value 10 to trigger the background change earlier or later
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // Changed header background end
+
   const handleTabChange = (event, newValue) => {
     console.log("newValue", newValue);
     setSelectedTab(newValue);
@@ -74,14 +98,13 @@ const Header = () => {
 
   return (
     <>
-      <AppBar position="sticky">
+      <AppBar position="sticky" className={isScrolled ? "" : "main-header-scrolled"}>
         <Toolbar
           style={{
-            background:
-              "repeating-linear-gradient(135deg,#f96702,#ff8400 2px,#f96702 2px,#f96702 10px)",
+            background: isScrolled ? "repeating-linear-gradient(135deg,#f96702,#ff8400 2px,#f96702 2px,#f96702 10px)" : "",
             minHeight: "95px",
           }}
-          className="toolbar-header"
+          className={"toolbar-header" }
         >
           <Grid item container sm={12} md={12}>
             <Grid item sm={3} className="header-logo-box" xs={10} md={3}>

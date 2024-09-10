@@ -43,7 +43,8 @@
 }
 
 .service-sec9 {
-  height: 800px;
+  /* height: 800px; */
+  height: 100vh;
   width: 100%;
   background: #ddedff;
   background: url("../../../public/watersprinkler.jpg") 50% 0 no-repeat;

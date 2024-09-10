@@ -72,7 +72,7 @@ const Service = () => {
   ];
   return (
     <>
-      <Grid item container>
+      <Grid item container sx={{marginTop:"-96px"}}>
         <Grid className="service-sec9">
           <Zoom>
             <Typography className="sec1-service-text1" variant="h2">
