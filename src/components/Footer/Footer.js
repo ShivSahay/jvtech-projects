@@ -9,6 +9,7 @@ import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Girl } from "@mui/icons-material";
 
 const actions = [
   {
@@ -44,12 +45,14 @@ const Footer = () => {
           padding: "32px",
           marginTop: "auto",
           // backgroundColor: "#f58320",
-          background:
-            "repeating-linear-gradient(135deg,#f96702,#ff8400 2px,#f96702 2px,#f96702 10px)",
+          // background:
+          //   "repeating-linear-gradient(135deg,#f96702,#ff8400 2px,#f96702 2px,#f96702 10px)",
+          background: "#09142b",
           color: "#ffffff",
+          borderRadius: "0px",
         }}
       >
-        <Container maxWidth="md">
+        {/* <Container maxWidth="md">
           <Typography variant="body2" align="center">
             © 2023 J.V. Tech
           </Typography>
@@ -73,7 +76,120 @@ const Footer = () => {
               Terms of Service
             </Link>
           </Typography>
-        </Container>
+        </Container> */}
+        <Grid item container>
+          <Grid item sm={3}>
+              
+          </Grid>
+          <Grid item sm={3}>
+            <Container maxWidth="md">
+              <Typography variant="body2" align="center">
+                © 2023 J.V. Tech
+              </Typography>
+              <Typography variant="body2" align="center">
+                <Link
+                  href="#"
+                  style={{
+                    color: "#ffffff",
+                    marginLeft: "16px",
+                  }}
+                >
+                  Privacy Policy
+                </Link>
+                <Link
+                  href="#"
+                  style={{
+                    color: "#ffffff",
+                    marginLeft: "16px",
+                  }}
+                >
+                  Terms of Service
+                </Link>
+              </Typography>
+            </Container>
+          </Grid>
+          <Grid item sm={3}>
+            <Container maxWidth="md">
+              <Typography variant="body2" align="center">
+                © 2023 J.V. Tech
+              </Typography>
+              <Typography variant="body2" align="center">
+                <Link
+                  href="#"
+                  style={{
+                    color: "#ffffff",
+                    marginLeft: "16px",
+                  }}
+                >
+                  Privacy Policy
+                </Link>
+                <Link
+                  href="#"
+                  style={{
+                    color: "#ffffff",
+                    marginLeft: "16px",
+                  }}
+                >
+                  Terms of Service
+                </Link>
+              </Typography>
+            </Container>
+          </Grid>
+          <Grid item sm={3}>
+            <Container maxWidth="md">
+              <Typography variant="body2" align="center">
+                © 2023 J.V. Tech
+              </Typography>
+              <Typography variant="body2" align="center">
+                <Link
+                  href="#"
+                  style={{
+                    color: "#ffffff",
+                    marginLeft: "16px",
+                  }}
+                >
+                  Privacy Policy
+                </Link>
+                <Link
+                  href="#"
+                  style={{
+                    color: "#ffffff",
+                    marginLeft: "16px",
+                  }}
+                >
+                  Terms of Service
+                </Link>
+              </Typography>
+            </Container>
+          </Grid>
+          <Grid item sm={12} sx={{marginTop:"2rem"}}>
+            <Container maxWidth="md">
+              <Typography variant="body2" align="center">
+                © 2023 J.V. Tech All rights reserved
+              </Typography>
+              <Typography variant="body2" align="center">
+                <Link
+                  href="#"
+                  style={{
+                    color: "#ffffff",
+                    marginLeft: "16px",
+                  }}
+                >
+                  Privacy Policy
+                </Link>
+                <Link
+                  href="#"
+                  style={{
+                    color: "#ffffff",
+                    marginLeft: "16px",
+                  }}
+                >
+                  Terms of Service
+                </Link>
+              </Typography>
+            </Container>
+          </Grid>
+        </Grid>
       </Paper>
       <ControlledOpenSpeedDial />
     </Grid>

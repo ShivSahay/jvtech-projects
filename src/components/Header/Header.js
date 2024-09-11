@@ -101,8 +101,9 @@ const Header = () => {
       <AppBar position="sticky" className={isScrolled ? "" : "main-header-scrolled"}>
         <Toolbar
           style={{
-            background: isScrolled ? "repeating-linear-gradient(135deg,#f96702,#ff8400 2px,#f96702 2px,#f96702 10px)" : "",
+            background: isScrolled ? "#0D0B56" : "",
             minHeight: "95px",
+            // repeating-linear-gradient(135deg,#f96702,#ff8400 2px,#f96702 2px,#f96702 10px)
           }}
           className={"toolbar-header" }
         >
