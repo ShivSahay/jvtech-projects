@@ -35,25 +35,25 @@ const Header = () => {
   const [selectedTab, setSelectedTab] = useState(0);
   let location = useLocation();
 
-
-  // Change header background 
+  // Change header background
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
-      if (offset > 10) { // You can adjust the value 10 to trigger the background change earlier or later
+      if (offset > 10) {
+        // You can adjust the value 10 to trigger the background change earlier or later
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // Cleanup the event listener when the component unmounts
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -98,14 +98,17 @@ const Header = () => {
 
   return (
     <>
-      <AppBar position="sticky" className={isScrolled ? "" : "main-header-scrolled"}>
+      <AppBar
+        position="sticky"
+        className={isScrolled ? "" : "main-header-scrolled"}
+      >
         <Toolbar
           style={{
             background: isScrolled ? "#0D0B56" : "",
             minHeight: "95px",
             // repeating-linear-gradient(135deg,#f96702,#ff8400 2px,#f96702 2px,#f96702 10px)
           }}
-          className={"toolbar-header" }
+          className={"toolbar-header"}
         >
           <Grid item container sm={12} md={12}>
             <Grid item sm={3} className="header-logo-box" xs={10} md={3}>
@@ -164,11 +167,15 @@ const Header = () => {
                 md={9}
                 style={{
                   display: "flex",
-                  justifyContent: "center",
+                  justifyContent: "right",
                   alignItems: "center",
                 }}
               >
-                <Tabs value={selectedTab} onChange={handleTabChange}>
+                <Tabs
+                  value={selectedTab}
+                  onChange={handleTabChange}
+                  sx={{ marginRight: "3rem" }}
+                >
                   {routes.map((route, index) => (
                     <Tab
                       key={`${index}`}

@@ -34,6 +34,7 @@ import insecticides from "../../images/insecticides.jpeg";
 import sachdeva from "../../images/sachdeva.jpeg";
 import sprintFire from "../../images/sprint-fire.jpeg";
 import { Fade, Roll } from "react-reveal";
+import TurnRightIcon from '@mui/icons-material/TurnRight';
 const testimonialsData = [
   {
     id: 1,
@@ -192,7 +193,7 @@ const ImageSliderMui = ({ images }) => {
               className="home-sec1-testomonial-img"
               src={images[currentIndex]}
               alt={`slide-${currentIndex}`}
-              style={{ width: "100%", height: "100vh",marginBottom:"-5px" }}
+              style={{ width: "100%", height: "100vh", marginBottom: "-5px" }}
             />
           </Zoom>
         </Paper>
@@ -204,21 +205,72 @@ const ImageSliderMui = ({ images }) => {
 const Home = () => {
   return (
     <>
-      <div style={{marginTop:"-96px"}}>
-        <Grid className="home-sec1">
-          <Typography
-            className="sec1-home-text"
-            style={{
+      <div style={{ marginTop: "-96px" }}>
+        <Grid item container className="home-sec1">
+          <Grid item sm={12} sx={{ position: "relative" }}>
+            <ImageSliderMui images={images} />
+          </Grid>
+          <Grid
+            item
+            sm={12}
+            sx={{
+              display: "flex",
+              justifyContent: "start",
+              width: "70%",
+              top: "40%",
               position: "absolute",
-              marginTop: "16%",
-              color: "rgb(249, 103, 2)",
-              zIndex: "999",
             }}
-            variant="h2"
+            container
           >
-            J.V.TECH ENGINEERS
-          </Typography>
-          <ImageSliderMui images={images} />
+            <Grid item xs={12} sm={12} md={8}>
+              <Typography className="sec1-home-text" sx={{fontSize:"70px"}} variant="h2">
+              Industry Leader in Big Flow Firefighting
+              </Typography>
+            </Grid>
+            <Grid item xs={12} sm={6} md={6} sx={{ marginTop: "1rem" }}>
+              <Typography className="sec1-home-text" variant="body1">
+                Fire Fighting Systems (FFS) is the global leader in the design,
+                engineering, and manufacturing of large firefighting systems – a
+                single-source supplier for both marine and land application.
+              </Typography>
+            </Grid>
+            <Grid item xs={12} sm={7} md={9} sx={{marginTop:"2rem"}}>
+            <a href="/contact"
+                style={{
+                  background: "#ce1319",
+                  color: "#ffffff",
+                  width: "210px",
+                  borderRadius: "10rem",
+                  fontSize: "22px",
+                  fontWeight:"bold",
+                  textTransform: "capitalize",
+                  padding: "12px 20px",
+                  transition: "all .5s",
+                  content: "",
+                  textDecoration:"none"
+                }}
+                className="Home-sec1-btn"
+              >
+                Contact Us
+              </a>
+              <a href="/contact"
+                style={{
+                  background: "#ce1319",
+                  color: "#ffffff",
+                  borderRadius: "100%",
+                  marginLeft:"1rem",
+                  fontSize: "24px",
+                  textTransform: "capitalize",
+                  padding: "10px 12px",
+                  transition: "all .5s",
+                }}
+                className="Home-sec1-btn"
+              >
+                <TurnRightIcon/>
+              </a>
+
+            </Grid>
+          </Grid>
         </Grid>
 
         <Grid className="home-sec2">

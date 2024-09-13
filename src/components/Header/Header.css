@@ -26,6 +26,7 @@
 
 .MuiTabs-fixed .MuiTabs-indicator {
   background-color: #1ed760 !important;
+  height: 3px;
 }
 
 .drower-sidebar .MuiDrawer-paper {

@@ -6,8 +6,18 @@
 .sec1-home-text {
   color: #fff;
   font-weight: 800 !important;
-  text-align: center;
+  /* text-align: center; */
+  z-index: "999";
 }
+
+.Home-sec1-btn:hover{
+  box-shadow: none !important;
+  outline: 0 !important;
+  border: 0 !important;
+  color: #ce1319 !important;
+  background-color: #ffffff !important;
+}
+
 .home-sec2 {
   display: flex;
   justify-content: center;
@@ -132,7 +142,8 @@
     margin-top: 60% !important;
   }
   .home-sec3,
-  .home-sec5,.landing-sec5 {
+  .home-sec5,
+  .landing-sec5 {
     padding: 25px !important;
   }
   .sec5-heading {
@@ -162,7 +173,7 @@
   .home-sec2-card {
     min-height: 54vh !important;
   }
-  .home-sec3-testomonial{
+  .home-sec3-testomonial {
     padding: 0px !important;
   }
 }
