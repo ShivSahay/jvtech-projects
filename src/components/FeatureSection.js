@@ -7,12 +7,9 @@ const FeatureSection = () => {
     <Container maxWidth="md">
       <Grid container spacing={3}>
         <Grid item xs={12} md={4}>
-          <Paper elevation={3} style={{ padding: "20px",  }}>
+          <Paper elevation={3} style={{ padding: "20px" }}>
             <Fade top>
-              <Typography
-                variant="h4"
-                style={{ fontWeight: "bold", color: "rgba(0, 0, 0, 0.6)",textAlign:"center" }}
-              >
+              <Typography variant="h4" className="work-exp-text">
                 Vision
               </Typography>
             </Fade>
@@ -29,12 +26,9 @@ const FeatureSection = () => {
         </Grid>
 
         <Grid item xs={12} md={4}>
-          <Paper elevation={3} style={{ padding: "20px", }}>
+          <Paper elevation={3} style={{ padding: "20px" }}>
             <Fade top>
-              <Typography
-                variant="h4"
-                style={{ fontWeight: "bold", color: "rgba(0, 0, 0, 0.6)",textAlign:"center" }}
-              >
+              <Typography variant="h4" className="work-exp-text">
                 Mission
               </Typography>
             </Fade>
@@ -51,12 +45,9 @@ const FeatureSection = () => {
         </Grid>
 
         <Grid item xs={12} md={4}>
-          <Paper elevation={3} style={{ padding: "20px", }}>
+          <Paper elevation={3} style={{ padding: "20px" }}>
             <Fade top>
-              <Typography
-                variant="h4"
-                style={{ fontWeight: "bold", color: "rgba(0, 0, 0, 0.6)",textAlign:"center" }}
-              >
+              <Typography variant="h4" className="work-exp-text">
                 Working
               </Typography>
             </Fade>

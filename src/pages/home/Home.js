@@ -211,18 +211,7 @@ const Home = () => {
           <Grid item sm={12} sx={{ position: "relative" }}>
             <ImageSliderMui images={images} />
           </Grid>
-          <Grid
-            item
-            sm={12}
-            sx={{
-              display: "flex",
-              justifyContent: "start",
-              width: "70%",
-              top: "40%",
-              position: "absolute",
-            }}
-            container
-          >
+          <Grid item sm={12} className="sec1-home-textbox" sx={{}} container>
             <Grid
               item
               xs={12}
@@ -239,7 +228,7 @@ const Home = () => {
               </Typography>
             </Grid>
             <Grid item xs={12} sm={6} md={6} sx={{ marginTop: "1rem" }}>
-              <Typography className="sec1-home-text" variant="body1">
+              <Typography className="sec1-home-text1" variant="body1">
                 Fire Fighting Systems (FFS) is the global leader in the design,
                 engineering, and manufacturing of large firefighting systems – a
                 single-source supplier for both marine and land application.
@@ -659,7 +648,8 @@ const Home = () => {
             <Grid
               item
               sm={12}
-              sx={{ display: "flex", alignItems: "flex-start" }}
+              className="home-project-summery-btnbox"
+              
             >
               <a
                 href="/projects"

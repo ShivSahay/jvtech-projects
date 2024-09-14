@@ -3,10 +3,10 @@
   display: flex;
   justify-content: center;
 }
-.sec1-home-text {
+.sec1-home-text,
+.sec1-home-text1 {
   color: #fff;
   font-weight: 800 !important;
-  /* text-align: center; */
   z-index: "999";
 }
 
@@ -26,9 +26,9 @@
   background-color: rgb(37, 37, 37) !important;
 }
 
-.home-project-summery-img{
+.home-project-summery-img {
   /* transition: "transform 0.3s ease" ; */
-  opacity: 0.8 !important;  
+  opacity: 0.8 !important;
 }
 
 .home-project-summery-img:hover {
@@ -52,7 +52,7 @@
   padding: 32px;
 }
 
-.home-project-summery{
+.home-project-summery {
   display: flex !important;
   justify-content: center;
   column-gap: 2rem;
@@ -94,8 +94,36 @@
   color: #fff !important;
 }
 .landing-sec5 {
-  background: #7da500
-    url("https://garden.pro-theme.info/wp-content/uploads/2015/09/tools-bg.png?id=26") !important;
+  /* background: #7da500
+    url("https://garden.pro-theme.info/wp-content/uploads/2015/09/tools-bg.png?id=26") !important; */
+  background: #1667ac;
+}
+
+.sec1-home-textbox {
+  /* display: "flex",
+              justifyContent: "start",
+              width: "70%",
+              top: "40%",
+              position: "absolute", */
+  display: flex;
+  justify-content: start;
+  width: 70% !important;
+  top: 40%;
+  position: absolute;
+}
+
+.home-project-summery-btnbox{
+  display: flex;
+  align-items: flex-start;
+  /* justify-content:center; */
+}
+
+.work-exp-text {
+  font-weight: bold !important;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  border-bottom: 2px solid #8d8784;
+  margin-bottom: 1rem !important;
 }
 
 .home-sec2-rol .react-reveal {
@@ -170,8 +198,8 @@
     font-size: 2rem !important;
   }
   .sec1-home-text {
-    font-size: 3rem !important;
-    margin-top: 60% !important;
+    font-size: 2rem !important;
+    /* margin-top: 60% !important; */
   }
   .home-sec3,
   .home-sec5,
@@ -200,7 +228,16 @@
     text-align: center !important;
   }
   .home-sec1-testomonial-img {
-    height: 85vh !important;
+    /* height: 85vh !important; */
+  }
+  .sec1-home-textbox {
+    width: 85% !important;
+  }
+
+  .home-project-summery-btnbox{
+    width: 100%;
+    margin-top: 1rem !important;
+    justify-content: center;
   }
   .home-sec2-card {
     min-height: 54vh !important;
