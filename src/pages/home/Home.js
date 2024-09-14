@@ -33,12 +33,13 @@ import marutisuzki from "../../images/marutisuzki.jpeg";
 import insecticides from "../../images/insecticides.jpeg";
 import sachdeva from "../../images/sachdeva.jpeg";
 import sprintFire from "../../images/sprint-fire.jpeg";
+import projectStory from "../../images/project-story.webp";
 import { Fade, Roll } from "react-reveal";
-import TurnRightIcon from '@mui/icons-material/TurnRight';
+import TurnRightIcon from "@mui/icons-material/TurnRight";
 const testimonialsData = [
   {
     id: 1,
-    name: "Insecticides India Pvt. Ltd. Azadpur Delhi",
+    name: "Insecticides India Pvt. Ltd. ",
     designation: "Plumbing Work",
     image: image1,
     message:
@@ -46,7 +47,7 @@ const testimonialsData = [
   },
   {
     id: 2,
-    name: "Radhey Bio.Tech Pvt. Ltd. (Kamdhenu Group)",
+    name: "Radhey Bio.Tech Pvt. Ltd.",
     designation: "Plumbing Work",
     image: image2,
     message:
@@ -54,7 +55,7 @@ const testimonialsData = [
   },
   {
     id: 3,
-    name: "Sleek Brake Products (Bahadurgrah Haryana)",
+    name: "Sleek Brake Products",
     designation: "Fire Figgting Work",
     image: image3,
     message:
@@ -62,7 +63,7 @@ const testimonialsData = [
   },
   {
     id: 4,
-    name: "Sachadeva Polycolor Pvt. Ltd. (Met City Jhajjar Haryana)",
+    name: "Sachadeva Polycolor Pvt. Ltd.",
     designation: "Fire Figgting & Alarm System",
     image: image4,
     message:
@@ -70,7 +71,7 @@ const testimonialsData = [
   },
   {
     id: 5,
-    name: "Holister Mediacl India Pvt. Ltd. (Hssid Growth Bawal Haryana)",
+    name: "Holister Mediacl India Pvt. Ltd.",
     designation: "Fire Figgting Work",
     image: holister,
     message:
@@ -222,9 +223,19 @@ const Home = () => {
             }}
             container
           >
-            <Grid item xs={12} sm={12} md={8}>
-              <Typography className="sec1-home-text" sx={{fontSize:"70px"}} variant="h2">
-              Industry Leader in Big Flow Firefighting
+            <Grid
+              item
+              xs={12}
+              sm={12}
+              md={8}
+              sx={{ borderLeft: "8px solid red" }}
+            >
+              <Typography
+                className="sec1-home-text"
+                sx={{ fontSize: "70px", marginLeft: "10px" }}
+                variant="h2"
+              >
+                Industry Leader in Big Flow Firefighting
               </Typography>
             </Grid>
             <Grid item xs={12} sm={6} md={6} sx={{ marginTop: "1rem" }}>
@@ -234,31 +245,33 @@ const Home = () => {
                 single-source supplier for both marine and land application.
               </Typography>
             </Grid>
-            <Grid item xs={12} sm={7} md={9} sx={{marginTop:"2rem"}}>
-            <a href="/contact"
+            <Grid item xs={12} sm={7} md={9} sx={{ marginTop: "2rem" }}>
+              <a
+                href="/contact"
                 style={{
                   background: "#ce1319",
                   color: "#ffffff",
                   width: "210px",
                   borderRadius: "10rem",
                   fontSize: "22px",
-                  fontWeight:"bold",
+                  fontWeight: "bold",
                   textTransform: "capitalize",
                   padding: "12px 20px",
                   transition: "all .5s",
                   content: "",
-                  textDecoration:"none"
+                  textDecoration: "none",
                 }}
                 className="Home-sec1-btn"
               >
                 Contact Us
               </a>
-              <a href="/contact"
+              <a
+                href="/contact"
                 style={{
                   background: "#ce1319",
                   color: "#ffffff",
                   borderRadius: "100%",
-                  marginLeft:"1rem",
+                  marginLeft: "1rem",
                   fontSize: "24px",
                   textTransform: "capitalize",
                   padding: "10px 12px",
@@ -266,9 +279,8 @@ const Home = () => {
                 }}
                 className="Home-sec1-btn"
               >
-                <TurnRightIcon/>
+                <TurnRightIcon />
               </a>
-
             </Grid>
           </Grid>
         </Grid>
@@ -604,25 +616,11 @@ const Home = () => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid
-          item
-          container
-          // direction="column"
-          alignItems="center"
-          justifyContent="center"
-          className="home-sec3"
-          style={{
-            minHeight: "400px",
-            // background:      " linear-gradient(94.64deg, #B023C2 -0.12%, #680DE4 99.52%)",
-            // background:  "linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231))",
-            background:
-              "linear-gradient(-45deg, rgba(31,164,30,255) -5%, rgba(245,131,32,255))",
-          }}
-          // sm={12}
-        >
+
+        <Grid item container className="home-project-summery">
           <Grid
             item
-            style={{ marginTop: "80px" }}
+            // style={{ marginTop: "80px" }}
             className="sec3-heading-box"
             sm={12}
           >
@@ -638,32 +636,97 @@ const Home = () => {
               </Typography>
             </Fade>
           </Grid>
-          <Grid
-            item
-            style={{ marginTop: "20px" }}
-            xs={12}
-            sm={10}
-            md={10}
-            lg={8}
-          >
-            <Fade bottom>
-              <Typography
-                variant="h6"
-                // align="center"
-                className="landing-sec3-text"
-                style={{ color: "#fff" }}
+          <Grid item style={{ marginTop: "20px" }} sm={4} container>
+            <Grid item sm={12}>
+              <Fade bottom>
+                <Typography
+                  variant="h6"
+                  // align="center"
+                  className="landing-sec3-text"
+                  style={{ color: "#fff" }}
+                >
+                  The journey of "Fire Fighting" began with extensive research
+                  and brainstorming sessions. The team delved into the science
+                  of fire behavior, studied existing firefighting techniques,
+                  and analyzed real-world scenarios to identify key challenges
+                  and opportunities for improvement. Drawing inspiration from
+                  nature, technology, and innovative design principles, they
+                  envisioned a comprehensive system that integrates cutting-edge
+                  technology with practical firefighting strategies.
+                </Typography>
+              </Fade>
+            </Grid>
+            <Grid
+              item
+              sm={12}
+              sx={{ display: "flex", alignItems: "flex-start" }}
+            >
+              <a
+                href="/projects"
+                style={{
+                  background: "#fff ",
+                  color: "#ce1319",
+                  // width: "210px",
+                  borderRadius: "10rem",
+                  fontSize: "22px",
+                  fontWeight: "bold",
+                  textTransform: "capitalize",
+                  padding: "12px 35px",
+                  transition: "all .5s",
+                  content: "",
+                  textDecoration: "none",
+                }}
+                className="home-project-summery-btn"
               >
-                The journey of "Fire Fighting" began with extensive research and
-                brainstorming sessions. The team delved into the science of fire
-                behavior, studied existing firefighting techniques, and analyzed
-                real-world scenarios to identify key challenges and
-                opportunities for improvement. Drawing inspiration from nature,
-                technology, and innovative design principles, they envisioned a
-                comprehensive system that integrates cutting-edge technology
-                with practical firefighting strategies.
-              </Typography>
-            </Fade>
+                Projects
+              </a>
+              <a
+                href="/projects"
+                style={{
+                  background: "#fff",
+                  color: "#ce1319",
+                  borderRadius: "100%",
+                  marginLeft: "1rem",
+                  fontSize: "24px",
+                  textTransform: "capitalize",
+                  padding: "10px 12px",
+                  transition: "all .5s",
+                }}
+                className="home-project-summery-btn"
+              >
+                <TurnRightIcon />
+              </a>
+            </Grid>
           </Grid>
+          <Grid item style={{ marginTop: "20px" }} sm={4}>
+            <Zoom>
+              <img
+                src={projectStory}
+                className="home-project-summery-img"
+                height="100%"
+                width="100%"
+                sx={{ transition: "transform 0.3s ease" }}
+              />
+            </Zoom>
+          </Grid>
+        </Grid>
+        <Grid
+          item
+          container
+          // direction="column"
+          alignItems="center"
+          justifyContent="center"
+          className="home-sec3"
+          style={{
+            minHeight: "400px",
+            // background:      " linear-gradient(94.64deg, #B023C2 -0.12%, #680DE4 99.52%)",
+            // background:  "linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231))",
+            // background:
+            //   "linear-gradient(-45deg, rgba(31,164,30,255) -5%, rgba(245,131,32,255))",
+            background: "#252525",
+          }}
+          // sm={12}
+        >
           <Grid item container xs={12} sm={10} style={{ marginBottom: "5rem" }}>
             <Testimonials />
           </Grid>

@@ -10,12 +10,30 @@
   z-index: "999";
 }
 
-.Home-sec1-btn:hover{
+.Home-sec1-btn:hover {
   box-shadow: none !important;
   outline: 0 !important;
   border: 0 !important;
   color: #ce1319 !important;
   background-color: #ffffff !important;
+}
+
+.home-project-summery-btn:hover {
+  box-shadow: none !important;
+  outline: 0 !important;
+  border: 0 !important;
+  color: #fff !important;
+  background-color: rgb(37, 37, 37) !important;
+}
+
+.home-project-summery-img{
+  /* transition: "transform 0.3s ease" ; */
+  opacity: 0.8 !important;  
+}
+
+.home-project-summery-img:hover {
+  transform: scale(1.05) !important;
+  opacity: 1 !important;
 }
 
 .home-sec2 {
@@ -26,6 +44,20 @@
   background: #7da500
     url("https://garden.pro-theme.info/wp-content/uploads/2015/09/tools-bg.png?id=26") !important;
 }
+
+.home-project-summery {
+  display: flex;
+  justify-content: center;
+  background-color: #ce1319;
+  padding: 32px;
+}
+
+.home-project-summery{
+  display: flex !important;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
 .about-text {
   /* margin-top: 200px !important; */
   color: #fff;
