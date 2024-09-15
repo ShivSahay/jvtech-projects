@@ -30,9 +30,10 @@
 }
 
 .drower-sidebar .MuiDrawer-paper {
-  width: 50% !important;
-  background: #f58320 !important;
+  width: 100% !important;
+  background: #1667ac !important;
   color: #fff;
+  height: 45vh !important;
 }
 .mobile-header-iconbtn {
   margin-left: 0px !important;

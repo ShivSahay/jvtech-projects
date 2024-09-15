@@ -112,7 +112,7 @@
   position: absolute;
 }
 
-.home-project-summery-btnbox{
+.home-project-summery-btnbox {
   display: flex;
   align-items: flex-start;
   /* justify-content:center; */
@@ -146,6 +146,9 @@
 @media (max-width: 1700px) {
   .home-sec3-testomonial .slick-next {
     right: 0px !important;
+  }
+  .card100 {
+    max-width: 85% !important;
   }
 }
 
@@ -227,14 +230,11 @@
   .landing-sec3-text {
     text-align: center !important;
   }
-  .home-sec1-testomonial-img {
-    /* height: 85vh !important; */
-  }
   .sec1-home-textbox {
     width: 85% !important;
   }
 
-  .home-project-summery-btnbox{
+  .home-project-summery-btnbox {
     width: 100%;
     margin-top: 1rem !important;
     justify-content: center;
@@ -244,5 +244,11 @@
   }
   .home-sec3-testomonial {
     padding: 0px !important;
+  }
+  .card100 {
+    max-width: 90% !important;
+  }
+  .card100one {
+    max-width: 98% !important;
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import { Paper, Container, Typography, Link, Grid } from "@mui/material";
-
+import { Paper, Container, Typography, Grid } from "@mui/material";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import SpeedDial from "@mui/material/SpeedDial";
 import SpeedDialIcon from "@mui/material/SpeedDialIcon";
@@ -57,6 +57,7 @@ const Footer = () => {
           color: "#ffffff",
           borderRadius: "0px",
         }}
+        className="footer-cover"
       >
         {/* <Container maxWidth="md">
           <Typography variant="body2" align="center">
@@ -83,8 +84,8 @@ const Footer = () => {
             </Link>
           </Typography>
         </Container> */}
-        <Grid item container sx={{ columnGap: "5rem" }}>
-          <Grid item container sm={3} xs={4} sx={{ display: "flow" }}>
+        <Grid item container className="footer-containerbox">
+          <Grid item container md={3} sm={5} xs={12} sx={{ display: "flow" }}>
             <Grid
               item
               sm={12}
@@ -94,10 +95,7 @@ const Footer = () => {
                 alignItems: "center",
               }}
             >
-              <Typography
-                variant="h6"
-                sx={{ fontWeight: "bold", fontSize: "2rem" }}
-              >
+              <Typography variant="h6" className="footer-jvtext">
                 J.V. Tech engineers
               </Typography>
             </Grid>
@@ -144,10 +142,11 @@ const Footer = () => {
                 </Typography>
               </a>
             </Grid>
-            <Grid item sm={12} container sx={{ marginTop: "2rem" }}>
+            <Grid item sm={12} xs={8} container className="footer-termbox">
               <Grid
                 item
-                sm={4}
+                md={4}
+                sm={5}
                 sx={{ display: "flex", justifyContent: "start" }}
               >
                 {" "}
@@ -156,6 +155,7 @@ const Footer = () => {
                     href="#"
                     style={{
                       color: "#ffffff",
+                      textDecoration: "none",
                       // marginLeft: "16px",
                     }}
                   >
@@ -165,7 +165,8 @@ const Footer = () => {
               </Grid>
               <Grid
                 item
-                sm={4}
+                md={5}
+                sm={6}
                 sx={{ display: "flex", justifyContent: "start" }}
               >
                 <Typography variant="body2" align="center">
@@ -173,6 +174,7 @@ const Footer = () => {
                     href="#"
                     style={{
                       color: "#ffffff",
+                      textDecoration: "none",
                       // marginLeft: "16px",
                     }}
                   >
@@ -182,16 +184,13 @@ const Footer = () => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item container sm={3} xs={4} sx={{ display: "flow" }}>
+          <Grid item container md={3} sm={5} xs={12} sx={{ display: "flow" }}>
             <Grid sm={12}>
-              <Typography
-                variant="h6"
-                sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
-              >
+              <Typography variant="h6" className="footer-col-head">
                 How to find us
               </Typography>
             </Grid>
-            <Grid sm={12} sx={{ paddingRight: "7vw" }}>
+            <Grid sm={12} className="footer-col2text">
               <Typography
                 variant="h6"
                 sx={{ fontWeight: "400", fontSize: "14px" }}
@@ -200,26 +199,20 @@ const Footer = () => {
                 State: Utter Pradesh,201303
               </Typography>
             </Grid>
-            <Grid sm={12} sx={{ display: "flex", marginTop: "3rem" }}>
+            <Grid sm={12} className="footer-copyright">
               <Typography variant="body2" align="center">
                 © 2023 J.V. Tech engineers All rights reserved
               </Typography>
             </Grid>
           </Grid>
-          <Grid item sm={2} container sx={{ display: "flow" }}>
+          <Grid item sm={2} xs={6} container sx={{ display: "flow" }}>
             <Grid item sm={12}>
-              <Typography
-                variant="h6"
-                sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
-              >
+              <Typography variant="h6" className="footer-col-head">
                 Company
               </Typography>
             </Grid>
             <Grid item sm={12} sx={{ marginLeft: "5px" }}>
-              <a
-                href="/"
-                style={{ color: "#fff", textDecoration: "none" }}
-              >
+              <a href="/" style={{ color: "#fff", textDecoration: "none" }}>
                 <Typography
                   variant="h6"
                   sx={{
@@ -234,123 +227,152 @@ const Footer = () => {
                 </Typography>
               </a>
               <a
-                href="/about" style={{ color: "#fff", textDecoration: "none" }}>
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: "400",
-                  fontSize: "18px",
-                  paddingTop: "0.5rem",
-                  display: "flex",
-                  alignItems: "center",
-                }}
+                href="/about"
+                style={{ color: "#fff", textDecoration: "none" }}
               >
-                About <InfoIcon sx={{ marginLeft: "5px" }} />
-              </Typography>
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: "400",
+                    fontSize: "18px",
+                    paddingTop: "0.5rem",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  About <InfoIcon sx={{ marginLeft: "5px" }} />
+                </Typography>
               </a>
               <a
-                href="/projects" style={{ color: "#fff", textDecoration: "none" }}>
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: "400",
-                  fontSize: "18px",
-                  paddingTop: "0.5rem",
-                  display: "flex",
-                  alignItems: "center",
-                }}
+                href="/projects"
+                style={{ color: "#fff", textDecoration: "none" }}
               >
-                Project <LibraryAddIcon sx={{ marginLeft: "5px" }} />
-              </Typography>
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: "400",
+                    fontSize: "18px",
+                    paddingTop: "0.5rem",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  Project <LibraryAddIcon sx={{ marginLeft: "5px" }} />
+                </Typography>
               </a>
               <a
-                href="/service" style={{ color: "#fff", textDecoration: "none" }}>
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: "400",
-                  fontSize: "18px",
-                  paddingTop: "0.5rem",
-                  display: "flex",
-                  alignItems: "center",
-                }}
+                href="/service"
+                style={{ color: "#fff", textDecoration: "none" }}
               >
-                Service <DesignServicesIcon sx={{ marginLeft: "5px" }} />
-              </Typography>
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: "400",
+                    fontSize: "18px",
+                    paddingTop: "0.5rem",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  Service <DesignServicesIcon sx={{ marginLeft: "5px" }} />
+                </Typography>
               </a>
               <a
-                href="/contact" style={{ color: "#fff", textDecoration: "none" }}>
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: "400",
-                  fontSize: "18px",
-                  paddingTop: "0.5rem",
-                  display: "flex",
-                  alignItems: "center",
-                }}
+                href="/contact"
+                style={{ color: "#fff", textDecoration: "none" }}
               >
-                Contact <ContactPhoneIcon sx={{ marginLeft: "5px" }} />
-              </Typography>
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: "400",
+                    fontSize: "18px",
+                    paddingTop: "0.5rem",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  Contact <ContactPhoneIcon sx={{ marginLeft: "5px" }} />
+                </Typography>
               </a>
             </Grid>
           </Grid>
-          <Grid item sm={2} container sx={{ display: "flow" }}>
+          <Grid item sm={2} xs={6} container sx={{ display: "flow" }}>
             <Grid item sm={12}>
-              <Typography
-                variant="h6"
-                sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
-              >
+              <Typography variant="h6" className="footer-col-head">
                 Social links
               </Typography>
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: "400",
-                  fontSize: "18px",
-                  paddingTop: "0.5rem",
-                  display: "flex",
-                  alignItems: "center",
-                }}
+              <Link
+                to="https://www.linkedin.com/"
+                target="_blank"
+                className="footer-social-link"
               >
-                LinkedIn <LinkedInIcon sx={{ marginLeft: "5px" }} />
-              </Typography>
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: "400",
-                  fontSize: "18px",
-                  paddingTop: "0.5rem",
-                  display: "flex",
-                  alignItems: "center",
-                }}
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: "400",
+                    fontSize: "18px",
+                    paddingTop: "0.5rem",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  LinkedIn <LinkedInIcon sx={{ marginLeft: "5px" }} />
+                </Typography>
+              </Link>
+              <Link
+                to="https://www.facebook.com/"
+                target="_blank"
+                className="footer-social-link"
               >
-                Facebook <FacebookOutlinedIcon sx={{ marginLeft: "5px" }} />
-              </Typography>
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: "400",
-                  fontSize: "18px",
-                  paddingTop: "0.5rem",
-                  display: "flex",
-                  alignItems: "center",
-                }}
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: "400",
+                    fontSize: "18px",
+                    paddingTop: "0.5rem",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  Facebook <FacebookOutlinedIcon sx={{ marginLeft: "5px" }} />
+                </Typography>
+              </Link>
+              <Link
+                to="https://www.instagram.com/jvtechengineers/"
+                target="_blank"
+                className="footer-social-link"
               >
-                Instagram <InstagramIcon sx={{ marginLeft: "5px" }} />
-              </Typography>
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: "400",
-                  fontSize: "18px",
-                  paddingTop: "0.5rem",
-                  display: "flex",
-                  alignItems: "center",
-                }}
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: "400",
+                    fontSize: "18px",
+                    paddingTop: "0.5rem",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  Instagram <InstagramIcon sx={{ marginLeft: "5px" }} />
+                </Typography>
+              </Link>
+              <Link
+                to="https://wa.me/+91 9990314859"
+                target="_blank"
+                className="footer-social-link"
               >
-                Whatsapp <WhatsAppIcon sx={{ marginLeft: "5px" }} />
-              </Typography>
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: "400",
+                    fontSize: "18px",
+                    paddingTop: "0.5rem",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  Whatsapp <WhatsAppIcon sx={{ marginLeft: "5px" }} />
+                </Typography>
+              </Link>
             </Grid>
           </Grid>
           {/* <Grid item sm={12} sx={{ marginTop: "2rem" }}>

@@ -304,8 +304,8 @@ const Home = () => {
               }}
             >
               <Zoom>
-                <Card
-                  className="home-sec2-card"
+                <Card 
+                  className="home-sec2-card  card100 card100one"
                   sx={{ maxWidth: "100%", minHeight: "48vh" }}
                 >
                   <CardMedia
@@ -383,7 +383,7 @@ const Home = () => {
             >
               <Zoom>
                 <Card
-                  className="home-sec2-card"
+                  className="home-sec2-card card100"
                   sx={{ maxWidth: "100%", minHeight: "48vh" }}
                 >
                   <CardMedia
@@ -500,7 +500,7 @@ const Home = () => {
             >
               <Zoom>
                 <Card
-                  className="home-sec2-card"
+                  className="home-sec2-card card100"
                   sx={{ maxWidth: "100%", minHeight: "48vh" }}
                 >
                   <CardMedia
@@ -645,12 +645,7 @@ const Home = () => {
                 </Typography>
               </Fade>
             </Grid>
-            <Grid
-              item
-              sm={12}
-              className="home-project-summery-btnbox"
-              
-            >
+            <Grid item sm={12} className="home-project-summery-btnbox">
               <a
                 href="/projects"
                 style={{
