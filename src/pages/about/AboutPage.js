@@ -23,6 +23,8 @@ import jitendra from "../..//images/jitendra.jpg";
 import shiv from "../../images/shiv.jpeg";
 import leader from "../../images/leader.jpeg";
 import joinus from "../../images/joinus.jpg";
+import TurnRightIcon from "@mui/icons-material/TurnRight";
+
 const AboutPage = () => {
   const testimonials = [
     {
@@ -121,10 +123,15 @@ const AboutPage = () => {
 
   return (
     <>
-      <Grid item container className="about-page-container" sx={{marginTop:"-96px"}}>
+      <Grid
+        item
+        container
+        className="about-page-container"
+        sx={{ marginTop: "-96px" }}
+      >
         {/* Section 1 */}
         <Grid className="about-container">
-          <Fade bottom>
+          {/* <Fade bottom>
             <Typography className="sec1-about-text1" variant="h2">
               J.V. TECH ENGINEERES
             </Typography>
@@ -133,7 +140,70 @@ const AboutPage = () => {
             <Typography className="sec1-about-text2" variant="h4">
               ENGINEERES & CONTRACTORS
             </Typography>
-          </Fade>
+          </Fade> */}
+          <Grid item sm={12} className="sec1-home-textbox" container>
+            <Grid
+              item
+              xs={12}
+              sm={12}
+              md={8}
+              sx={{ borderLeft: "8px solid red" }}
+            >
+              <Typography
+                className="sec1-home-text"
+                sx={{ fontSize: "70px", marginLeft: "10px" }}
+                variant="h2"
+              >
+                About Us
+              </Typography>
+            </Grid>
+            <Grid item xs={12} sm={6} md={6} sx={{ marginTop: "1rem" }}>
+              <Typography className="sec1-home-text1" variant="body1">
+                Fire Flight is a new airborne fire mapping software, providing
+                real-time fire information (active fire data), like maps, and
+                post-fire hotspot maps. We ship the system from Australia and
+                operated by local pilots in fire danger regions worldwide, and
+                it is cheap to deploy and easy to use.
+              </Typography>
+            </Grid>
+            <Grid item xs={12} sm={7} md={9} sx={{ marginTop: "2rem" }}>
+              <a
+                href="/contact"
+                style={{
+                  background: "#ce1319",
+                  color: "#ffffff",
+                  width: "210px",
+                  borderRadius: "10rem",
+                  fontSize: "22px",
+                  fontWeight: "bold",
+                  textTransform: "capitalize",
+                  padding: "12px 40px",
+                  transition: "all .5s",
+                  content: "",
+                  textDecoration: "none",
+                }}
+                className="Home-sec1-btn"
+              >
+                Contact Us
+              </a>
+              <a
+                href="/contact"
+                style={{
+                  background: "#ce1319",
+                  color: "#ffffff",
+                  borderRadius: "100%",
+                  marginLeft: "1rem",
+                  fontSize: "24px",
+                  textTransform: "capitalize",
+                  padding: "10px 12px",
+                  transition: "all .5s",
+                }}
+                className="Home-sec1-btn"
+              >
+                <TurnRightIcon />
+              </a>
+            </Grid>
+          </Grid>
         </Grid>
         {/* Section 2 */}
         <Grid
@@ -206,10 +276,21 @@ const AboutPage = () => {
         <Grid
           item
           container
-          style={{ height: "35rem",width:"100vw",alignItems:"center",justifyContent:"center",backgroundImage:"url(" + joinus + ")",backgroundSize:"contain"}}
+          style={{
+            height: "35rem",
+            width: "100vw",
+            alignItems: "center",
+            justifyContent: "center",
+            backgroundImage: "url(" + joinus + ")",
+            backgroundSize: "contain",
+          }}
           className="abou-joinus-container"
         >
-          <Typography sx={{color:"red",fontWeight:"bolder",fontSize:"3rem"}}>Why Join Us ?</Typography>
+          <Typography
+            sx={{ color: "red", fontWeight: "bolder", fontSize: "3rem" }}
+          >
+            Why Join Us ?
+          </Typography>
         </Grid>
         {/* Section 3 */}
         <Grid

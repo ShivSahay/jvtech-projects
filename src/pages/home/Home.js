@@ -36,6 +36,7 @@ import sprintFire from "../../images/sprint-fire.jpeg";
 import projectStory from "../../images/project-story.webp";
 import { Fade, Roll } from "react-reveal";
 import TurnRightIcon from "@mui/icons-material/TurnRight";
+import KeyboardCommandKeyIcon from "@mui/icons-material/KeyboardCommandKey";
 const testimonialsData = [
   {
     id: 1,
@@ -211,7 +212,7 @@ const Home = () => {
           <Grid item sm={12} sx={{ position: "relative" }}>
             <ImageSliderMui images={images} />
           </Grid>
-          <Grid item sm={12} className="sec1-home-textbox" sx={{}} container>
+          <Grid item sm={12} className="sec1-home-textbox" container>
             <Grid
               item
               xs={12}
@@ -245,7 +246,7 @@ const Home = () => {
                   fontSize: "22px",
                   fontWeight: "bold",
                   textTransform: "capitalize",
-                  padding: "12px 20px",
+                  padding: "12px 40px",
                   transition: "all .5s",
                   content: "",
                   textDecoration: "none",
@@ -304,8 +305,8 @@ const Home = () => {
               }}
             >
               <Zoom>
-                <Card 
-                  className="home-sec2-card  card100 card100one"
+                <Card
+                  className="home-sec2-card  card100"
                   sx={{ maxWidth: "100%", minHeight: "48vh" }}
                 >
                   <CardMedia
@@ -318,6 +319,7 @@ const Home = () => {
                       gutterBottom
                       variant="h6"
                       style={{ fontWeight: "500", textAlign: "center" }}
+                      className="home-sec2-card-text"
                     >
                       MARUTI SUZUKLI INDIA LIMITED
                     </Typography>
@@ -357,6 +359,7 @@ const Home = () => {
                       gutterBottom
                       variant="h6"
                       style={{ fontWeight: "500", textAlign: "center" }}
+                      className="home-sec2-card-text"
                     >
                       HOLISTER MEDICAL INDIA PRIVATE LIMITED
                     </Typography>
@@ -396,6 +399,7 @@ const Home = () => {
                       gutterBottom
                       variant="h6"
                       style={{ fontWeight: "500", textAlign: "center" }}
+                      className="home-sec2-card-text"
                     >
                       ATS TOWNSHIP PRIVATE LIMITED
                     </Typography>
@@ -435,6 +439,7 @@ const Home = () => {
                       gutterBottom
                       variant="h6"
                       style={{ fontWeight: "500", textAlign: "center" }}
+                      className="home-sec2-card-text"
                     >
                       Sleek Brake Products (Bahadurgrah Haryana)
                     </Typography>
@@ -474,6 +479,7 @@ const Home = () => {
                       gutterBottom
                       variant="h6"
                       style={{ fontWeight: "500", textAlign: "center" }}
+                      className="home-sec2-card-text"
                     >
                       SACHADEVA POLYCOLOR PRIVATE LIMITED
                     </Typography>
@@ -513,6 +519,7 @@ const Home = () => {
                       gutterBottom
                       variant="h6"
                       style={{ fontWeight: "500", textAlign: "center" }}
+                      className="home-sec2-card-text"
                     >
                       AC POLYCOTERS PRIVATE LIMITED
                     </Typography>
@@ -552,6 +559,7 @@ const Home = () => {
                       gutterBottom
                       variant="h6"
                       style={{ fontWeight: "500", textAlign: "center" }}
+                      className="home-sec2-card-text"
                     >
                       THE AMARYLLIS CENTRAL PARK DELHI
                     </Typography>
@@ -591,6 +599,7 @@ const Home = () => {
                       gutterBottom
                       variant="h6"
                       style={{ fontWeight: "500", textAlign: "center" }}
+                      className="home-sec2-card-text"
                     >
                       INSECTICIDES INDIA PRIVATE LIMITED
                     </Typography>
@@ -606,7 +615,7 @@ const Home = () => {
           </Grid>
         </Grid>
 
-        <Grid item container className="home-project-summery">
+        {/* <Grid item container className="home-project-summery">
           <Grid
             item
             // style={{ marginTop: "80px" }}
@@ -694,7 +703,115 @@ const Home = () => {
               />
             </Zoom>
           </Grid>
+        </Grid> */}
+
+        <Grid item container className="home-project-summery">
+          <Grid item sm={12} md={6} className="sec3-imagebox" sx={{maxHeight:"100vh"}}>
+            <img
+              src={projectStory}
+              className="home-project-summery-img"
+              height="100%"
+              width="100%"
+              sx={{ transition: "transform 0.3s ease" }}
+            />
+          </Grid>
+          <Grid item sm={12} md={6} container sx={{display:"flex",justifyContent:"center"}}>
+            <Grid
+              item
+              sm={12}
+              sx={{ padding: "2rem" }}
+              className="sec3-heading-box"
+            >
+              <Fade bottom>
+                <Typography
+                  variant="h2"
+                  align="center"
+                  gutterBottom
+                  className="sec3-heading"
+                  style={{
+                    color: "rgba(0, 0, 0, 0.6)",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Project Story
+                </Typography>
+              </Fade>
+              <Fade bottom>
+                <Typography
+                  variant="body1"
+                  // align="center"
+                  className="landing-sec3-text"
+                >
+                  <KeyboardCommandKeyIcon
+                    style={{ color: "rgb(245, 131, 32)" }}
+                  />
+                  The journey of "Fire Fighting" began with extensive research
+                  and brainstorming sessions. The team delved into the science
+                  of fire behavior, studied existing firefighting techniques,
+                  and analyzed real-world scenarios to identify key challenges
+                  and opportunities for improvement. Drawing inspiration from
+                  nature, technology, and innovative design principles, they
+                  envisioned a comprehensive system that integrates cutting-edge
+                  technology with practical firefighting strategies.
+                </Typography>
+              </Fade>
+              <Fade bottom>
+                <Typography
+                  variant="body1"
+                  // align="center"
+                  sx={{ marginTop: "1rem" }}
+                  className="landing-sec3-text"
+                >
+                  <KeyboardCommandKeyIcon
+                    style={{ color: "rgb(245, 131, 32)" }}
+                  />
+                  Fires can be unpredictable and are getting larger. With each
+                  passing year, there is more property, environmental damage,
+                  and lives lost due to these raging fires. To combat this,
+                  firefighters need a fighting advantage.
+                </Typography>
+              </Fade>
+            </Grid>
+            <Grid item sm={12} className="home-project-summery-btnbox">
+              <a
+                href="/projects"
+                style={{
+                  background: "rgb(206, 19, 25)",
+                  color: "#fff",
+                  // width: "210px",
+                  borderRadius: "10rem",
+                  fontSize: "22px",
+                  fontWeight: "bold",
+                  textTransform: "capitalize",
+                  padding: "12px 40px",
+                  transition: "all .5s",
+                  content: "",
+                  textDecoration: "none",
+                }}
+                className="home-project-summery-btn"
+              >
+                Projects
+              </a>
+              <a
+                href="/projects"
+                style={{
+                  background: "rgb(206, 19, 25)",
+                  color: "#fff",
+                  borderRadius: "100%",
+                  marginLeft: "1rem",
+                  fontSize: "24px",
+                  textTransform: "capitalize",
+                  padding: "10px 12px",
+                  transition: "all .5s",
+                }}
+                className="home-project-summery-btn"
+              >
+                <TurnRightIcon />
+              </a>
+            </Grid>
+          </Grid>
         </Grid>
+
         <Grid
           item
           container

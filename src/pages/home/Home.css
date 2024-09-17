@@ -26,14 +26,17 @@
   background-color: rgb(37, 37, 37) !important;
 }
 
-.home-project-summery-img {
-  /* transition: "transform 0.3s ease" ; */
-  opacity: 0.8 !important;
+.sec3-imagebox {
+  height: 60vh !important;
 }
 
 .home-project-summery-img:hover {
-  transform: scale(1.05) !important;
-  opacity: 1 !important;
+  /* transform: scale(1.05) !important;
+  opacity: 1 !important; */
+}
+
+.landing-sec3-text {
+  font-size: 18px !important;
 }
 
 .home-sec2 {
@@ -46,16 +49,8 @@
 }
 
 .home-project-summery {
-  display: flex;
-  justify-content: center;
-  background-color: #ce1319;
-  padding: 32px;
-}
-
-.home-project-summery {
   display: flex !important;
   justify-content: center;
-  column-gap: 2rem;
 }
 
 .about-text {
@@ -100,11 +95,6 @@
 }
 
 .sec1-home-textbox {
-  /* display: "flex",
-              justifyContent: "start",
-              width: "70%",
-              top: "40%",
-              position: "absolute", */
   display: flex;
   justify-content: start;
   width: 70% !important;
@@ -115,7 +105,7 @@
 .home-project-summery-btnbox {
   display: flex;
   align-items: flex-start;
-  /* justify-content:center; */
+  justify-content: center;
 }
 
 .work-exp-text {
@@ -156,6 +146,12 @@
   .home-sec2-card {
     min-height: 62vh !important;
   }
+  .sec3-imagebox {
+    height: 72vh !important;
+  }
+  .home-sec2-card-text {
+    font-size: 1.15rem !important;
+  }
 }
 @media (max-width: 1154px) {
   .home-sec3-testomonial .slick-next {
@@ -173,11 +169,20 @@
   .home-sec2-card3 {
     margin: 0px 0px 5rem 0px !important;
   }
+  .home-project-summery-btnbox {
+    margin-bottom: 1rem !important;
+  }
+  .sec3-imagebox {
+    height: 50vh !important;
+  }
 }
 
 @media (max-width: 768px) {
   .home2-container {
     margin: 5rem 0px !important;
+  }
+  .home-sec2-card-text {
+    font-size: 1.25rem !important;
   }
 }
 
@@ -224,11 +229,11 @@
   .home-sec2-card5,
   .home-sec2-card6,
   .home-sec2-card7,
-  .home-sec2-card4 {
+  .home-sec2-card8 {
     margin: 2rem 0px !important;
   }
   .landing-sec3-text {
-    text-align: center !important;
+    /* text-align: center !important; */
   }
   .sec1-home-textbox {
     width: 85% !important;
@@ -246,9 +251,16 @@
     padding: 0px !important;
   }
   .card100 {
-    max-width: 90% !important;
+    max-width: 85% !important;
   }
-  .card100one {
-    max-width: 98% !important;
+
+  .home-sec2-card-media {
+    min-width: 100vw;
+  }
+}
+
+@media (max-width: 360px) {
+  .home-sec2-card-text {
+    font-size: 1rem !important;
   }
 }
