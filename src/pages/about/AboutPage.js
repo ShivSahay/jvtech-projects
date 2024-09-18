@@ -131,17 +131,7 @@ const AboutPage = () => {
       >
         {/* Section 1 */}
         <Grid className="about-container">
-          {/* <Fade bottom>
-            <Typography className="sec1-about-text1" variant="h2">
-              J.V. TECH ENGINEERES
-            </Typography>
-          </Fade>
-          <Fade bottom>
-            <Typography className="sec1-about-text2" variant="h4">
-              ENGINEERES & CONTRACTORS
-            </Typography>
-          </Fade> */}
-          <Grid item sm={12} className="sec1-home-textbox" container>
+          <Grid item sm={12} className="sec1-about-textbox" container>
             <Grid
               item
               xs={12}
@@ -150,15 +140,22 @@ const AboutPage = () => {
               sx={{ borderLeft: "8px solid red" }}
             >
               <Typography
-                className="sec1-home-text"
+                className="sec1-about-text"
                 sx={{ fontSize: "70px", marginLeft: "10px" }}
                 variant="h2"
               >
                 About Us
               </Typography>
+              <Typography
+                className="sec1-about-text"
+                sx={{ fontSize: "60px", marginLeft: "10px" }}
+                variant="h3"
+              >
+                Industrial and commercial electrical installations
+              </Typography>
             </Grid>
-            <Grid item xs={12} sm={6} md={6} sx={{ marginTop: "1rem" }}>
-              <Typography className="sec1-home-text1" variant="body1">
+            <Grid item xs={12} sm={8} md={6} sx={{ marginTop: "1rem" }}>
+              <Typography className="sec1-about-text1" variant="body1">
                 Fire Flight is a new airborne fire mapping software, providing
                 real-time fire information (active fire data), like maps, and
                 post-fire hotspot maps. We ship the system from Australia and
@@ -205,6 +202,7 @@ const AboutPage = () => {
             </Grid>
           </Grid>
         </Grid>
+        
         {/* Section 2 */}
         <Grid
           className="about-sec2"

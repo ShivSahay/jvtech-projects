@@ -163,6 +163,12 @@
   .home-sec2-card4 {
     margin: 0px 0px 5rem 0px !important;
   }
+  .sec1-home-textbox {
+    width: 85% !important;
+  }
+  .sec1-home-text {
+    font-size: 60px !important;
+  }
 }
 
 @media (max-width: 899px) {
@@ -235,9 +241,7 @@
   .landing-sec3-text {
     /* text-align: center !important; */
   }
-  .sec1-home-textbox {
-    width: 85% !important;
-  }
+ 
 
   .home-project-summery-btnbox {
     width: 100%;
