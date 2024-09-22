@@ -17,8 +17,7 @@
 .sec1-about-text2 {
   font-weight: bold !important;
   /* color: #de0933; */
-  color: rgb(245, 131, 32);
-  text-align: center;
+  /* text-align: center; */
 }
 .about-sec3-card {
   display: flex;
@@ -75,12 +74,28 @@
     width: 310px !important;
     height: 310px !important;
   }
+  .about-sec2up-img {
+    width: 93vw !important;
+  }
+  .about-sec2up {
+    padding: 25px !important;
+  }
+  .about-sec2up-textbox {
+    padding: 10px 0px !important;
+  }
 }
 @media (max-width: 599px) {
   .about-container {
-    height: 85vh !important;
+    /* height: 85vh !important; */
+  }
+
+  .about-page-container {
+    margin-top: -82px !important;
   }
   .about-sec2 {
+    padding: 25px !important;
+  }
+  .about-sec2up {
     padding: 25px !important;
   }
   .about-sec2 .css-1oqqzyl-MuiContainer-root {
@@ -130,4 +145,12 @@
     font-size: 2rem !important;
     /* margin-top: 60% !important; */
   }
+  .sec1-about-textbox {
+    top: 25% !important;
+  }
+  .about-sec2up-img {
+    width: 86vw !important;
+    height: 45vh !important;
+  }
+  
 }

@@ -24,6 +24,8 @@ import shiv from "../../images/shiv.jpeg";
 import leader from "../../images/leader.jpeg";
 import joinus from "../../images/joinus.jpg";
 import TurnRightIcon from "@mui/icons-material/TurnRight";
+import aboutStory from "../../images/about-story.jpg";
+import KeyboardCommandKeyIcon from "@mui/icons-material/KeyboardCommandKey";
 
 const AboutPage = () => {
   const testimonials = [
@@ -202,7 +204,161 @@ const AboutPage = () => {
             </Grid>
           </Grid>
         </Grid>
-        
+
+        <Grid
+          className="about-sec2up"
+          container
+          style={{
+            // minHeight: "50vh",
+            display: "flex",
+            // flexDirection: "column",
+            // alignItems: "center",
+            justifyContent: "center",
+            width: "100%",
+            padding: "60px",
+          }}
+        >
+          <Grid item xs={12} sm={12} md={6}>
+            <img
+              src={joinus}
+              className="about-sec2up-img"
+              height="100%"
+              width="100%"
+              style={{ height: "65vh", width: "46vw", borderRadius: "25px" }}
+            />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={6}
+            className="about-sec2up-textbox"
+            sx={{ padding: "10px 30px" }}
+          >
+            {/* <Fade bottom>
+              <Typography
+                variant="h4"
+                // align="center"
+                gutterBottom
+                className="sec3-heading"
+                style={{
+                  color: "rgba(0, 0, 0, 0.6)",
+                  fontWeight: "bold",
+                }}
+              >
+                Overview of the Fire Flight System
+              </Typography>
+            </Fade> */}
+            <Fade bottom>
+              <Typography
+                variant="h4"
+                // align="center"
+                gutterBottom
+                className="sec3-heading"
+                style={{
+                  color: "rgba(0, 0, 0, 0.6)",
+                  fontWeight: "bold",
+                }}
+              >
+                What is Fire Flight ?
+              </Typography>
+            </Fade>
+            <Fade bottom>
+              <Typography
+                variant="body1"
+                // align="center"
+                className="landing-sec3-text"
+              >
+                <KeyboardCommandKeyIcon
+                  style={{ color: "rgb(245, 131, 32)" }}
+                />
+                The Fire Flight system is a small, self-contained system that
+                can be installed into an aircraft with a camera hatch. We have
+                local operators who are based in high fire danger regions
+                throughout the world who provide this fire data to local
+                clients.
+              </Typography>
+            </Fade>
+            <Fade bottom>
+              <Typography
+                variant="body1"
+                // align="center"
+                sx={{ marginTop: "1rem" }}
+                className="landing-sec3-text"
+              >
+                <KeyboardCommandKeyIcon
+                  style={{ color: "rgb(245, 131, 32)" }}
+                />
+                Fires can be unpredictable and are getting larger. With each
+                passing year, there is more property, environmental damage, and
+                lives lost due to these raging fires. To combat this,
+                firefighters need a fighting advantage.
+              </Typography>
+            </Fade>
+            <Fade bottom>
+              <Typography
+                variant="h4"
+                // align="center"
+                // gutterBottom
+                className="sec3-heading"
+                style={{
+                  color: "rgba(0, 0, 0, 0.6)",
+                  fontWeight: "bold",
+                  marginTop: "1rem",
+                }}
+              >
+                Overview of the Fire Flight System
+              </Typography>
+            </Fade>
+            <Fade bottom>
+              <Typography
+                variant="body1"
+                // align="center"
+                sx={{ marginTop: "1rem" }}
+                className="landing-sec3-text"
+              >
+                <KeyboardCommandKeyIcon
+                  style={{ color: "rgb(245, 131, 32)" }}
+                />
+                "Fire Fighting Systems" typically refers to a range of
+                equipment, methods, and technologies designed to detect,
+                control, and extinguish fires to protect lives and property.
+              </Typography>
+            </Fade>
+            <Fade bottom>
+              <Typography
+                variant="body1"
+                // align="center"
+                sx={{ marginTop: "1rem" }}
+                className="landing-sec3-text"
+              >
+                <KeyboardCommandKeyIcon
+                  style={{ color: "rgb(245, 131, 32)" }}
+                />
+                The Fire Fighting System (FFS) is a comprehensive set of tools
+                and technologies designed to detect, control, and extinguish
+                fires, ensuring the safety of people and minimizing damage to
+                property.
+              </Typography>
+            </Fade>
+            <Fade bottom>
+              <Typography
+                variant="body1"
+                // align="center"
+                sx={{ marginTop: "1rem" }}
+                className="landing-sec3-text"
+              >
+                <KeyboardCommandKeyIcon
+                  style={{ color: "rgb(245, 131, 32)" }}
+                />
+                A fire fighting system operates by early detection through
+                sensors and alarms, followed by activation of suppression
+                systems like sprinklers, water mist, or foam systems.
+              </Typography>
+            </Fade>
+          </Grid>
+        </Grid>
+
         {/* Section 2 */}
         <Grid
           className="about-sec2"
@@ -277,19 +433,44 @@ const AboutPage = () => {
           style={{
             height: "35rem",
             width: "100vw",
-            alignItems: "center",
+            // alignItems: "center",
             justifyContent: "center",
-            backgroundImage: "url(" + joinus + ")",
-            backgroundSize: "contain",
+            backgroundImage: "url(" + aboutStory + ")",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            padding: "100px 0px",
           }}
           className="abou-joinus-container"
         >
-          <Typography
-            sx={{ color: "red", fontWeight: "bolder", fontSize: "3rem" }}
+          <Grid item sm={7}></Grid>
+          <Grid
+            item
+            sm={4}
+            sx={{ background: "#fff", borderRadius: "20px", padding: "25px" }}
           >
-            Why Join Us ?
-          </Typography>
+            <Typography
+              sx={{
+                color: "red",
+                fontWeight: "bolder",
+                fontSize: "2rem",
+                textAlign: "center",
+              }}
+            >
+              Why Join Us ?
+            </Typography>
+            <Typography
+              sx={{
+                color: "rgba(0, 0, 0, 0.6);",
+                fontWeight: "bolder",
+                fontSize: "1rem",
+              }}
+            >
+              Fire Flight is a dedicated team with years of experience in aerial
+              mapping and firefighting.
+            </Typography>
+          </Grid>
         </Grid>
+
         {/* Section 3 */}
         <Grid
           item
