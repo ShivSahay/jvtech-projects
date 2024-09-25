@@ -254,7 +254,7 @@ const AboutPage = () => {
                 variant="h4"
                 // align="center"
                 gutterBottom
-                className="sec3-heading"
+                className="about-sec2up-heading"
                 style={{
                   color: "rgba(0, 0, 0, 0.6)",
                   fontWeight: "bold",
@@ -300,7 +300,7 @@ const AboutPage = () => {
                 variant="h4"
                 // align="center"
                 // gutterBottom
-                className="sec3-heading"
+                className="about-sec2up-heading"
                 style={{
                   color: "rgba(0, 0, 0, 0.6)",
                   fontWeight: "bold",
@@ -431,7 +431,7 @@ const AboutPage = () => {
           item
           container
           style={{
-            height: "35rem",
+            // height: "35rem",
             width: "100vw",
             // alignItems: "center",
             justifyContent: "center",
@@ -442,32 +442,128 @@ const AboutPage = () => {
           }}
           className="abou-joinus-container"
         >
-          <Grid item sm={7}></Grid>
+          <Grid item sm={3} md={6}></Grid>
           <Grid
             item
-            sm={4}
-            sx={{ background: "#fff", borderRadius: "20px", padding: "25px" }}
+            sm={8}
+            md={5}
+            sx={{
+              background: "#fff",
+              borderRadius: "20px",
+              padding: "25px",
+              background: "rgb(199 210 219);",
+            }}
           >
             <Typography
               sx={{
-                color: "red",
+                color: "rgb(242, 101, 34)",
                 fontWeight: "bolder",
-                fontSize: "2rem",
-                textAlign: "center",
+                fontSize: "1.5rem",
+                // textAlign: "center",
               }}
             >
-              Why Join Us ?
+              We Are Commited To Provide Quality Service
             </Typography>
             <Typography
               sx={{
                 color: "rgba(0, 0, 0, 0.6);",
                 fontWeight: "bolder",
                 fontSize: "1rem",
+                marginTop: "1rem",
               }}
             >
-              Fire Flight is a dedicated team with years of experience in aerial
-              mapping and firefighting.
+              Fire Flight is a new airborne fire mapping software, providing
+              real-time fire information (active fire data), like maps, and
+              post-fire hotspot maps. We ship the system from Australia and
+              operated by local pilots in fire danger regions worldwide, and it
+              is cheap to deploy and easy to use.
             </Typography>
+            <Typography
+              sx={{
+                color: "rgb(242, 101, 34)",
+                fontWeight: "bolder",
+                fontSize: "1.5rem",
+                // textAlign: "center",
+                marginTop: "1rem",
+              }}
+            >
+              Our services include:
+            </Typography>
+            <Typography
+              gutterBottom
+              sx={{
+                color: "rgba(0, 0, 0, 0.6);",
+                fontWeight: "bolder",
+                fontSize: "1rem",
+              }}
+            >
+              * Industrial and commercial electrical installations.
+            </Typography>
+            <Typography
+              gutterBottom
+              sx={{
+                color: "rgba(0, 0, 0, 0.6);",
+                fontWeight: "bolder",
+                fontSize: "1rem",
+              }}
+            >
+              * Maintenance and upgrades
+            </Typography>
+            <Typography
+              gutterBottom
+              sx={{
+                color: "rgba(0, 0, 0, 0.6);",
+                fontWeight: "bolder",
+                fontSize: "1rem",
+              }}
+            >
+              * Custom electrical panel manufacturing
+            </Typography>
+            <Grid
+              item
+              xs={12}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                marginTop: "1rem",
+              }}
+            >
+              <a
+                href="/contact"
+                style={{
+                  background: "#ce1319",
+                  color: "#ffffff",
+                  width: "120px",
+                  borderRadius: "10rem",
+                  fontSize: "22px",
+                  fontWeight: "bold",
+                  textTransform: "capitalize",
+                  padding: "12px 40px",
+                  transition: "all .5s",
+                  content: "",
+                  textDecoration: "none",
+                }}
+                className="Home-sec1-btn"
+              >
+                Contact Us
+              </a>
+              <a
+                href="/contact"
+                style={{
+                  background: "#ce1319",
+                  color: "#ffffff",
+                  borderRadius: "100%",
+                  marginLeft: "1rem",
+                  fontSize: "24px",
+                  textTransform: "capitalize",
+                  padding: "10px 12px",
+                  transition: "all .5s",
+                }}
+                className="Home-sec1-btn"
+              >
+                <TurnRightIcon />
+              </a>
+            </Grid>
           </Grid>
         </Grid>
 
@@ -680,8 +776,9 @@ const AboutPage = () => {
           className="about-sec3"
           style={{
             minHeight: "400px",
-            background:
-              "linear-gradient(-45deg, rgba(31,164,30,255) -5%, rgba(245,131,32,255))",
+            background: "#1667ac",
+            // background:
+            //   "linear-gradient(-45deg, rgba(31,164,30,255) -5%, rgba(245,131,32,255))",
           }}
         >
           <Grid

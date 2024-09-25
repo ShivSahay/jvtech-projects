@@ -83,6 +83,9 @@
   .about-sec2up-textbox {
     padding: 10px 0px !important;
   }
+  .about-sec2up-heading {
+    font-size: 1.5rem !important;
+  }
 }
 @media (max-width: 599px) {
   .about-container {
@@ -152,5 +155,4 @@
     width: 86vw !important;
     height: 45vh !important;
   }
-  
 }
